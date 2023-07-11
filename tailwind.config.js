@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -20,10 +20,10 @@ module.exports = {
         allrox: ['var(--font-allrox)'],
         geologica: ['var(--font-geologica)'],
       },
-      spacing:{
-        '120':'30rem',
-        '128':'32rem',
-        '144':'36rem'
+      spacing: {
+        '120': '30rem',
+        '128': '32rem',
+        '144': '36rem'
       },
       colors: {
         'brand': {
@@ -53,6 +53,9 @@ module.exports = {
           800: '#1B1209',
           900: '#000000',
           950: '#000000'
+        },
+        'dodger-blue': {
+          DEFAULT: '#4472FF', 50: '#FCFCFF', 100: '#E7EDFF', 200: '#BECEFF', 300: '#96B0FF', 400: '#6D91FF', 500: '#4472FF', 600: '#0C48FF', 700: '#0034D3', 800: '#00269B', 900: '#001863', 950: '#001147'
         },
       },
       keyframes: {

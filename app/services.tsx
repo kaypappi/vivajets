@@ -77,7 +77,7 @@ let ourservices = [{
 },]
 const services = () => {
     return (
-        <section className=' container mx-auto py-10'>
+        <section className=' container mx-auto py-10 h-full min-h-[60rem]'>
             <div className="grid grid-cols-12">
                 <div className="col-span-6">
                     <Badge variant={'nohover'} className=' mb-4 bg-clay bg-opacity-[0.04] text-clay font-light px-3 py-2'>Our Services</Badge>

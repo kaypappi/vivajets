@@ -71,7 +71,7 @@ const stackedTabs: React.FC<TabsProps> = ({services,className,...props}) => {
             <TabsList className=' w-full bg-transparent'>
                 {services.map((tab, i) => {
                     return (
-                        <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab} key={tab.head.title} className={`mb-2 text-slate-400 px-6 py-3 rounded-full ${active===i ? 'text-clay border-clay border': ' text-slate-400'}`}>
+                        <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab.head.title} key={tab.head.title} className={`mb-2 text-slate-400 px-6 py-3 rounded-full ${active===i ? 'text-clay border-clay border': ' text-slate-400'}`}>
                             {tab.head.title}
                         </TabsTrigger>
                     )
