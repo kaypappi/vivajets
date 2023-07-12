@@ -4,6 +4,7 @@ import About from './about'
 import Benefits from './benefits'
 import Testimonials from './testimonials'
 import Cta from './cta'
+import Footer from './footer'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Benefits />
       <Testimonials />
       <Cta />
+      <Footer />  
     </main>
   )
 }
