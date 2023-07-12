@@ -42,7 +42,7 @@ const testimonials = () => {
                 <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }}>
                     <Badge variant={'nohover'} className=' mb-4 bg-dodger-blue bg-opacity-[0.16] text-dodger-blue font-light px-3 py-2'>Testimonials</Badge>
                 </motion.div>
-                <motion.h3 initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className="h3 font-bold max-w-lg text-center mt-8 mb-4">What Client Says About Flights
+                <motion.h3 initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className="h3 font-bold max-w-xl text-center mt-8 mb-4">What Client Says About Flights
                 </motion.h3>
                 <motion.p initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className='p text-center max-w-xl font-extralight'>With many satisfied and happy client’s to our name, you can trust us to give you nothing less than the best. Here what some of our satified clients have to say about us.
 
