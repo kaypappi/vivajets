@@ -26,7 +26,7 @@ const autoplayOptions = {
     stopOnMouseEnter: true,
 }
 
-const testimonialCarousel: React.FC<PropType> = ({ slides, options,className }) => {
+const TestimonialCarousel: React.FC<PropType> = ({ slides, options,className }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', ...options }, [Autoplay(autoplayOptions)])
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -96,4 +96,4 @@ const testimonialCarousel: React.FC<PropType> = ({ slides, options,className }) 
     )
 }
 
-export default testimonialCarousel
+export default TestimonialCarousel

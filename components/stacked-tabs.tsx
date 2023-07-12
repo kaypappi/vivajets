@@ -45,7 +45,7 @@ interface Tab {
     }
 }
 
-const stackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => {
+const StackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => {
     const [tabs, setTabs] = React.useState<Tab[]>([...services])
     const [active, setActive] = React.useState(0)
     const moveToEnd = (from: number) => {
@@ -161,4 +161,4 @@ const stackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => 
     )
 }
 
-export default stackedTabs
+export default StackedTabs

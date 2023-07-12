@@ -17,7 +17,7 @@ interface benefitsCardProps {
     }[]
 }
 
-const benefitsCard = ({ benefits }: benefitsCardProps) => {
+const BenefitsCard = ({ benefits }: benefitsCardProps) => {
     const [activeBenefit, setActiveBenefit] = React.useState(0)
     return (
         <div className=' text-white grid grid-cols-12  gap-x-6'>
@@ -73,4 +73,4 @@ const benefitsCard = ({ benefits }: benefitsCardProps) => {
     )
 }
 
-export default benefitsCard
+export default BenefitsCard
