@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
+
 const cta = () => {
     return (
         <section className=' bg-[#FFF8F2] w-full py-16 flex flex-col text-center items-center'>

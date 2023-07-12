@@ -5,6 +5,7 @@ import { ScrollArea } from './ui/scroll-area'
 import { Card, CardContent } from './ui/card'
 import { ReactComponent as ArrowRight } from '@/public/svgs/arrowcircleright.svg'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 
 
@@ -28,7 +29,7 @@ const benefitsCard = ({ benefits }: benefitsCardProps) => {
                             <div className="">
                                 <div className='flex flex-col gap-y-2'>
                                     {benefits.map((faq, index) => (
-                                        <div onClick={() => setActiveBenefit(index)} className={`text-sm p-4 border rounded-md w-full flex items-center font-light cursor-pointer   transition  text-black ${index !== activeBenefit ? '' : ' border-clay text-clay'}`} key={faq.title}>
+                                        <div key={faq.title} onClick={() => setActiveBenefit(index)} className={`text-sm p-4 border rounded-md w-full flex items-center font-light cursor-pointer   transition-all duration-500  text-black ${index !== activeBenefit ? '' : ' border-clay text-clay'}`}>
                                             <ArrowRight className={`ml-auto w-6 h-6 ${index === activeBenefit ? 'text-clay' : ''}`} />  {faq.title}
                                         </div>
                                     ))}
@@ -44,7 +45,23 @@ const benefitsCard = ({ benefits }: benefitsCardProps) => {
                 <Card className="w-full h-full text-white relative flex overflow-hidden ">
 
                     <CardContent className=' w-full h-full '>
-                        <Image width={700} height={700} className=' w-full h-full  object-cover absolute top-0 left-0 right-0 bottom-0 ' src={benefits[activeBenefit].image} alt={benefits[activeBenefit].title} />
+                        <motion.div
+                            key={benefits[activeBenefit].image}
+                            initial={{
+                                opacity: 0.8,
+                            }}
+                            animate={{
+                                opacity: 1,
+                            }}
+                            transition={{
+                                duration: 0.5,
+                            }}
+                            
+                            className='w-full h-full absolute top-0 left-0 right-0 bottom-0 '>
+                            {benefits.map((benefit, index) => (
+                                <Image key={benefit.title} style={{ zIndex: index === activeBenefit ? 1 : 0 }} width={700} height={700} className=' w-full h-full absolute top-0 left-0 right-0 bottom-0  object-cover ' src={benefit.image} alt={benefit.title} />
+                            ))}
+                        </motion.div>
                         <div className=' relative z-10 w-full h-full p-6 flex '>
                             <p className='p self-end   font-extralight'> {benefits[activeBenefit].desc}</p>
                         </div>

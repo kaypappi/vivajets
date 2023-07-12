@@ -4,10 +4,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs'
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { Button } from './ui/button';
+import { delay } from 'lodash';
 
 
 const CARD_OFFSET = 30;
 const SCALE_FACTOR = 0.04;
+
+
 
 function move<T>(array: T[], currentIndex: number, newPosition: number): T[] {
     if (currentIndex < 0 || currentIndex >= array.length || newPosition < 0 || newPosition >= array.length) {
@@ -54,20 +57,55 @@ const stackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => 
         setActive(indexx);
     }
     useEffect(() => {
-        const index= tabs.findIndex((tab) => tab.head.id === active)
+        const index = tabs.findIndex((tab) => tab.head.id === active)
         moveToEnd(index);
     }, [active])
-    
+
     return (
         <Tabs value={services[active].head.title} className={`${className}`}>
             <TabsList className=' w-full bg-transparent'>
-                {services.map((tab, i) => {
-                    return (
-                        <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab.head.title} key={tab.head.title} className={`mb-2 text-slate-400 font-extralight px-6 py-3 rounded-full data-[state=active]:text-clay data-[state=active]:border data-[state=active]:border-clay `}>
-                            {tab.head.title} {tab.head.icon &&  tab.head.icon()}
-                        </TabsTrigger>
-                    )
-                })}
+                <motion.div
+                    variants={{
+                        hidden: { y: 100 },
+                        show: {
+                            y: 0,
+                            transition: {
+                                duration: 0.5,
+                                staggerChildren: 0.3,
+                                delayChildren: 0.3
+                            }
+                        }
+                    }}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true }}
+                    className=' w-full flex justify-center'>
+                    {services.map((tab, i) => {
+                        return (
+                            <motion.div
+                            key={tab.head.title}
+                            variants={{
+                                hidden:{
+                                    y:100,
+                                    opacity:0
+                                },
+                                show:{
+                                    y:0,
+                                    opacity:1,
+                                    transition:{
+                                        duration:0.5
+                                    }
+                                }
+                            }}
+                            >
+                                <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab.head.title} key={tab.head.title} className={`mb-2 text-slate-400 transition-all duration-500 font-extralight border border-transparent px-6 py-3 rounded-full data-[state=active]:text-clay data-[state=active]:border data-[state=active]:border-clay `}>
+                                    {tab.head.title} {tab.head.icon && tab.head.icon()}
+                                </TabsTrigger>
+                            </motion.div>
+                        )
+                    })}
+                </motion.div>
+
 
             </TabsList>
             <div className=' relative flex items-center w-full justify-center mt-40' >
@@ -92,12 +130,12 @@ const stackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => 
                                     scale: 1 - index * SCALE_FACTOR,
                                     zIndex: tabs.length - index
                                 }}
-                                drag={canDrag ? "y" : false}
-                                dragConstraints={{
-                                    top: 0,
-                                    bottom: 0
-                                }}
-                                onDragEnd={() => moveToEnd(index)}
+                            /* drag={canDrag ? "y" : false}
+                            dragConstraints={{
+                                top: 0,
+                                bottom: 0
+                            }}
+                            onDragEnd={() => moveToEnd(index)} */
 
                             >
 

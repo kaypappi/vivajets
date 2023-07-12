@@ -1,6 +1,9 @@
+"use client"
+
 import { Badge } from '@/components/ui/badge'
 import React from 'react'
 import TestimonialCarousel from '@/components/testimonial-carousel'
+import { motion } from 'framer-motion'
 
 
 const testimonialsData = [
@@ -27,22 +30,25 @@ const testimonialsData = [
 ]
 
 const carouselOptions = {
-    loop:true,
+    loop: true,
     startIndex: 1,
     inViewThreshold: 1,
 }
 
 const testimonials = () => {
     return (
-        <section className=' w-full '>
-            <div className="container py-16 flex flex-col items-center text-center">
-                <Badge variant={'nohover'} className=' mb-4 bg-dodger-blue bg-opacity-[0.16] text-dodger-blue font-light px-3 py-2'>Testimonials</Badge>
-                <h3 className="h3 font-bold max-w-xl text-center mt-8 mb-4">What Client Says About Flights
-                </h3>
-                <p className='p text-center max-w-xl font-extralight'>With many satisfied and happy client’s to our name, you can trust us to give you nothing less than the best. Here what some of our satified clients have to say about us
-                </p>
+        <section className=' w-full pb-16 '>
+            <div className="container pt-16 pb-20 flex flex-col items-center text-center">
+                <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }}>
+                    <Badge variant={'nohover'} className=' mb-4 bg-dodger-blue bg-opacity-[0.16] text-dodger-blue font-light px-3 py-2'>Testimonials</Badge>
+                </motion.div>
+                <motion.h3 initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className="h3 font-bold max-w-lg text-center mt-8 mb-4">What Client Says About Flights
+                </motion.h3>
+                <motion.p initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className='p text-center max-w-xl font-extralight'>With many satisfied and happy client’s to our name, you can trust us to give you nothing less than the best. Here what some of our satified clients have to say about us.
+
+                </motion.p>
             </div>
-            <TestimonialCarousel slides={testimonialsData} options={carouselOptions} />
+            <TestimonialCarousel className='mb-10' slides={testimonialsData} options={carouselOptions} />
 
         </section>
     )

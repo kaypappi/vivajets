@@ -13,7 +13,8 @@ interface PropType {
         testimony: string,
         image: string,
     }[]
-    options?: EmblaOptionsType
+    options?: EmblaOptionsType,
+    className?: string
 }
 
 const SLIDE_SPACING = '0.5rem'
@@ -25,7 +26,7 @@ const autoplayOptions = {
     stopOnMouseEnter: true,
 }
 
-const testimonialCarousel: React.FC<PropType> = ({ slides, options }) => {
+const testimonialCarousel: React.FC<PropType> = ({ slides, options,className }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', ...options }, [Autoplay(autoplayOptions)])
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -46,7 +47,7 @@ const testimonialCarousel: React.FC<PropType> = ({ slides, options }) => {
     return (
 
         <>
-            <div className=" overflow-hidden w-full" ref={emblaRef}>
+            <div className={`overflow-hidden w-full ${className}`} ref={emblaRef}>
                 <div style={{
                     backfaceVisibility: 'hidden',
                     display: 'flex',
@@ -89,7 +90,7 @@ const testimonialCarousel: React.FC<PropType> = ({ slides, options }) => {
                     )}
                 </div>
             </div>
-            <CarouselDots className='mt-10' itemsLength={slides.length} selectedIndex={selectedIndex} />
+            <CarouselDots className='mt-14' itemsLength={slides.length} selectedIndex={selectedIndex} />
         </>
 
     )
