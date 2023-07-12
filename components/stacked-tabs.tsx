@@ -6,11 +6,6 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 
 
-
-
-
-
-
 const CARD_OFFSET = 30;
 const SCALE_FACTOR = 0.04;
 
@@ -20,11 +15,11 @@ function move<T>(array: T[], currentIndex: number, newPosition: number): T[] {
         return array;
     }
 
-
-    const item = array[currentIndex];
-    array.splice(currentIndex, 1);
-    array.splice(newPosition, 0, item);
-    return array;
+    const newArray = [...array];
+    const item = newArray[currentIndex];
+    newArray.splice(currentIndex, 1);
+    newArray.splice(newPosition, 0, item);
+    return newArray;
 }
 
 
@@ -35,8 +30,9 @@ interface TabsProps {
 interface Tab {
     head: {
         title: string,
-        icon: string,
+        icon: null | Function,
         disabled: boolean,
+        id: number
     },
     body: {
         title: string,
@@ -46,33 +42,29 @@ interface Tab {
     }
 }
 
-const stackedTabs: React.FC<TabsProps> = ({services,className,...props}) => {
+const stackedTabs: React.FC<TabsProps> = ({ services, className, ...props }) => {
     const [tabs, setTabs] = React.useState<Tab[]>([...services])
     const [active, setActive] = React.useState(0)
     const moveToEnd = (from: number) => {
         setTabs(move(tabs, from, 0))
     };
 
-    const tabsHead = services.map((tab, i) => tab.head.title)
-
     const handleTabClick = (index: string) => {
-        //setActive(index);
-        //moveToEnd(index);
         const indexx = services.findIndex((tab) => tab.head.title === index)
         setActive(indexx);
-
     }
     useEffect(() => {
-        console.log(active)
-        moveToEnd(active);
+        const index= tabs.findIndex((tab) => tab.head.id === active)
+        moveToEnd(index);
     }, [active])
+    
     return (
-        <Tabs value={tabs[active].head.title} className={`${className}`}>
+        <Tabs value={services[active].head.title} className={`${className}`}>
             <TabsList className=' w-full bg-transparent'>
                 {services.map((tab, i) => {
                     return (
-                        <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab.head.title} key={tab.head.title} className={`mb-2 text-slate-400 px-6 py-3 rounded-full ${active===i ? 'text-clay border-clay border': ' text-slate-400'}`}>
-                            {tab.head.title}
+                        <TabsTrigger disabled={tab.head.disabled} onClick={() => handleTabClick(tab.head.title)} value={tab.head.title} key={tab.head.title} className={`mb-2 text-slate-400 font-extralight px-6 py-3 rounded-full data-[state=active]:text-clay data-[state=active]:border data-[state=active]:border-clay `}>
+                            {tab.head.title} {tab.head.icon &&  tab.head.icon()}
                         </TabsTrigger>
                     )
                 })}
@@ -82,7 +74,7 @@ const stackedTabs: React.FC<TabsProps> = ({services,className,...props}) => {
                 <ul className=' relative w-full h-full' >
                     {tabs.map((tab, index) => {
                         const canDrag = index === 0;
-                        if(tab.head.disabled){
+                        if (tab.head.disabled) {
                             return
                         }
                         return (

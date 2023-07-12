@@ -1,11 +1,15 @@
+"use client"
+
 import { Badge } from '@/components/ui/badge'
 import StackedTabs from '@/components/stacked-tabs'
+import { ReactComponent as SlantRightArrow } from '@/public/svgs/slant-right-arrow.svg'
 
 let ourservices = [{
     head: {
         title: 'Private Jet Charter',
-        icon: '',
+        icon: null,
         disabled: false,
+        id:0
     },
     body: {
         title: 'Private Jet Charter',
@@ -18,8 +22,9 @@ let ourservices = [{
 }, {
     head: {
         title: 'Aircraft Management',
-        icon: '',
+        icon: null,
         disabled: false,
+        id:1
     },
     body: {
         title: 'Air Craft Management',
@@ -33,8 +38,9 @@ let ourservices = [{
 {
     head: {
         title: 'Aircraft Fractional Ownership',
-        icon: '',
+        icon: null,
         disabled: false,
+        id:2
     },
     body: {
         title: 'Aircraft Fractional Ownership',
@@ -48,8 +54,9 @@ let ourservices = [{
 {
     head: {
         title: 'Business Jet Charter',
-        icon: '',
+        icon: null,
         disabled: false,
+        id:3
     },
     body: {
         title: 'Business Jet Charter',
@@ -63,11 +70,12 @@ let ourservices = [{
 {
     head: {
         title: 'View All Services',
-        icon: '',
+        icon: ()=>(<SlantRightArrow className='ml-2' />),
         disabled: true,
+        id:4
     },
     body: {
-        title: 'Air Craft Management',
+        title: 'View All Services',
         desc: `Do you want to lease a private jet? Our expert team is 
         available to listen to your needs and give the best 
         private jet charter options.`,
