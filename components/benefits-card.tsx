@@ -28,7 +28,7 @@ const benefitsCard = ({ benefits }: benefitsCardProps) => {
                             <div className="">
                                 <div className='flex flex-col gap-y-2'>
                                     {benefits.map((faq, index) => (
-                                        <div onClick={() => setActiveBenefit(index)} className={`text-sm p-4 border rounded-md w-full flex font-light cursor-pointer   transition  text-black ${index !== activeBenefit ? '' : ' border-clay text-clay'}`} key={faq.title}>
+                                        <div onClick={() => setActiveBenefit(index)} className={`text-sm p-4 border rounded-md w-full flex items-center font-light cursor-pointer   transition  text-black ${index !== activeBenefit ? '' : ' border-clay text-clay'}`} key={faq.title}>
                                             <ArrowRight className={`ml-auto w-6 h-6 ${index === activeBenefit ? 'text-clay' : ''}`} />  {faq.title}
                                         </div>
                                     ))}

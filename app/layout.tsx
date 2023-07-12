@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Geologica } from 'next/font/google'
 
-const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica', display: 'swap' })
+const geologica = Geologica({ subsets: ['latin'], variable: '--font-geologica' })
 
 export const metadata: Metadata = {
   title: 'Viva Jets',
