@@ -35,7 +35,7 @@ const hero = () => {
         </video>
       <div className="w-full h-full bg-[url('/images/heromesh.png')] ">
         <div className="heromesh w-full h-full flex  items-center justify-start bg-[#0C0C23]/80">
-          <div className=" container ">
+          <div className=" container max-w-6xl ">
             <Badge
               variant={"nohover"}
               className=" mb-8 bg-brand bg-opacity-[0.7] text-white font-light px-3 py-2"
