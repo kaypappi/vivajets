@@ -25,7 +25,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                 <Card className="w-full h-full text-black shadow-[0px_0px_15px_0px_rgba(0,0,0,0.09)]  ">
 
                     <CardContent className='p-6'>
-                        <ScrollArea type='scroll' dir='rtl' className=" h-96 w-full rounded-md text-end ">
+                        <ScrollArea type='scroll' dir='rtl' className=" h-max w-full rounded-md text-end ">
                             <div className="">
                                 <div className='flex flex-col gap-y-2'>
                                     {benefits.map((faq, index) => (
@@ -63,7 +63,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                             ))}
                         </motion.div>
                         <div className=' relative z-10 w-full h-full p-6 flex '>
-                            <p className='p self-end   font-extralight'> {benefits[activeBenefit].desc}</p>
+                            <h6 className='h6 self-end font-medium max-w-md'> {benefits[activeBenefit].desc}</h6>
                         </div>
                     </CardContent>
 
