@@ -5,10 +5,12 @@ import Benefits from './benefits'
 import Testimonials from './testimonials'
 import Cta from './cta'
 import Footer from './footer'
+import Hero from './hero'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Hero/>
       <Services />
       <About />
       <Benefits />
