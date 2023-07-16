@@ -30,8 +30,8 @@ const textCarouselOptions = {
 const hero = () => {
   return (
     <section className=" w-screen text-white h-screen relative ">
-        <video className=" w-full h-full absolute top-0 left-0 bottom-0 right-0 -z-10 " width={'100%'} height={'100%'} loop autoPlay muted>
-            <source src="/images/hero.mp4" type="video/mp4"/>
+        <video className=" w-full min-w-[100vw] object-cover min-h-screen block h-full absolute top-0 left-0 bottom-0 right-0 -z-10 " width={'100%'} height={'100%'} loop autoPlay muted>
+            <source className="w-full h-full " src="/images/hero.mp4" type="video/mp4"/>
         </video>
       <div className="w-full h-full bg-[url('/images/heromesh.png')] ">
         <div className="heromesh w-full h-full flex  items-center justify-start bg-[#0C0C23]/80">
