@@ -32,7 +32,7 @@ const services = [
 
 const about = () => {
     return (
-        <section className='bg-[#FFF8F2] w-full'>
+        <section className='bg-[#FFF8F2] w-full mt-20'>
             <div className=' container text-black py-16 flex flex-col items-center'>
                 <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }}>
                     <Badge variant={'nohover'} className=' mb-4 bg-dodger-blue bg-opacity-[0.16] text-dodger-blue font-light px-3 py-2'>About Us</Badge>
