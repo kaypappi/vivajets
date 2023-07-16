@@ -158,12 +158,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                   scale: 1 - index * SCALE_FACTOR,
                   zIndex: tabs.length - index,
                 }}
-                /* drag={canDrag ? "y" : false}
-                            dragConstraints={{
-                                top: 0,
-                                bottom: 0
-                            }}
-                            onDragEnd={() => moveToEnd(index)} */
+               onClick={() => handleTabClick(tab.head.title)}
               >
                 <div className=" grid grid-cols-12 gap-x-4 h-full">
                   <div className="col-span-5 flex flex-col h-full">

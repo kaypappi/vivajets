@@ -21,11 +21,6 @@ const heroSlides = [
   },
 ];
 
-const textCarouselOptions = {
-  loop: true,
-  startIndex: 1,
-  inViewThreshold: 0.5,
-};
 
 const hero = () => {
   return (

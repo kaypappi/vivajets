@@ -22,6 +22,7 @@ const variants = {
     opacity: 1,
   },
   exit: {
+    y:-20,
     zIndex: 0,
     opacity: 0,
   },

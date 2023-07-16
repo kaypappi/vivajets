@@ -24,7 +24,7 @@ const SLIDE_HEIGHT = "20rem";
 
 const autoplayOptions = {
   delay: 4000,
-  stopOnMouseEnter: true,
+  stopOnMouseEnter: false,
 };
 
 const TestimonialCarousel: React.FC<PropType> = ({
