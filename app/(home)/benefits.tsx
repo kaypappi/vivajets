@@ -47,7 +47,7 @@ const ourBenefits = [
 
 const benefits = () => {
   return (
-    <section className="py-10 text-black bg-[#F0F4FF]">
+    <section id="benefits" className="py-10 text-black bg-[#F0F4FF]">
       <div className="container">
         <div className="grid grid-cols-12 gap-x-16 mb-14">
           <motion.div

@@ -136,7 +136,7 @@ let ourservices: Tab[] = [
 ];
 const services = () => {
   return (
-    <section className=" container mx-auto pt-10 pb-36 h-full min-h-[60rem]">
+    <section id="services" className=" container mx-auto pt-10 pb-36 h-full min-h-[60rem]">
       <div className="grid grid-cols-12">
         <motion.div
           initial={{

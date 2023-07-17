@@ -44,7 +44,7 @@ const slashMotion = {
 
 const about = () => {
   return (
-    <section className="bg-[#FFF8F2] w-full mt-20">
+    <section id="about" className="bg-[#FFF8F2] w-full mt-20">
       <div className=" container text-black py-16 flex flex-col items-center">
         <motion.div
           initial={{ y: 50, opacity: 0 }}
