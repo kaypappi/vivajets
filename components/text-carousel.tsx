@@ -41,7 +41,7 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
 
   return (
     <div className=" min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         <motion.div
           className=" absolute  w-full"
           variants={variants}
