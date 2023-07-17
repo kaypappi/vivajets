@@ -10,17 +10,17 @@ const testimonialsData = [
     {
         name: 'Accra to United States of America',
         testimony: `I had an amazing experience using VivaJetss. The entire process was seamless and efficient, from selecting the jet to booking the flight. The platform provided a wide range of jet options and I was able to find one that perfectly suited my needs. The customer support was exceptional, always available to answer my questions and ensure a smooth experience. I highly recommend the jet hiring platform to anyone looking for a convenient and hassle-free way to book private jets.`,
-        image: '/images/businesswoman.png'
+        image: '/images/privatejet3.png'
     },
     {
         name: 'Lagos to London',
         testimony: `I had an amazing experience using Vivajets. The entire process was seamless and efficient, from selecting the jet to booking the flight. The platform provided a wide range of jet options and I was able to find one that perfectly suited my needs. The customer support was exceptional, always available to answer my questions and ensure a smooth experience. I highly recommend the jet hiring platform to anyone looking for a convenient and hassle-free way to book private jets.`,
-        image: '/images/sunglass-girl.png'
+        image: '/images/privatejet2.png'
     },
     {
         name: 'Abuja to Canada',
         testimony: `I had an amazing experience using Vivajets. The entire process was seamless and efficient, from selecting the jet to booking the flight. The platform provided a wide range of jet options and I was able to find one that perfectly suited my needs. The customer support was exceptional, always available to answer my questions and ensure a smooth experience. I highly recommend the jet hiring platform to anyone looking for a convenient and hassle-free way to book private jets.`,
-        image: '/images/businessman.png'
+        image: '/images/privatejet1.png'
     },
 ]
 
