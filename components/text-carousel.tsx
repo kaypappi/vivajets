@@ -22,7 +22,7 @@ const variants = {
     opacity: 1,
   },
   exit: {
-    y:-20,
+    y: -20,
     zIndex: 0,
     opacity: 0,
   },
@@ -33,14 +33,11 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      let next = index + 1;
-      if (next === slides.length) {
-        next = 0;
-      }
-      setIndex(next);
-    }, 5 * 1000);
+      setIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 7000);
+
     return () => clearTimeout(timeout);
-  }, [index, setIndex,slides.length]);
+  }, [slides.length,index]);
 
   return (
     <div className=" min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">

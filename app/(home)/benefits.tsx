@@ -69,9 +69,7 @@ const benefits = () => {
             >
               Our Benefits
             </Badge>
-            <h3 className=" h3 max-w-sm font-bold">
-              Learn More About Private Jet Benefits
-            </h3>
+            <h3 className=" h3 max-w-sm font-bold">The VivaJets Experience</h3>
           </motion.div>
           <motion.div
             initial={{

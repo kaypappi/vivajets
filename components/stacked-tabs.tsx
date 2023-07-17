@@ -75,14 +75,11 @@ const StackedTabs: React.FC<TabsProps> = ({
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      let next = active + 1;
-      if (next === services.length) {
-        next = 0;
-      }
-      setActive(next);
-    }, 5 * 1000);
+      setActive((prevActive) => (prevActive + 1) % services.length);
+    }, 7000);
+
     return () => clearTimeout(timeout);
-  }, [active, setActive,services.length]);
+  }, [services.length,active]);
 
   return (
     <Tabs value={services[active].head.title} className={`${className}`}>
