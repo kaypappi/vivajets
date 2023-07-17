@@ -43,7 +43,7 @@ const footerItems = [
     links: [
       {
         name: "Contact",
-        link: "",
+        link: "/contact",
       },
     ],
   },

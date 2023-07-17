@@ -14,7 +14,7 @@ const cta = () => {
         our experts with the response and a quote.
       </p>
       <Button asChild size={"lg"} variant={"clay"}>
-        <Link href="/contact">Send Us a Message</Link>
+        <Link href="/contact#contact-form">Send Us a Message</Link>
       </Button>
     </section>
   );

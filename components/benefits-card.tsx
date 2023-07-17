@@ -15,77 +15,11 @@ interface benefitsCardProps {
   }[];
 }
 
-{
-  /* <motion.div
-                  key={benefit.title}
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={{
-                    opacity: 1,
-                  }}
-                  exit={{
-                    opacity: 0,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                  }}
-                  className="w-full h-full absolute top-0 left-0 right-0 bottom-0 "
-                >
-                  <Image
-                    key={benefit.title}
-                    width={700}
-                    height={700}
-                    className=" w-full h-full absolute top-0 left-0 right-0 bottom-0  object-cover "
-                    src={benefit.image}
-                    alt={benefit.title}
-                    priority
-                  />
-                </motion.div> */
-}
-
-export const Slideshow = ({ image }: { image: string }) => (
-  <AnimatePresence mode="wait">
-    <motion.div
-      key={image}
-      initial={{
-        opacity: 0.8,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0.8,
-      }}
-      transition={{
-        duration: 0.5,
-      }}
-      className="w-full h-full absolute top-0 left-0 right-0 bottom-0 "
-    >
-      <Image
-        key={image}
-        width={700}
-        height={700}
-        className=" w-full h-full absolute top-0 left-0 right-0 bottom-0  object-cover "
-        src={image}
-        alt={image}
-        priority
-      />
-    </motion.div>
-    {/* <motion.img
-      key={image}
-      src={image}
-      initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    /> */}
-  </AnimatePresence>
-);
 
 const BenefitsCard = ({ benefits }: benefitsCardProps) => {
   const [activeBenefit, setActiveBenefit] = React.useState(0);
   return (
-    <div className=" text-white grid grid-cols-12  gap-x-6">
+    <div id="contact-form" className=" text-white grid grid-cols-12  gap-x-6">
       <div className="col-span-5">
         <Card className="w-full h-full text-black shadow-[0px_0px_15px_0px_rgba(0,0,0,0.09)]  ">
           <CardContent className="p-6">

@@ -85,9 +85,11 @@ const benefits = () => {
             className="col-span-6 flex items-end"
           >
             <p className=" p max-w-xl">
-              Where Ever you need to go in the world, Vivajet can take you
-              there. Our private jet charter with global coverage provides you
-              unparalleled freedom to suit your leisure or business travel.
+              With professional and confidential guidance, our expert
+              assistance, coupled with continuous monitoring, we provide a
+              stellar experience, while determining the best for you, VIVAJETS
+              will provide unwavering support every step of the way, no matter
+              the need, place or time.
             </p>
           </motion.div>
         </div>

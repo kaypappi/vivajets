@@ -86,9 +86,9 @@ const Contact = () => {
             </motion.div>
           </div>
         </section>
-        <section className="w-full h-full mt-32  ">
+        <section id="contact-form" className="w-full h-full pt-32  ">
           <div className="container mx-auto max-w-xl">
-            <h4 className="h4 mb-8 text-center">CONTACT FORM</h4>
+            <h4  className="h4 mb-8 text-center">CONTACT FORM</h4>
             <ContactForm />
           </div>
         </section>
