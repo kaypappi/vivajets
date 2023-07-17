@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 const cta = () => {
@@ -12,8 +13,8 @@ const cta = () => {
         What are your requirements? Be sure to get a quick response from one of
         our experts with the response and a quote.
       </p>
-      <Button size={"lg"} variant={"clay"}>
-        Send Us a Message
+      <Button asChild size={"lg"} variant={"clay"}>
+        <Link href="/contact">Send Us a Message</Link>
       </Button>
     </section>
   );

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button, ButtonProps, ButtonVariantProps } from "./ui/button";
 import { delay } from "lodash";
 import { VariantProps } from "class-variance-authority";
+import Link from "next/link";
 
 const CARD_OFFSET = 30;
 const SCALE_FACTOR = 0.04;
@@ -82,7 +83,7 @@ const StackedTabs: React.FC<TabsProps> = ({
       setActive(next);
     }, 5 * 1000);
     return () => clearTimeout(timeout);
-  }, [active, setActive]);
+  }, [active, setActive,services.length]);
 
   return (
     <Tabs value={services[active].head.title} className={`${className}`}>
@@ -171,8 +172,10 @@ const StackedTabs: React.FC<TabsProps> = ({
                           variant={cta.variant}
                           className=" "
                           size={'lg'}
+                          asChild
                         >
-                          {cta.text}
+                          
+                          <Link href={cta.link}>{cta.text}</Link>
                         </Button>
                       ))}
                     </div>

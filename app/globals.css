@@ -2,34 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .h1 {
-    @apply text-4xl md:text-6xl
+    @apply text-4xl md:text-6xl;
   }
 
   .h2 {
-    @apply text-3xl md:text-5xl
+    @apply text-3xl md:text-5xl;
   }
 
   .h3 {
-    @apply text-2xl md:text-4xl
+    @apply text-2xl md:text-4xl;
   }
 
   .h4 {
-    @apply text-xl md:text-3xl
+    @apply text-xl md:text-3xl;
   }
 
   .h5 {
-    @apply text-base md:text-2xl
+    @apply text-base md:text-2xl;
   }
 
   .h6 {
-    @apply text-sm md:text-xl
+    @apply text-sm md:text-xl;
   }
 
   p {
-    @apply text-sm md:text-base font-light
+    @apply text-sm md:text-base font-light;
   }
 }
 
@@ -39,7 +38,7 @@
 
 @media screen and (min-width: 768px) {
   .embla__slide {
-    flex: 0 0 85%
+    flex: 0 0 85%;
   }
 }
 
@@ -48,8 +47,34 @@
     flex: 0 0 65%;
   }
 }
+
 @media screen and (min-width: 1536px) {
   .embla__slide {
     flex: 0 0 62.5rem;
   }
+}
+
+.contact-bottom{
+  background: linear-gradient(0deg, #111342 0%, rgba(17, 19, 66, 0.5) 100%);
+}
+
+.contact-wrapper {
+  background: linear-gradient(0deg, #111342 0%, rgba(17, 19, 66, 0.5) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }

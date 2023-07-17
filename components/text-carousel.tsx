@@ -40,10 +40,10 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
       setIndex(next);
     }, 5 * 1000);
     return () => clearTimeout(timeout);
-  }, [index, setIndex]);
+  }, [index, setIndex,slides.length]);
 
   return (
-    <div className=" min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
+    <div className=" min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
       <AnimatePresence>
         <motion.div
           className=" absolute  w-full"
