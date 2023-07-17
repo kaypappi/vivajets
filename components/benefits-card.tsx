@@ -41,7 +41,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                       {index === activeBenefit && (
                         <motion.div
                           className="underline absolute left-0 right-0 bottom-0 top-0 border rounded-md border-clay text-clay"
-                          layoutId="underline"
+                          layoutId="benefits-underline"
                         />
                       )}
                       <ArrowRight

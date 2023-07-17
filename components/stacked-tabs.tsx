@@ -124,8 +124,17 @@ const StackedTabs: React.FC<TabsProps> = ({
                   onClick={() => handleTabClick(tab.head.title)}
                   value={tab.head.title}
                   key={tab.head.title}
-                  className={`mb-2 text-slate-400 transition-all duration-500 font-extralight border border-transparent px-6 py-3 rounded-full data-[state=active]:text-clay data-[state=active]:border data-[state=active]:border-clay `}
+                  className={`mb-2 text-slate-400 transition-all relative duration-500 font-extralight border border-transparent px-6 py-3 rounded-full data-[state=active]:text-clay  `}
                 >
+                    {i === active && (
+                        <motion.div
+                        transition={{
+                            duration: 0.5,
+                        }}
+                          className="underline absolute left-0 right-0 bottom-0 top-0 border rounded-full border-clay text-clay"
+                          layoutId="tabsborder"
+                        />
+                      )}
                   {tab.head.title} {tab.head.icon && tab.head.icon()}
                 </TabsTrigger>
               </motion.div>
