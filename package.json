@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
-    "@kodingdotninja/use-tailwind-breakpoint": "^0.0.5",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.4",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -69,7 +68,6 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@svgr/babel-plugin-add-jsx-attribute": "^8.0.0",
-    "@types/lodash": "^4.14.195"
+    "@svgr/babel-plugin-add-jsx-attribute": "^8.0.0"
   }
 }

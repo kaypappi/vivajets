@@ -5,8 +5,8 @@ import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Image from "next/image";
 import CarouselDots from "./carousel-dots";
 import Autoplay from "embla-carousel-autoplay";
-import { useBreakpointEffect } from "@/hooks/tailwind";
-import { set } from "lodash";
+
+
 
 interface PropType {
   slides: {
@@ -38,22 +38,6 @@ const TestimonialCarousel: React.FC<PropType> = ({
   );
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [slideSize, setSlideSize] = useState(SLIDE_SIZE);
-
-  useBreakpointEffect("lg", (match) => {
-    if (match) {
-      setSlideSize("30rem");
-    }
-  });
-  useBreakpointEffect("md", (match) => {
-    if (match) {
-        setSlideSize("35rem");
-    }
-  });
-  useBreakpointEffect("sm", (match) => {
-    if (match) {
-      setSlideSize("90%");
-    }
-  });
 
   useEffect(() => {
     function selectHandler() {

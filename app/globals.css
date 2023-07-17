@@ -63,7 +63,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth!important;
+scroll-behavior: smooth!important;
   scrollbar-width: none;
 }
 
@@ -73,6 +74,7 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {

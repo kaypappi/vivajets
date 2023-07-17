@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geologica.variable} font-geologica`}>
+      <body className={`${geologica.variable} font-geologica scroll-smooth`}>
         {children}
         </body>
     </html>

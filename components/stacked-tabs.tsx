@@ -4,7 +4,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button, ButtonProps, ButtonVariantProps } from "./ui/button";
-import { delay } from "lodash";
 import { VariantProps } from "class-variance-authority";
 import Link from "next/link";
 
