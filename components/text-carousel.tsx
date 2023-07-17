@@ -15,6 +15,7 @@ const variants = {
   enter: {
     y: -20,
     opacity: 0,
+    zIndex: -1,
   },
   center: {
     zIndex: 1,
@@ -23,7 +24,7 @@ const variants = {
   },
   exit: {
     y: -20,
-    zIndex: 0,
+    zIndex: -1,
     opacity: 0,
   },
 };
@@ -35,7 +36,6 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
     const timeout = setTimeout(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 7000);
-
     return () => clearTimeout(timeout);
   }, [slides.length,index]);
 

@@ -136,7 +136,10 @@ let ourservices: Tab[] = [
 ];
 const services = () => {
   return (
-    <section id="services" className=" container mx-auto pt-10 pb-36 h-full min-h-[60rem]">
+    <section
+      id="services"
+      className=" container mx-auto pt-10 pb-36 h-full min-h-[60rem]"
+    >
       <div className="grid grid-cols-12">
         <motion.div
           initial={{
@@ -176,7 +179,7 @@ const services = () => {
             className=" p max-w-xl"
           >
             Enjoy the benefits of luxury and aircraft ownership for a fraction
-            of the cost with VivaJetss, you can trust us to give you an
+            of the cost with Vivajets, you can trust us to give you an
             experience of a lifetime while empowering your aviation investment
             today and for future legacies .Experience Unparalleled Luxury and
             Convenience in Business Aviation.

@@ -44,7 +44,7 @@ const hero = () => {
           <div className=" container max-w-6xl ">
             <Badge
               variant={"nohover"}
-              className=" mb-8 bg-brand bg-opacity-[0.7] text-white font-light px-3 py-2"
+              className=" mb-8 bg-brand border border-brand/70 bg-opacity-[0.7] text-white font-light px-3 py-2"
             >
               Welcome to VivaJets
             </Badge>

@@ -22,7 +22,7 @@ const services = [
   },
 
   {
-    title: "Certified Pilot",
+    title: "Maximum Returns",
     desc: `All of our pilots are certified and 
         this is certain, so be sure to be cared 
         for by professionals`,
@@ -72,7 +72,7 @@ const about = () => {
           viewport={{ once: true }}
           className="p text-center opacity-70 max-w-5xl font-extralight"
         >
-          VIVAJETSS provides full range Aircraft Management Services Built Upon
+          VIVAJETS provides full range Aircraft Management Services Built Upon
           Its Broad experience in the business aviation industry. Our Turnkey
           Aircraft Management Program has consistently proven to be attractive
           to aircraft owners as our expertise ensures uncompromising
