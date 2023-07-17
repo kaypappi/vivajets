@@ -59,7 +59,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                             
                             className='w-full h-full absolute top-0 left-0 right-0 bottom-0 '>
                             {benefits.map((benefit, index) => (
-                                <Image key={benefit.title} style={{ zIndex: index === activeBenefit ? 1 : 0 }} width={700} height={700} className=' w-full h-full absolute top-0 left-0 right-0 bottom-0  object-cover ' src={benefit.image} alt={benefit.title} />
+                                <Image key={benefit.title} style={{ zIndex: index === activeBenefit ? 1 : 0 }} width={700} height={700} className=' w-full h-full absolute top-0 left-0 right-0 bottom-0  object-cover ' src={benefit.image} alt={benefit.title} priority />
                             ))}
                         </motion.div>
                         <div className=' relative z-10 w-full h-full p-6 flex '>
