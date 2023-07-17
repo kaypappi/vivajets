@@ -70,7 +70,7 @@ const Contact = () => {
             }}
             >
               {contactDetails.map((detail, i) => (
-                <div className="w-full h-full md:mx-4 mb-8 flex flex-col items-start text-start">
+                <div key={detail.title} className="w-full h-full md:mx-4 mb-8 flex flex-col items-start text-start">
                   <Badge
                     variant={"nohover"}
                     className=" mb-2 bg-brand bg-opacity-[0.44] border border-white/30 text-meteor font-light px-[0.625rem] py-[0.4375rem]"
