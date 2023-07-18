@@ -6,7 +6,7 @@ const cta = () => {
   return (
     <section className=" bg-[#FFF8F2] w-full py-16 flex flex-col text-center items-center">
       <h2 className="h2 max-w-5xl  font-bold">
-        Tell us your requirements and one of our charter experts will send you a
+        Tell us your requirements and one of our private aviation expert will send you a
         quote.
       </h2>
       <p className="p font-extralight max-w-xl mt-6 mb-14">

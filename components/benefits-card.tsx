@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { ScrollArea } from "./ui/scroll-area";
 import { Card, CardContent } from "./ui/card";
 import { ReactComponent as ArrowRight } from "@/public/svgs/arrowcircleright.svg";
@@ -15,9 +15,15 @@ interface benefitsCardProps {
   }[];
 }
 
-
 const BenefitsCard = ({ benefits }: benefitsCardProps) => {
   const [activeBenefit, setActiveBenefit] = React.useState(0);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setActiveBenefit((prevActive) => (prevActive + 1) % benefits.length);
+    }, 7000);
+    return () => clearTimeout(timeout);
+  }, [benefits.length, activeBenefit]);
+
   return (
     <div id="contact-form" className=" text-white grid grid-cols-12  gap-x-6">
       <div className="col-span-5">
@@ -35,7 +41,8 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                       key={faq.title}
                       onClick={() => setActiveBenefit(index)}
                       className={`text-sm p-4 border ${
-                        index === activeBenefit && "border-transparent text-clay"
+                        index === activeBenefit &&
+                        "border-transparent text-clay"
                       } relative rounded-md w-full flex items-center font-light cursor-pointer   transition-all duration-500  text-black`}
                     >
                       {index === activeBenefit && (

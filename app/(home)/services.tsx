@@ -23,7 +23,7 @@ let ourservices: Tab[] = [
       our dedicated team ensures every detail is taken care of, 
       providing you with a seamless travel experience.`,
       image: "/images/privatejet.png",
-      background: "#0D0E2B",
+      background: "#131656",
       cta: [
         {
           text: "Get In Touch",
@@ -79,7 +79,7 @@ let ourservices: Tab[] = [
       of flying at your own pace, while we handle the 
      maintenance and management of the aircraft.`,
       image: "/images/fractionalownership.png",
-      background: "#4472ff",
+      background: "#0D0E2B",
       cta: [
         {
           text: "Get In Touch",
@@ -115,7 +115,7 @@ let ourservices: Tab[] = [
       transaction. Trust us to guide you through the process, providing 
       expert advice and personalized solutions every step of the way.`,
       image: "/images/sales.png",
-      background: "#f17c19",
+      background: "#613810",
       cta: [
         {
           text: "Get In Touch",
