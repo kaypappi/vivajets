@@ -35,6 +35,7 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
             }}
             transition={{
               duration: 0.5,
+              ease: "easeOut",
             }}
           >
             <h1 className="h1 max-w-4xl font-bold leading-normal  text-start">

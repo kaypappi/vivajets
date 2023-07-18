@@ -23,7 +23,7 @@ let SLIDE_SIZE = "55%";
 const SLIDE_HEIGHT = "20rem";
 
 const autoplayOptions = {
-  delay: 4000,
+  delay: 7000,
   stopOnMouseEnter: false,
 };
 
