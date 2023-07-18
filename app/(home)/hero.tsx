@@ -39,7 +39,7 @@ const hero = () => {
           type="video/mp4"
         />
       </video>
-      <div className="w-full h-full bg-[url('/images/heromesh.png')] ">
+      <div className="w-full h-full bg-[url('/images/heromesh.png')] bg-cover ">
         <div className="heromesh w-full h-full flex  items-center justify-start bg-[#0C0C23]/80">
           <div className=" container max-w-6xl ">
             <Badge

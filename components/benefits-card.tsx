@@ -35,7 +35,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
                       key={faq.title}
                       onClick={() => setActiveBenefit(index)}
                       className={`text-sm p-4 border ${
-                        index === activeBenefit && "border-transparent"
+                        index === activeBenefit && "border-transparent text-clay"
                       } relative rounded-md w-full flex items-center font-light cursor-pointer   transition-all duration-500  text-black`}
                     >
                       {index === activeBenefit && (

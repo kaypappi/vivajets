@@ -13,7 +13,7 @@ const cta = () => {
         What are your requirements? Be sure to get a quick response from one of
         our experts with the response and a quote.
       </p>
-      <Button asChild size={"lg"} variant={"clay"}>
+      <Button asChild size={"lg"} variant={"clay"} className=" hover:bg-dodger-blue hover:ring-1 hover:ring-brand-500 hover:text-brand-500">
         <Link href="/contact#contact-form">Send Us a Message</Link>
       </Button>
     </section>

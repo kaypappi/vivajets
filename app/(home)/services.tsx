@@ -42,7 +42,7 @@ let ourservices: Tab[] = [
       id: 1,
     },
     body: {
-      title: "Air Craft Management",
+      title: "Aircraft Management",
       desc: `Maximize the value of your aircraft with our 
       comprehensive management services. With our team of 
       experienced professionals, we handle all aspects of 
@@ -64,7 +64,7 @@ let ourservices: Tab[] = [
   },
   {
     head: {
-      title: "Fractional Ownership",
+      title: "Aircraft Fractional Ownership",
       icon: null,
       disabled: false,
       id: 2,
@@ -98,8 +98,7 @@ let ourservices: Tab[] = [
   },
   {
     head: {
-      title: `Streamlined Sales and 
-      Acquisition Services`,
+      title: `Sales and Acquisition`,
       icon: null,
       disabled: false,
       id: 3,
@@ -160,7 +159,7 @@ const services = () => {
           >
             Our Services
           </Badge>
-          <h3 className=" h3 max-w-sm font-bold">
+          <h3 className=" h3 max-w-xl font-bold">
             Experience the fusion of innovation, luxury and travel
           </h3>
         </motion.div>
@@ -176,7 +175,7 @@ const services = () => {
             transition={{
               duration: 0.5,
             }}
-            className=" p max-w-xl"
+            className=" p max-w-lg"
           >
             Enjoy the benefits of luxury and aircraft ownership for a fraction
             of the cost with Vivajets, you can trust us to give you an
