@@ -28,9 +28,9 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
           <motion.div
             className=" absolute  w-full"
             key={slide.title}
+            initial={{opacity:0}}
             animate={{
               opacity: index === i ? 1 : 0,
-              zIndex: index === i ? 1 : -1,
               y: index === i ? 0 : -20,
             }}
             transition={{
