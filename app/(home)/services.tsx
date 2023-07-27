@@ -8,6 +8,7 @@ import ServicesMobileCard from "@/components/services-mobile-card";
 import ServicesMobileWrapper from "@/components/services-mobile-wrapper";
 import ScrollCarousel from "@/components/scroll-carousel";
 import { useBreakpoint } from "@/hooks/tailwind";
+import ServicesMobileCarousel from "@/components/services-mobile-carousel";
 
 let ourservices: Tab[] = [
   {
@@ -140,7 +141,10 @@ let ourservices: Tab[] = [
 const Services = () => {
   const isDesktop = useBreakpoint("md");
   return (
-    <section id="services" className=" container mx-auto py-10  lg:min-h-[60rem]">
+    <section
+      id="services"
+      className=" container mx-auto py-10  lg:min-h-[60rem]"
+    >
       <div className="grid grid-cols-12">
         <motion.div
           initial={{
@@ -189,7 +193,9 @@ const Services = () => {
       </div>
       {isDesktop ? (
         <StackedTabs services={ourservices} className="mt-16 mb-34 " />
-      ):<ServicesMobileWrapper services={ourservices} className=" mt-9 "/>}
+      ) : (
+        <ServicesMobileCarousel services={ourservices} className="mt-10" />
+      )}
       {/* {
         ourservices.map((service) => (
           <ScrollCarousel>
@@ -197,14 +203,13 @@ const Services = () => {
           </ScrollCarousel>
         ))
       } */}
-     {/*  <ScrollCarousel>
+      {/*  <ScrollCarousel>
         <div />
         <div />
         <div />
         <div />
         <div />
       </ScrollCarousel> */}
-      
     </section>
   );
 };
