@@ -158,7 +158,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                   listStyle: "none",
                   backgroundColor: tab.body.background,
                 }}
-                className=" absolute text-white  w-full min-h-max bg-cover bg-center rounded-[2.5rem] p-8 lg:p-8 xl:p-16 pb-14 lg:pb-8 shadow-md"
+                className=" absolute text-white  w-full min-h-max  bg-cover bg-center rounded-[2.5rem] p-8 lg:p-8 xl:p-16 pb-14 lg:pb-8 shadow-md"
                 animate={{
                   top: index * -CARD_OFFSET,
                   scale: 1 - index * SCALE_FACTOR,
@@ -166,7 +166,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                 }}
                onClick={() => handleTabClick(tab.head.title)}
               >
-                <div className=" grid grid-cols-12 gap-x-4 h-full">
+                <div className=" grid grid-cols-12 gap-x-4 h-full lg:min-h-[500px] xl:min-h-[400px]">
                   <div className="col-span-12 lg:col-span-5 mt-4 lg:mt-0 order-2 lg:order-1 flex flex-col h-full">
                     <h3 className=" h3 font-bold">{tab.body.title}</h3>
                     <p className=" p lg:max-w-md mt-6 mb-10">{tab.body.desc}</p>
@@ -180,7 +180,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                           asChild
                         >
                           
-                          <Link href={cta.link}>{cta.text}</Link>
+                          <Link target={cta.isExternal? '_blank':'_self'} href={cta.link}>{cta.text}</Link>
                         </Button>
                       ))}
                     </div>

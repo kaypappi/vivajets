@@ -62,7 +62,7 @@ const Testimonials = () => {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
           viewport={{ once: true }}
-          className="p text-center  font-extralight"
+          className="p text-center md:max-w-2xl  font-extralight"
         >
           With many satisfied and happy client’s to our name, you can trust us
           to give you nothing less than the best. Here what some of our satified

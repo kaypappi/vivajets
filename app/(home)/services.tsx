@@ -94,9 +94,9 @@ let ourservices: Tab[] = [
         },
         {
           text: "Download Brochure",
-          link: "/contact",
+          link: "https://drive.google.com/file/d/12PUjTMwNPjfCmKtF2a5wSdUELf_rUsg2/view?usp=drive_link",
           variant: "outline",
-          isExternal: false,
+          isExternal: true,
         },
       ],
     },
@@ -130,9 +130,9 @@ let ourservices: Tab[] = [
         },
         {
           text: "Download Brochure",
-          link: "/contact",
+          link: "https://drive.google.com/file/d/12PUjTMwNPjfCmKtF2a5wSdUELf_rUsg2/view?usp=drive_link",
           variant: "outline",
-          isExternal: false,
+          isExternal: true,
         },
       ],
     },
@@ -145,7 +145,7 @@ const Services = () => {
       id="services"
       className=" container mx-auto py-10  lg:min-h-[60rem]"
     >
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 gap-x-4">
         <motion.div
           initial={{
             x: -50,

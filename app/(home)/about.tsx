@@ -41,7 +41,7 @@ const about = () => {
   return (
     <section
       id="about"
-      className="bg-[#FFF8F2] w-full mt-20 md:mt-96 lg:mt-20 "
+      className="bg-[#FFF8F2] w-full mt-20 md:mt-[50rem] lg:mt-28 xl:mt-20 "
     >
       <div className=" container text-black py-16 flex flex-col items-center">
         <motion.div
@@ -98,7 +98,7 @@ const about = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className=" grid grid-cols-12 gap-y-8 lg:gap-x-16  mt-14"
+          className=" grid grid-cols-12 gap-y-8 gap-x-4 xl:gap-x-16  mt-14"
         >
           {services.map((service) => (
             <motion.div
@@ -135,8 +135,8 @@ const about = () => {
                 >
                   {service.icon()}
                 </motion.div>
-                <h5 className="h5 mb-3">{service.title}</h5>
-                <p className="p max-w-xs opacity-60 text-center font-extralight">
+                <h5 className="text-xl lg:text-2xl mb-3">{service.title}</h5>
+                <p className="text-sm lg:text-base max-w-xs opacity-60 text-center font-extralight">
                   {service.desc}
                 </p>
               </div>

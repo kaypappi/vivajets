@@ -91,7 +91,7 @@ const footer = () => {
             src="/images/logo.png"
             alt="logo"
           />
-          <div className=" container flex flex-col lg:flex-row gap-y-7 lg:gap-y-0 justify-between my-11">
+          <div className=" container flex flex-col md:flex-row gap-y-7 lg:gap-y-0 justify-between my-11">
             {footerItems.map((item, index) => (
               <div key={item.header} className=" flex flex-col gap-y-4">
                 <h6 className=" h4 md:h6 text-white text-opacity-60">{item.header}</h6>

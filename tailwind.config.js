@@ -18,7 +18,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        allrox: ['var(--font-allrox)'],
+        gothic: ['var(--font-gothic)'],
+        gothicBold: ['var(--font-gothic-bold)'],
         geologica: ['var(--font-geologica)'],
       },
       spacing: {
