@@ -6,6 +6,7 @@ import TestimonialCarousel from "@/components/testimonial-carousel";
 import { motion } from "framer-motion";
 import TestimonialMobileWrapper from "@/components/testimonial-mobile-wrapper";
 import { useBreakpoint } from "@/hooks/tailwind";
+import TestimonialMobileCarousel from "@/components/testimonial-mobile-carousel";
 
 const testimonialsData = [
   {
@@ -75,10 +76,7 @@ const Testimonials = () => {
           options={carouselOptions}
         />
       ) : (
-        <TestimonialMobileWrapper
-          slides={testimonialsData}
-          className=" md:hidden"
-        />
+        <TestimonialMobileCarousel slides={testimonialsData} className="mb"   />
       )}
     </section>
   );

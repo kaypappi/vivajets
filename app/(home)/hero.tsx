@@ -50,7 +50,7 @@ const hero = () => {
             </Badge>
             <motion.div
               initial={{
-                y: -100,
+                y: 0,
               }}
               animate={{
                 y: [0, -100, 0, -20, 0],

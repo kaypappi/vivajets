@@ -10,8 +10,8 @@ const ServicesMobileCard: React.FC<Tab & { className?: string }> = ({
   className,
 }) => {
   return (
-    <div  style={{backgroundColor:body.background}} className={`${className} p-6 text-white rounded-[0.625rem] flex flex-col `}>
-      <Image className=" w-full   h-auto aspect-auto object-cover max-w-[18.5rem]" width={296} height={160}  src={body.image} alt={body.title} />
+    <div  style={{backgroundColor:body.background}} className={`${className} p-4 text-white rounded-[0.625rem] flex flex-col `}>
+      <Image className=" w-full rounded-md h-40  object-cover max-w-[18.5rem]" width={296} height={160}  src={body.image} alt={body.title} />
       <h4 className="h4 max-w-[18.5rem] my-2">{body.title}</h4>
       <p className=" text-xs md:text-sm text-white/70 max-w-[18.5rem]">{body.desc}</p>
       <div className=" mt-auto flex flex-col sm:flex-row gap-4 max-w-[18.5rem]">

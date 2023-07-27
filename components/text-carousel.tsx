@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 interface PropType {
   slides: {
@@ -13,6 +13,8 @@ interface PropType {
 
 const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
   const [index, setIndex] = useState(0);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const maxHieght = useRef<number>(0);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -21,8 +23,32 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
     return () => clearTimeout(timeout);
   }, [slides.length, index]);
 
+  useEffect(() => {
+    // Function to get the positions of the child elements
+    const getChildPositions = () => {
+      if (wrapperRef.current) {
+        const childElements =
+          wrapperRef.current.querySelectorAll<HTMLDivElement>(
+            "div"
+          );
+        const positions = Array.from(childElements).map((element) =>
+          element.getBoundingClientRect()
+        );
+        console.log(positions)
+        const maxH=positions.reduce((max, item) => {
+          return Math.max(max, item.height);
+        }, 0);
+        maxHieght.current=maxH
+        //setChildPositions(positions);
+      }
+    };
+
+    // Call the function to get the positions after the rendering is completed
+    getChildPositions();
+  }, [slides]);
+
   return (
-    <div className=" min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
+    <div ref={wrapperRef} className=" min-h-[18rem]   sm:min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
       <AnimatePresence >
         {slides.map((slide, i) => (
           <motion.div

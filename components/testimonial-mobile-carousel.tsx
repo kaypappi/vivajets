@@ -7,6 +7,8 @@ import CarouselDots from "./carousel-dots";
 import Autoplay from "embla-carousel-autoplay";
 import ServicesMobileCard from "./services-mobile-card";
 import { TabsProps } from "./stacked-tabs";
+import { sl } from "date-fns/locale";
+import TestimonialMobileCard from "./testimonial-mobile-card";
 
 
 
@@ -30,8 +32,8 @@ const autoplayOptions = {
   stopOnMouseEnter: false,
 };
 
-const ServicesMobileCarousel: React.FC<TabsProps&{options?:EmblaOptionsType}> = ({
-  services,
+const TestimonialMobileCarousel: React.FC<TestimonialCarouselProps> = ({
+  slides,
   options,
   className,
 }) => {
@@ -58,7 +60,7 @@ const ServicesMobileCarousel: React.FC<TabsProps&{options?:EmblaOptionsType}> = 
 
   return (
     <>
-      <div className={`overflow-hidden w-full ${className}`} ref={emblaRef}>
+      <div className={`overflow-hidden container w-full ${className}`} ref={emblaRef}>
         <div
           style={{
             backfaceVisibility: "hidden",
@@ -68,7 +70,7 @@ const ServicesMobileCarousel: React.FC<TabsProps&{options?:EmblaOptionsType}> = 
           }}
           className="embla__container"
         >
-          {services.map((service, index) => {
+          {slides.map((slide, index) => {
             const selected = index === selectedIndex;
 
             return (
@@ -80,40 +82,9 @@ const ServicesMobileCarousel: React.FC<TabsProps&{options?:EmblaOptionsType}> = 
                   position: "relative",
                 }}
                 className="embla__slide w-full"
-                key={service.head.title}
+                key={slide.name}
               >
-                {/* <div
-                  style={{
-                    minHeight: SLIDE_HEIGHT,
-                    width: "100%",
-                    objectFit: "cover",
-                    transform: !selected ? "scale(0.9)" : "scale(1)",
-                    opacity: !selected ? 0.5 : 1,
-                  }}
-                  className=" grid grid-cols-[16rem_1fr]  rounded-xl w-full text-white transition-all "
-                >
-                  <div className="  bg-meteor p-8 border-r-2 border-dashed rounded-xl roun">
-                    <div className=" overflow-hidden rounded-full h-full w-full relative">
-                      <Image
-                        className=" absolute top-0 left-0 right-0 bottom-0"
-                        fill
-                        src="/images/airplane-window.png"
-                        alt="airplane window"
-                      />
-                      <Image
-                        className=" absolute top-0 left-0 right-0 bottom-0"
-                        fill
-                        src={slide.image}
-                        alt={slide.name}
-                      />
-                    </div>
-                  </div>
-                  <div className=" rounded-xl bg-meteor p-8">
-                    <h5 className="h5 mb-4  font-semibold">{slide.name}</h5>
-                    <p className="p font-extralight">{slide.testimony}</p>
-                  </div>
-                </div> */}
-                <ServicesMobileCard head={service.head} body={service.body} className=" min-h-[600px] h-full"/>
+                <TestimonialMobileCard slide={slide} className="min-h-[390px] w-full"/>
               </div>
             );
           })}
@@ -128,4 +99,4 @@ const ServicesMobileCarousel: React.FC<TabsProps&{options?:EmblaOptionsType}> = 
   );
 };
 
-export default ServicesMobileCarousel;
+export default TestimonialMobileCarousel;
