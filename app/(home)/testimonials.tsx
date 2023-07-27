@@ -31,7 +31,7 @@ const carouselOptions = {
   inViewThreshold: 1,
 };
 
-const testimonials = () => {
+const Testimonials = () => {
   const isDesktop = useBreakpoint("md");
 
   return (
@@ -84,4 +84,4 @@ const testimonials = () => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

@@ -47,7 +47,7 @@ const ourBenefits = [
   },
 ];
 
-const benefits = () => {
+const Benefits = () => {
   const isDesktop = useBreakpoint("lg");
 
   return (
@@ -110,4 +110,4 @@ const benefits = () => {
   );
 };
 
-export default benefits;
+export default Benefits;

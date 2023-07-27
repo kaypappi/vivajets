@@ -137,7 +137,7 @@ let ourservices: Tab[] = [
     },
   },
 ];
-const services = () => {
+const Services = () => {
   const isDesktop = useBreakpoint("md");
   return (
     <section id="services" className=" container mx-auto py-10  lg:min-h-[60rem]">
@@ -209,4 +209,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;
