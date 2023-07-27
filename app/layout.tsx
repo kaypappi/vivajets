@@ -12,7 +12,7 @@ const gothic = localFont({
 })
 
 const gothicBold = localFont({
-  src: '../public/fonts/GOTHICB.ttf',
+  src: '../public/fonts/GOTHICB.TTF',
   display: 'swap',
   variable: '--font-gothic-bold',
 })
