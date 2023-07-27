@@ -32,6 +32,11 @@
   }
 }
 
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+}
+
 .embla__slide {
   flex: 0 0 90%;
 }
