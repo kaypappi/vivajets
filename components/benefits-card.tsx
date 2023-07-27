@@ -13,9 +13,10 @@ interface benefitsCardProps {
     desc: string;
     image: string;
   }[];
+className?:string
 }
 
-const BenefitsCard = ({ benefits }: benefitsCardProps) => {
+const BenefitsCard:React.FC<benefitsCardProps> = ({ benefits,className }) => {
   const [activeBenefit, setActiveBenefit] = React.useState(0);
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -25,7 +26,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
   }, [benefits.length, activeBenefit]);
 
   return (
-    <div id="contact-form" className=" text-white grid grid-cols-12  gap-x-6">
+    <div id="contact-form" className={`text-white grid grid-cols-12  gap-x-6 ${className}`}>
       <div className="col-span-5">
         <Card className="w-full h-full text-black shadow-[0px_0px_15px_0px_rgba(0,0,0,0.09)]  ">
           <CardContent className="p-6">
@@ -68,7 +69,7 @@ const BenefitsCard = ({ benefits }: benefitsCardProps) => {
       <div className="col-span-7">
         <Card className="w-full h-full text-white relative flex overflow-hidden ">
           <CardContent className=" w-full h-full ">
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={benefit.title}

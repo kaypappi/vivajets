@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${geologica.variable} font-geologica scroll-smooth`}>
+    <html className='' lang="en">
+      <body className={`${geologica.variable} w-full font-geologica scroll-smooth`}>
         {children}
         </body>
     </html>

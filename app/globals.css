@@ -62,6 +62,84 @@
   background: linear-gradient(0deg, #111342 0%, rgba(17, 19, 66, 0.5) 100%);
 }
 
+.embla__scroll {
+  position: relative;
+}
+
+.embla__scroll__viewport {
+  overflow: hidden;
+}
+
+.embla__scroll__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__scroll__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__scroll__viewport.is-wheel-dragging {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__scroll__container {
+  display: flex;
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+}
+
+.embla__scroll[data-axis="y"] .embla__scroll__container {
+  flex-direction: column;
+  height: 100%;
+  min-width: 100%;
+  padding-top: -1rem;
+  margin-left: 0;
+}
+
+.embla__scroll__slide {
+  flex: 0 0 100%;
+  width: max-content;
+  height: max-content;
+  position: relative;
+  counter-increment: embla;
+}
+
+.embla__scroll[data-axis="y"] .embla__scroll__slide {
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
+.embla__scroll__slide__inner {
+  background-color: rgb(40, 44, 52);
+  min-height: 600px;
+  position: relative;
+  border-radius: 0.5rem;
+  height: 100%;
+  font-size: 5rem;
+}
+
+.embla__scroll__slide__inner:before {
+  color: white;
+  font-weight: 300;
+  line-height: 1;
+  content: counter(embla);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.embla__scroll[data-axis="y"] .embla__scroll__slide__inner {
+  padding-bottom: 0;
+  height: 100%;
+}
+
+
+
 html {
   --scroll-behavior: smooth!important;
 scroll-behavior: smooth!important;

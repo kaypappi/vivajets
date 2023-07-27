@@ -91,13 +91,13 @@ const footer = () => {
             src="/images/logo.png"
             alt="logo"
           />
-          <div className=" container flex justify-between my-11">
+          <div className=" container flex flex-col lg:flex-row gap-y-7 lg:gap-y-0 justify-between my-11">
             {footerItems.map((item, index) => (
               <div key={item.header} className=" flex flex-col gap-y-4">
-                <h6 className="h6 text-white text-opacity-60">{item.header}</h6>
+                <h6 className=" h4 md:h6 text-white text-opacity-60">{item.header}</h6>
                 {item.links.map((link, index) => (
                   <Link
-                    className="  text-xs md:text-sm font-extralight max-w-[150px]"
+                    className="  text-sm md:text-sm font-extralight lg:max-w-[150px]"
                     key={link.name}
                     href={link.link}
                   >

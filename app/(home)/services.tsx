@@ -4,6 +4,10 @@ import { Badge } from "@/components/ui/badge";
 import StackedTabs, { Tab } from "@/components/stacked-tabs";
 import { ReactComponent as SlantRightArrow } from "@/public/svgs/slant-right-arrow.svg";
 import { motion } from "framer-motion";
+import ServicesMobileCard from "@/components/services-mobile-card";
+import ServicesMobileWrapper from "@/components/services-mobile-wrapper";
+import ScrollCarousel from "@/components/scroll-carousel";
+import { useBreakpoint } from "@/hooks/tailwind";
 
 let ourservices: Tab[] = [
   {
@@ -134,11 +138,9 @@ let ourservices: Tab[] = [
   },
 ];
 const services = () => {
+  const isDesktop = useBreakpoint("md");
   return (
-    <section
-      id="services"
-      className=" container mx-auto pt-10 pb-36 h-full min-h-[60rem]"
-    >
+    <section id="services" className=" container mx-auto py-10  lg:min-h-[60rem]">
       <div className="grid grid-cols-12">
         <motion.div
           initial={{
@@ -151,19 +153,19 @@ const services = () => {
           transition={{
             duration: 0.5,
           }}
-          className="col-span-6"
+          className=" col-span-12 lg:col-span-6"
         >
           <Badge
             variant={"nohover"}
-            className=" mb-4 bg-clay bg-opacity-[0.04] text-clay font-light px-3 py-2"
+            className=" mb-0 lg:mb-4 bg-clay bg-opacity-[0.04] text-clay font-light px-3 py-2"
           >
             Our Services
           </Badge>
-          <h3 className=" h3 max-w-xl font-bold">
+          <h3 className=" h3 my-4 lg:my-0 max-w-xl font-bold">
             Experience the fusion of innovation, luxury and travel
           </h3>
         </motion.div>
-        <div className="col-span-6 flex items-end">
+        <div className="col-span-12 lg:col-span-6 flex items-end">
           <motion.p
             initial={{
               x: 50,
@@ -175,7 +177,7 @@ const services = () => {
             transition={{
               duration: 0.5,
             }}
-            className=" p max-w-lg"
+            className=" p w-full lg:max-w-lg text-brand/80"
           >
             Enjoy the benefits of luxury and aircraft ownership for a fraction
             of the cost with Vivajets, you can trust us to give you an
@@ -185,7 +187,24 @@ const services = () => {
           </motion.p>
         </div>
       </div>
-      <StackedTabs services={ourservices} className="mt-16 mb-34" />
+      {isDesktop ? (
+        <StackedTabs services={ourservices} className="mt-16 mb-34 " />
+      ):<ServicesMobileWrapper services={ourservices} className=" mt-9 "/>}
+      {/* {
+        ourservices.map((service) => (
+          <ScrollCarousel>
+            <ServicesMobileCard head={service.head} body={service.body} className="w-full"/>
+          </ScrollCarousel>
+        ))
+      } */}
+     {/*  <ScrollCarousel>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ScrollCarousel> */}
+      
     </section>
   );
 };

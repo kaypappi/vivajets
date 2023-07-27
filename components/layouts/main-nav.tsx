@@ -27,21 +27,21 @@ const generateHoverGroup=(title:string)=>(`group-hover/${title}:max-w-full`)
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="hidden gap-6 lg:flex w-full">
+    <div className=" gap-6 lg:flex w-full">
       <Link
         aria-label="Home"
         href="/"
-        className="hidden items-center space-x-2 lg:flex"
+        className=" items-center space-x-2 lg:flex"
       >
         <Image
           width={500}
           height={500}
-          className=" w-56 h-9 mx-auto"
+          className=" w-56 h-9 lg:mx-auto"
           src="/images/logo.png"
           alt="logo"
         />
       </Link>
-      <NavigationMenu className="  w-full mx-auto">
+      <NavigationMenu className=" hidden gap-6 lg:flex w-full mx-auto">
         <NavigationMenuList className="gap-10">
           {items?.map((item) =>
             item?.items ? (

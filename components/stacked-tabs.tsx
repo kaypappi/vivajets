@@ -99,7 +99,7 @@ const StackedTabs: React.FC<TabsProps> = ({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className=" w-full flex justify-center"
+          className=" w-full flex flex-wrap justify-center"
         >
           {services.map((tab, i) => {
             return (
@@ -124,7 +124,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                   onClick={() => handleTabClick(tab.head.title)}
                   value={tab.head.title}
                   key={tab.head.title}
-                  className={`mb-2 text-slate-400 transition-all relative duration-500 font-extralight border border-transparent px-6 py-3 rounded-full data-[state=active]:text-clay  `}
+                  className={`mb-2 hidden md:block text-slate-400 transition-all relative duration-500 font-extralight border border-transparent px-6 py-3 rounded-full data-[state=active]:text-clay  `}
                 >
                     {i === active && (
                         <motion.div
@@ -158,7 +158,7 @@ const StackedTabs: React.FC<TabsProps> = ({
                   listStyle: "none",
                   backgroundColor: tab.body.background,
                 }}
-                className=" absolute text-white  w-full min-h-max bg-cover bg-center rounded-[2.5rem] p-16 shadow-md"
+                className=" absolute text-white  w-full min-h-max bg-cover bg-center rounded-[2.5rem] p-8 lg:p-8 xl:p-16 pb-14 lg:pb-8 shadow-md"
                 animate={{
                   top: index * -CARD_OFFSET,
                   scale: 1 - index * SCALE_FACTOR,
@@ -167,15 +167,15 @@ const StackedTabs: React.FC<TabsProps> = ({
                onClick={() => handleTabClick(tab.head.title)}
               >
                 <div className=" grid grid-cols-12 gap-x-4 h-full">
-                  <div className="col-span-5 flex flex-col h-full">
+                  <div className="col-span-12 lg:col-span-5 mt-4 lg:mt-0 order-2 lg:order-1 flex flex-col h-full">
                     <h3 className=" h3 font-bold">{tab.body.title}</h3>
-                    <p className=" p max-w-md mt-6 mb-10">{tab.body.desc}</p>
-                    <div className=" mt-auto flex gap-x-4">
+                    <p className=" p lg:max-w-md mt-6 mb-10">{tab.body.desc}</p>
+                    <div className=" mt-auto flex lg:flex-col xl:flex-row gap-4">
                       {tab.body.cta.map((cta) => (
                         <Button
                           key={cta.text}
                           variant={cta.variant}
-                          className=" "
+                          className="lg:w-full xl:w-auto "
                           size={'lg'}
                           asChild
                         >
@@ -185,11 +185,11 @@ const StackedTabs: React.FC<TabsProps> = ({
                       ))}
                     </div>
                   </div>
-                  <div className="col-span-7">
+                  <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
                     <Image
                       width={1000}
                       height={1000}
-                      className="w-full h-full max-w-[35rem] ml-auto  rounded-[0.8125rem] object-cover "
+                      className="w-full aspect-video lg:h-full lg:max-w-[35rem] ml-auto  rounded-[0.8125rem] object-cover "
                       src={tab.body.image}
                       alt={tab.body.title}
                     />

@@ -8,24 +8,19 @@ import React from "react";
 
 const services = [
   {
-    title: "Best Services",
-    desc: `We offer you the best services an airline 
-    company can offer you out here. Trust VivaJets to give you the very best`,
+    title: "World-Class Services",
+    desc: `Experience perfection and luxury with our world-class services. Tailored to your desires, our attentive staff ensures a seamless journey, be it for business or leisure. Elevate your travel to new heights with the extraordinary.`,
     icon: () => <Certificate className=" w-12 h-12" />,
   },
   {
     title: "Luxury Flight",
-    desc: `Seat back, relax and be treated 
-        right by our top notch services as 
-        we take you to your destination`,
+    desc: `Fly in comfort and style with our luxury flights. From exclusive lounges to elegant cabins, every detail exudes sophistication. Indulge in exquisite cuisine and exceptional comfort. Your journey is redefined.`,
     icon: () => <AirPlane className=" w-12 h-12" />,
   },
 
   {
     title: "Maximum Returns",
-    desc: `All of our pilots are certified and 
-        this is certain, so be sure to be cared 
-        for by professionals`,
+    desc: `Enjoy remarkable returns with fractional ownership. Join a thriving community of high-net-worth individuals, access high-value assets, and grow your portfolio confidently. Invest with confidence and receive the best returns on your investments. Your success is our mission.`,
     icon: () => <Moneybag className=" w-12 h-12" />,
   },
 ];
@@ -44,7 +39,10 @@ const slashMotion = {
 
 const about = () => {
   return (
-    <section id="about" className="bg-[#FFF8F2] w-full mt-20">
+    <section
+      id="about"
+      className="bg-[#FFF8F2] w-full mt-20 md:mt-96 lg:mt-20 "
+    >
       <div className=" container text-black py-16 flex flex-col items-center">
         <motion.div
           initial={{ y: 50, opacity: 0 }}
@@ -72,11 +70,14 @@ const about = () => {
           viewport={{ once: true }}
           className="p text-center opacity-70 max-w-5xl font-extralight"
         >
-          VIVAJETS provides full range Aircraft Management Services Built Upon
-          Its Broad experience in the business aviation industry. Our Turnkey
-          Aircraft Management Program has consistently proven to be attractive
-          to aircraft owners as our expertise ensures uncompromising
-          safety,lower operational costs,and efficient asset management.
+          VIVAJETS provides a full range of Aircraft Management Services,
+          fractional ownership opportunities, and Aircraft sales and
+          acquisition, built upon its broad experience in the business aviation
+          industry. Our Turnkey Aircraft Management Services, Fractional
+          Ownership Program, and Efficient Sales Process have consistently
+          proven to be attractive to aircraft owners as our expertise ensures
+          uncompromising safety, lower operational costs, efficient asset
+          management, and maximum return on investment.
         </motion.p>
         <motion.div
           variants={{
@@ -97,7 +98,7 @@ const about = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className=" grid grid-cols-12 gap-x-16  mt-14"
+          className=" grid grid-cols-12 gap-y-8 lg:gap-x-16  mt-14"
         >
           {services.map((service) => (
             <motion.div
@@ -115,21 +116,20 @@ const about = () => {
                     duration: 0.5,
                   },
                 },
-                
               }}
-              className="col-span-4"
+              className=" col-span-12 md:col-span-4"
             >
               <div className="flex flex-col items-center">
                 <motion.div
                   variants={{
                     hover: {
-                        y: [0, 10, 5, 10],
-                        backgroundColor:'#D6E0FF',
-                        transition: {
-                          duration: 0.3,
-                          ease: "easeOut",
-                        },
+                      y: [0, 10, 5, 10],
+                      backgroundColor: "#D6E0FF",
+                      transition: {
+                        duration: 0.3,
+                        ease: "easeOut",
                       },
+                    },
                   }}
                   className=" rounded-md w-[3.75rem] h-[3.75rem] flex items-center justify-center mb-4 "
                 >

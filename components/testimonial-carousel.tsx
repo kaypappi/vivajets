@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 
 
-interface PropType {
+export interface TestimonialCarouselProps {
   slides: {
     name: string;
     testimony: string;
@@ -27,7 +27,7 @@ const autoplayOptions = {
   stopOnMouseEnter: false,
 };
 
-const TestimonialCarousel: React.FC<PropType> = ({
+const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   slides,
   options,
   className,
@@ -116,7 +116,7 @@ const TestimonialCarousel: React.FC<PropType> = ({
         </div>
       </div>
       <CarouselDots
-        className="mt-14"
+        className="mt-14 hidden md:flex"
         itemsLength={slides.length}
         selectedIndex={selectedIndex}
       />

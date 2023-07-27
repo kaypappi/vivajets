@@ -8,13 +8,13 @@ import Hero from "./hero";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <section className="min-h-[100vh] w-full ">
       <Hero />
       <Services />
       <About />
       <Benefits />
       <Testimonials />
       <Cta />
-    </main>
+    </section>
   );
 }

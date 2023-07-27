@@ -58,7 +58,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button";
     return (
       <motion.div
-      className="w-max h-max"
+      className=""
       whileHover={{
         x:[0,5,2,5],
         y:[0,5,2,5],

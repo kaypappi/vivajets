@@ -38,10 +38,10 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
               ease: "easeOut",
             }}
           >
-            <h1 className="h1 max-w-4xl font-bold leading-normal  text-start">
+            <h1 className="h1 max-w-4xl font-bold leading-tight lg:leading-normal  text-start">
               {slide.title}
             </h1>
-            <p className="p max-w-3xl mt-6 leading-loose text-white/70">
+            <p className="p max-w-3xl mt-2 leading-loose text-white/70">
               {slide.desc}
             </p>
           </motion.div>

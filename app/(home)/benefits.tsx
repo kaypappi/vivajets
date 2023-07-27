@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import React from "react";
 import BenefitsCard from "@/components/benefits-card";
 import { motion } from "framer-motion";
+import MobileBenefitsCard from "@/components/mobile-benefits-card";
+import { useBreakpoint } from "@/hooks/tailwind";
 
 const ourBenefits = [
   {
@@ -46,6 +48,8 @@ const ourBenefits = [
 ];
 
 const benefits = () => {
+  const isDesktop = useBreakpoint("lg");
+
   return (
     <section id="benefits" className="py-10 text-black bg-[#F0F4FF]">
       <div className="container">
@@ -61,7 +65,7 @@ const benefits = () => {
             transition={{
               duration: 0.5,
             }}
-            className="col-span-6"
+            className="col-span-12 md:col-span-6"
           >
             <Badge
               variant={"nohover"}
@@ -69,7 +73,9 @@ const benefits = () => {
             >
               Our Benefits
             </Badge>
-            <h3 className=" h3 max-w-sm font-bold">The VivaJets Experience</h3>
+            <h3 className=" h3 max-w-[16rem] lg:max-w-sm mb-4 lg:mb-0 font-bold">
+              The VivaJets Experience
+            </h3>
           </motion.div>
           <motion.div
             initial={{
@@ -84,17 +90,21 @@ const benefits = () => {
             }}
             className="col-span-6 flex items-end"
           >
-            <p className=" p max-w-xl">
-              With professional and confidential guidance, our expert
+            <p className=" p max-w-xl ">
+              With professional and confidential guidance, and our expert
               assistance, coupled with continuous monitoring, we provide a
-              stellar experience, while determining the best for you, VIVAJETS
+              stellar experience while determining the best for you, VIVAJETS
               will provide unwavering support every step of the way, no matter
-              the need, place or time.
+              the need, place, or time.
             </p>
           </motion.div>
         </div>
 
-        <BenefitsCard benefits={ourBenefits} />
+        {isDesktop ? (
+          <BenefitsCard benefits={ourBenefits} className="" />
+        ) : (
+          <MobileBenefitsCard benefits={ourBenefits} className="" />
+        )}
       </div>
     </section>
   );

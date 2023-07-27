@@ -26,7 +26,7 @@ const hero = () => {
   return (
     <section className=" w-screen text-white h-screen relative ">
       <video
-        className=" w-full min-w-[100vw] object-cover min-h-screen block h-full absolute top-0 left-0 bottom-0 right-0 -z-10 "
+        className=" w-full min-w-[100vw] object-cover  block h-full absolute top-0 left-0 bottom-0 right-0 -z-10 "
         width={"100%"}
         height={"100%"}
         loop
@@ -44,7 +44,7 @@ const hero = () => {
           <div className=" container max-w-6xl ">
             <Badge
               variant={"nohover"}
-              className=" mb-8 bg-brand border border-brand/70 bg-opacity-[0.7] text-white font-light px-3 py-2"
+              className=" mb-2 lg:mb-8 bg-[#B5B5C0]/10 lg:bg-brand/70 border border-white/10 lg:border-brand/70 text-white font-light px-3 py-2"
             >
               Welcome to VivaJets
             </Badge>
@@ -64,7 +64,7 @@ const hero = () => {
             </motion.div>
             <Button
               asChild
-              className="py-2 font-light"
+              className="lg:py-2 font-light w-full md:w-max"
               size={"4xl"}
               variant={"clay"}
             >
