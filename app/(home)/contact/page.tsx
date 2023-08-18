@@ -33,7 +33,7 @@ const contactDetails = [
 
 const Contact = () => {
   return (
-    <main className="min-h-screen text-white  w-full relative pt-40 pb-32 ">
+    <main className="min-h-screen text-white  w-full relative pt-24 md:pt-40 pb-32 ">
       <div className="w-full h-full max-h-[50%] absolute top-0 left-0 -z-20 bg-[url('/images/airplaneinclouds.png')] bg-cover bg-center">
         <div className="w-full h-full contact-wrapper"></div>
       </div>
@@ -86,7 +86,7 @@ const Contact = () => {
             </motion.div>
           </div>
         </section>
-        <section id="contact-form" className="w-full h-full pt-32  ">
+        <section id="contact-form" className="w-full h-full pt-10 md:pt-32  ">
           <div className="container mx-auto max-w-xl">
             <h4  className="h4 mb-8 text-center">CONTACT FORM</h4>
             <ContactForm />

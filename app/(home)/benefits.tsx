@@ -93,9 +93,7 @@ const Benefits = () => {
             <p className=" p max-w-xl ">
               With professional and confidential guidance, and our expert
               assistance, coupled with continuous monitoring, we provide a
-              stellar experience while determining the best for you, VIVAJETS
-              will provide unwavering support every step of the way, no matter
-              the need, place, or time.
+              stellar experience while determining the best for you.
             </p>
           </motion.div>
         </div>

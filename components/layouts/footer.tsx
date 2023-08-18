@@ -52,15 +52,15 @@ const footerItems = [
     links: [
       {
         name: "Facebook",
-        link: "",
+        link: "https://www.facebook.com/profile.php?id=100086641894658&mibextid=ZbWKwL",
       },
       {
         name: "Instagram",
-        link: "",
+        link: "https://instagram.com/viva.jets?igshid=MzRlODBiNWFlZA==",
       },
       {
-        name: "Twitter",
-        link: "",
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/company/vivajets/",
       },
     ],
   },

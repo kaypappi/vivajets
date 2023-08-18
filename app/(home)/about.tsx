@@ -9,18 +9,18 @@ import React from "react";
 const services = [
   {
     title: "World-Class Services",
-    desc: `Experience perfection and luxury with our world-class services. Tailored to your desires, our attentive staff ensures a seamless journey, be it for business or leisure. Elevate your travel to new heights with the extraordinary.`,
+    desc: `Experience perfection and luxury with our world-class services tailored to your desires.`,
     icon: () => <Certificate className=" w-12 h-12" />,
   },
   {
     title: "Luxury Flight",
-    desc: `Fly in comfort and style with our luxury flights. From exclusive lounges to elegant cabins, every detail exudes sophistication. Indulge in exquisite cuisine and exceptional comfort. Your journey is redefined.`,
+    desc: `Fly in comfort and style with our luxury flights. From exclusive lounges to elegant cabins, every detail exudes sophistication.`,
     icon: () => <AirPlane className=" w-12 h-12" />,
   },
 
   {
     title: "Maximum Returns",
-    desc: `Enjoy remarkable returns with fractional ownership. Join a thriving community of high-net-worth individuals, access high-value assets, and grow your portfolio confidently. Invest with confidence and receive the best returns on your investments. Your success is our mission.`,
+    desc: `Enjoy remarkable returns with fractional ownership. Join a thriving community of high-net-worth individuals, access high-value assets, and grow your portfolio confidently.`,
     icon: () => <Moneybag className=" w-12 h-12" />,
   },
 ];
@@ -73,11 +73,9 @@ const about = () => {
           VIVAJETS provides a full range of Aircraft Management Services,
           fractional ownership opportunities, and Aircraft sales and
           acquisition, built upon its broad experience in the business aviation
-          industry. Our Turnkey Aircraft Management Services, Fractional
-          Ownership Program, and Efficient Sales Process have consistently
-          proven to be attractive to aircraft owners as our expertise ensures
-          uncompromising safety, lower operational costs, efficient asset
-          management, and maximum return on investment.
+          industry. Our expertise ensures uncompromising safety, lower
+          operational costs, efficient asset management, and maximum return on
+          investment.
         </motion.p>
         <motion.div
           variants={{

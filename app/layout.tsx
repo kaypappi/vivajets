@@ -19,8 +19,7 @@ const gothicBold = localFont({
 
 export const metadata: Metadata = {
   title: 'Viva Jets',
-  description: `Elevate Your Private Flights 
-  to Extraordinary Heights`,
+  description: `Own Your Journey`,
 }
 
 export default function RootLayout({
