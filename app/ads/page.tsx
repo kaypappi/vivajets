@@ -6,7 +6,7 @@ import Link from 'next/link';
 import axios, { AxiosResponse } from 'axios';
 import logo1 from '../../public/images/font.png';
 import logo2 from '../../public/images/logo2.png';
-import cover from '../../public/images/cover.jpeg';
+import cover from '../../public/images/cover.png';
 import jets from '../../public/images/plane.jpg'
 
 interface FormData {
