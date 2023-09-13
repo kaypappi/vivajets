@@ -58,6 +58,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-57L6FWHZ');
 `}
         </Script>
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
+        />
       </head>
       <body
         className={`${geologica.variable} ${gothic.variable} ${gothicBold.variable} w-full font-gothic scroll-smooth`}
