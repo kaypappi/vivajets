@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html className="" lang="en">
       <head>
-      <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -58,10 +58,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-57L6FWHZ');
 `}
         </Script>
+        <Script strategy="afterInteractive" id="google analytics tag">
+          {`  
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VJNRY6B5E0');
+`}
+        </Script>
 
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
+        />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-VJNRY6B5E0"
         />
       </head>
       <body
