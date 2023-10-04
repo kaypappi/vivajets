@@ -69,12 +69,14 @@ gtag('config', 'G-VJNRY6B5E0');
 
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
-        />
-        <Script
-          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-VJNRY6B5E0"
         />
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
+        />
+       
       </head>
       <body
         className={`${geologica.variable} ${gothic.variable} ${gothicBold.variable} w-full font-gothic scroll-smooth`}
