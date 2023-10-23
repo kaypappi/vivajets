@@ -34,11 +34,10 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
         const positions = Array.from(childElements).map((element) =>
           element.getBoundingClientRect()
         );
-        console.log(positions)
         const maxH=positions.reduce((max, item) => {
           return Math.max(max, item.height);
         }, 0);
-        maxHieght.current=maxH
+        maxHieght.current=maxH +20
         //setChildPositions(positions);
       }
     };
@@ -48,7 +47,7 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
   }, [slides]);
 
   return (
-    <div ref={wrapperRef} className=" min-h-[18rem]   sm:min-h-[16rem]  md:min-h-[20rem] mb-8 relative flex items-center flex-col text-start justify-start">
+    <div ref={wrapperRef} style={{minHeight:maxHieght.current>0?`${maxHieght.current}px`:'35vh'}} className=" mb-8 relative flex items-center flex-col text-start justify-start">
       <AnimatePresence >
         {slides.map((slide, i) => (
           <motion.div

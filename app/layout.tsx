@@ -66,6 +66,11 @@ gtag('js', new Date());
 gtag('config', 'G-VJNRY6B5E0');
 `}
         </Script>
+        <Script  id="popup form">
+          {`  
+!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
+`}
+        </Script>
 
         <Script
           strategy="afterInteractive"
@@ -76,7 +81,6 @@ gtag('config', 'G-VJNRY6B5E0');
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
         />
-       
       </head>
       <body
         className={`${geologica.variable} ${gothic.variable} ${gothicBold.variable} w-full font-gothic scroll-smooth`}

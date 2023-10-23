@@ -73,7 +73,6 @@ const ServicesMobileWrapper: React.FC<TabsProps> = ({
   const onResize = useCallback((entries: ResizeObserverEntry[]) => {
     for (let entry of entries) {
       setViewportW(entry.contentRect.width);
-      console.log(viewportW)
     }
   }, []);
 
