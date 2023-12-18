@@ -2,11 +2,8 @@
 
 import { Badge } from "@/components/ui/badge";
 import StackedTabs, { Tab } from "@/components/stacked-tabs";
-import { ReactComponent as SlantRightArrow } from "@/public/svgs/slant-right-arrow.svg";
 import { motion } from "framer-motion";
-import ServicesMobileCard from "@/components/services-mobile-card";
-import ServicesMobileWrapper from "@/components/services-mobile-wrapper";
-import ScrollCarousel from "@/components/scroll-carousel";
+
 import { useBreakpoint } from "@/hooks/tailwind";
 import ServicesMobileCarousel from "@/components/services-mobile-carousel";
 
