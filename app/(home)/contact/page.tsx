@@ -19,7 +19,7 @@ const contactDetails = [
     icon: () => <Mail className="w-3 h-3" />,
     desc: `For inquiries, reviews and comments send a mail to our official email 
         address via`,
-    value: "takeoff@viva-jets.com",
+    value: "sales@viva-jets.com",
   },
   {
     title: "OFFICE ADDRESS",
