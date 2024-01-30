@@ -69,7 +69,7 @@ const footerItems = [
     links: [
       {
         name: "Blog",
-        link: "",
+        link: "https://www.falconaero.org/blog",
       },
       {
         name: "Privacy Policy",
@@ -92,21 +92,24 @@ const footer = () => {
             alt="logo"
           />
           <div className=" container flex flex-col md:flex-row gap-y-7 lg:gap-y-0 justify-between my-11">
-            {footerItems.map((item, index) => (
-              <div key={item.header} className=" flex flex-col gap-y-4">
-                <h6 className=" h4 md:h6 text-white text-opacity-60">{item.header}</h6>
-                {item.links.map((link, index) => (
-                  <Link
-                    className="  text-sm md:text-sm font-extralight lg:max-w-[150px]"
-                    key={link.name}
-                    href={link.link}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
+  {footerItems.map((item, index) => (
+    <div key={item.header} className=" flex flex-col gap-y-4">
+      <h6 className=" h4 md:h6 text-white text-opacity-60">{item.header}</h6>
+      {item.links.map((link, index) => (
+        <a
+          className="  text-sm md:text-sm font-extralight lg:max-w-[150px]"
+          key={link.name}
+          href={link.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {link.name}
+        </a>
+      ))}
+    </div>
+  ))}
+</div>
+
           <Separator className=" container bg-dodger-blue opacity-20 w-full" />
           <div className="container text-center flex items-center justify-center py-8">
             <p className=" text-white text-opacity-30 font-extralight ">
