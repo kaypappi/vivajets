@@ -69,7 +69,7 @@ const footerItems = [
     links: [
       {
         name: "Blog",
-        link: "",
+        link: "https://www.falconaero.org/blog",
       },
       {
         name: "Privacy Policy",
@@ -100,7 +100,7 @@ const footer = () => {
                     className="  text-sm md:text-sm font-extralight lg:max-w-[150px]"
                     key={link.name}
                     href={link.link}
-                    
+                    target="_self"
                   >
                     {link.name}
                   </Link>

@@ -136,7 +136,8 @@ let ourservices: Tab[] = [
   },
 ];
 const Services = () => {
-  const isDesktop = useBreakpoint("md");
+  const isDesktop =
+  typeof window !== 'undefined' && window.matchMedia("(min-width: 768px)").matches;
   return (
     <section
       id="services"
@@ -192,20 +193,7 @@ const Services = () => {
       ) : (
         <ServicesMobileCarousel services={ourservices} className="mt-10" />
       )}
-      {/* {
-        ourservices.map((service) => (
-          <ScrollCarousel>
-            <ServicesMobileCard head={service.head} body={service.body} className="w-full"/>
-          </ScrollCarousel>
-        ))
-      } */}
-      {/*  <ScrollCarousel>
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-      </ScrollCarousel> */}
+     
     </section>
   );
 };

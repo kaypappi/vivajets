@@ -47,7 +47,7 @@ const Testimonials = () => {
             variant={"nohover"}
             className=" mb-4 bg-dodger-blue bg-opacity-[0.16] text-dodger-blue font-light px-3 py-2"
           >
-            Testimonials
+            Our Fleet
           </Badge>
         </motion.div>
         <motion.h3
