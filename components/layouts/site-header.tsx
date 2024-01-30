@@ -89,7 +89,7 @@ const isDesktop = useBreakpoint("lg");
   return (
     <motion.header style={{top:isDesktop ? '2.5rem':top }} className="fixed inset-x-0 top-8 lg:top-8 z-40 w-full px-2 ">
       <motion.div animate={{
-        backgroundColor: `rgba(255,255,249,${showBlur?backgroundOpacity.get():isDesktop?0.3:0})`,
+        backgroundColor: `rgba(13,15,43,${showBlur?backgroundOpacity.get():isDesktop?0.3:0})`,
         backdropFilter: `blur(${showBlur || isDesktop?35:0}px)`,
       }}
       transition={{
