@@ -1,56 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-
-import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { useForm } from "react-hook-form";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-
-const formSchema = z.object({
-  fullname: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-  email: z.string().email({ message: "Invalid email address." }),
-  phone: z.string().min(11),
-  type: z.string(),
-  message: z.string().min(10),
-});
 
 const ContactForm = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullname: "",
-      email: "",
-      phone: "",
-      type: "",
-      message: "",
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-  }
   return (
     <form
       action="https://viva-jets.us8.list-manage.com/subscribe/post?u=775ebfd74ac13f416e56a8db7&amp;id=8e736064df&amp;f_id=00cb76e0f0"
@@ -159,7 +110,7 @@ const ContactForm = () => {
             name="subscribe"
             id="mc-embedded-subscribe"
             className="w-full cursor-pointer py-[0.8rem] px-10 inline-flex items-center justify-center transition-all rounded-full text-sm font-medium ring-offset-white  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-800 bg-clay text-white hover:bg-clay hover:bg-opacity-[.16] hover:backdrop-blur-lg ring-transparent ring-2 hover:ring-clay dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90"
-            value="Subscribe"
+            value="Get In Touch"
           />
         </div>
       </div>
