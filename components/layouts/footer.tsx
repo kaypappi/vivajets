@@ -22,19 +22,19 @@ const footerItems = [
     links: [
       {
         name: "Private Jet Charter",
-        link: "",
+        link: "/#services",
       },
       {
         name: "Aircraft Management",
-        link: "",
+        link: "/#services",
       },
       {
         name: "Aircraft Fractional Ownership",
-        link: "",
+        link: "/#services",
       },
       {
         name: "Business Jet Charter",
-        link: "",
+        link: "/#services",
       },
     ],
   },
@@ -100,6 +100,7 @@ const footer = () => {
                     className="  text-sm md:text-sm font-extralight lg:max-w-[150px]"
                     key={link.name}
                     href={link.link}
+                    
                   >
                     {link.name}
                   </Link>
