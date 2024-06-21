@@ -12,7 +12,7 @@ const contactDetails = [
     icon: () => <Phone className="w-3 h-3" />,
     desc: `Call our customer care representative via the contact number for 
         bookings and enquiries.`,
-    value: " +2347057497533",
+    value: "+23413430614",
   },
   {
     title: "EMAIL ADDRESS",
