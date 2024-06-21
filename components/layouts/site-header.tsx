@@ -108,8 +108,8 @@ const isDesktop = useBreakpoint("lg");
             <Button asChild className=" w-max" size={"lg"} variant={"clay"}>
               <Link href="/contact">
                 <div>
-                +2347057497533
-                  <span className="sr-only"> +2347057497533</span>
+                +23413430614
+                  <span className="sr-only">+23413430614</span>
                 </div>
               </Link>
             </Button>
