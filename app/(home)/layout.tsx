@@ -8,7 +8,8 @@ interface LobbyLayoutProps {
 
 export const metadata: Metadata = {
   title: "Own a Private Jet | Aircraft Fractional Ownership",
-  description: `Own a slice of luxury with our Fractional Jet Ownership Model. Jetsetter dreams start at just $500,000. Own your Jet —seize the skies in style`,
+  description: `Charter A Private Jet To Anywhere You Want To Go and Anytime. Own Your Private Jet With Vivajets
+  `,
 };
 
 export default async function LobbyLayout({ children }: LobbyLayoutProps) {
