@@ -181,10 +181,7 @@ const Services = () => {
             }}
             className=" p w-full lg:max-w-lg text-brand/80"
           >
-            Enjoy the benefits of luxury and aircraft ownership for a fraction
-            of the cost with Vivajets, you can trust us to give you an
-            experience of a lifetime while empowering your aviation investment
-            today and for future legacies.
+         Enjoy the benefits of private jet charter, luxury and aircraft ownership for a fraction of the cost with Vivajets, you can trust us to give you an experience of a lifetime while empowering your aviation investment today and for future legacies.
           </motion.p>
         </div>
       </div>

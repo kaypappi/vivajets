@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 
 const heroSlides = [
   {
-    title: `Charter a jet`,
+    title: `Charter a Jet`,
     desc: `Charter a private jet for business trips, leisure, or travel, and experience the freedom and comfort Viva Jets provides you.`,
     buttonText: "Request a quote.",
     buttonUrl: "/contact"
   },
   {
-    title: `Own a jet`,
+    title: `Own a Jet`,
     desc: `Explore a world of possibilities with the convenience and luxury of owning your own private jet.`,
     buttonText: " Explore ownership options.",
     buttonUrl: "/contact"
   },
   {
-    title: `Own a fraction of a jet`,
+    title: `Own a Fraction of a Jet`,
     desc: `Join thousands of smart investors who experience the luxury of private jet travel through our fractional investment program.`,
     buttonText: "Learn more",
     buttonUrl: "/contact"
