@@ -21,7 +21,7 @@ const heroSlides = [
   {
     title: `Own a fraction of a jet`,
     desc: `Join thousands of smart investors who experience the luxury of private jet travel through our fractional investment program.`,
-    buttonText: "Learn more about fractional ownership.",
+    buttonText: "Learn more",
     buttonUrl: "/contact"
   },
 ];

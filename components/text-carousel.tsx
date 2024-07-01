@@ -23,7 +23,7 @@ const TextCarousel: React.FC<PropType> = ({ slides, className }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 7000);
+    }, 4000);
     return () => clearTimeout(timeout);
   }, [slides.length, index]);
 
