@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState, useEffect } from 'react'
 import { createClient } from 'contentful';
 import Link from 'next/link';
@@ -9,7 +8,7 @@ import { SiteHeader } from '@/components/layouts/site-header';
 import media from '../../public/images/blog.png'
 import Footer from '@/components/layouts/footer';
 
-function page() {
+function Page() {
   const [blogPosts, setBlogPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -149,4 +148,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
