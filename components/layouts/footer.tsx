@@ -117,7 +117,7 @@ const footer = () => {
           <Separator className=" container bg-dodger-blue opacity-20 w-full" />
           <div className="container text-center flex items-center justify-center py-8">
             <p className=" text-white text-opacity-30 font-extralight ">
-              © 2023 Vivajets. All rights reserved.
+              © 2024 Vivajets. All rights reserved.
             </p>
           </div>
         </div>
