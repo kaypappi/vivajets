@@ -69,11 +69,15 @@ const footerItems = [
     links: [
       {
         name: "Blog",
-        link: "https://www.falconaero.org/blog",
+        link: "/blog",
+      },
+      {
+        name: "News and Media",
+        link: "/media",
       },
       {
         name: "Privacy Policy",
-        link: "",
+        link: "https://www.falconaero.org/privacy",
       },
     ],
   },

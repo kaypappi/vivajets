@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import {LucideExternalLink} from 'lucide-react'
 import { createClient } from 'contentful';
+import Footer from '@/components/layouts/footer';
 
 function Page() {
     const [mediaItems, setmediaItems] = useState<any[]>([]);
@@ -77,7 +78,7 @@ function Page() {
         <div className="min-h-screen">
             {/* Hero Section */}
             <div 
-                className="relative bg-cover bg-center h-[700px]" 
+                className="relative bg-cover bg-center h-[100vh]" 
                 style={{backgroundImage: `url(${media.src})`}}
             >
                 <SiteHeader/>
@@ -124,6 +125,7 @@ function Page() {
                     )}
                 </section>
             </div>
+            <Footer/>
         </div>
     )
 }
