@@ -43,14 +43,23 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '241851378558892');
+            fbq('init', '1454751448548687');
             fbq('track', 'PageView');
           `}
         </Script>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=1454751448548687&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
 
         {/* Google Tag Manager */}
-        <Script id="google script">
-          {`  
+        <Script id="google-script">
+          {`
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -58,16 +67,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-57L6FWHZ');
 `}
         </Script>
-        <Script strategy="afterInteractive" id="google analytics tag">
-          {`  
+        <Script strategy="afterInteractive" id="google-analytics-tag">
+          {`
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-VJNRY6B5E0');
 `}
         </Script>
-        <Script  id="popup form">
-          {`  
+        <Script id="popup-form">
+          {`
 !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
 `}
         </Script>
