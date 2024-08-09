@@ -67,24 +67,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-57L6FWHZ');
 `}
         </Script>
-        <Script strategy="afterInteractive" id="google-analytics-tag">
+        
+        {/* New Google Analytics code */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9YFQYYTJP"></Script>
+        <Script id="google-analytics">
           {`
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-VJNRY6B5E0');
-`}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q9YFQYYTJP');
+          `}
         </Script>
+
         <Script id="popup-form">
           {`
 !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
 `}
         </Script>
-
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-VJNRY6B5E0"
-        />
 
         <Script
           strategy="afterInteractive"
