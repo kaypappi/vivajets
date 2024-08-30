@@ -67,7 +67,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-57L6FWHZ');
 `}
         </Script>
-        
+
         {/* New Google Analytics code */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9YFQYYTJP"></Script>
         <Script id="google-analytics">
@@ -89,6 +89,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
         />
+
+        {/* New Script */}
+        <Script id="mcjs">
+          {`
+!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/e1e554b1c6d972d4459986603.js");
+`}
+        </Script>
       </head>
       <body
         className={`${geologica.variable} ${gothic.variable} ${gothicBold.variable} w-full font-gothic scroll-smooth`}
