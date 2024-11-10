@@ -21,7 +21,7 @@ const gothicBold = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Viva Jets",
+  title: "VivaJets",
   description: `Own Your Journey`,
 };
 
