@@ -58,54 +58,75 @@ export default function RootLayout({
         </noscript>
 
         {/* Google Tag Manager */}
-        <Script id="google-script">
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-57L6FWHZ');
-`}
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PDKBLGSH');
+          `}
         </Script>
 
-        {/* New Google Analytics code */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9YFQYYTJP"></Script>
-        <Script id="google-analytics">
+        {/* Google Analytics */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z9SWS0FGD"></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Q9YFQYYTJP');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6Z9SWS0FGD');
+          `}
+        </Script>
+
+        {/* Google Ads */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16927607169"></Script>
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16927607169');
+          `}
+        </Script>
+
+        {/* Google Ads Conversion Event */}
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-16927607169/_8Y3CI7Mxa0aEIGT24c_',
+              'value': 1.0,
+              'currency': 'USD',
+              'transaction_id': ''
+            });
           `}
         </Script>
 
         <Script id="popup-form">
           {`
-!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
-`}
+            !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
+          `}
         </Script>
 
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-57L6FWHZ"
-        />
-
-        {/* New Script */}
         <Script id="mcjs">
           {`
-!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/e1e554b1c6d972d4459986603.js");
-`}
+            !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/e1e554b1c6d972d4459986603.js");
+          `}
         </Script>
       </head>
       <body
         className={`${geologica.variable} ${gothic.variable} ${gothicBold.variable} w-full font-gothic scroll-smooth`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PDKBLGSH"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         {children}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57L6FWHZ" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
-          }}
-        />
       </body>
     </html>
   );
