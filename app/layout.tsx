@@ -90,18 +90,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Ads Conversion Event */}
-        <Script id="google-ads-conversion" strategy="afterInteractive">
-          {`
-            gtag('event', 'conversion', {
-              'send_to': 'AW-16927607169/_8Y3CI7Mxa0aEIGT24c_',
-              'value': 1.0,
-              'currency': 'USD',
-              'transaction_id': ''
-            });
-          `}
-        </Script>
-
         <Script id="popup-form">
           {`
             !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/775ebfd74ac13f416e56a8db7/922d757f28b40e4143490ba80.js");
