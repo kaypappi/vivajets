@@ -105,7 +105,7 @@ export function SiteHeader() {
               Media
             </Link>
            
-            <Button asChild className="w-max flex items-center gap-2 bg-yellow-700 hover:bg-[#20bd59]" size={"lg"} variant={"clay"}>
+            <Button asChild className="w-max flex items-center gap-2 bg-green-500 hover:bg-[#20bd59]" size={"lg"} variant={"clay"}>
               <Link href="https://wa.me/message/K25UVJD5PN54D1" target="_blank">
                 <div className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
