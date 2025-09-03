@@ -1,0 +1,76 @@
+.PortableText {
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.PortableText ul {
+  list-style-type: disc;
+  padding: 5px 40px;
+}
+
+.PortableText ol {
+  list-style-type: decimal;
+  padding: 5px 40px;
+}
+
+.PortableText h2, 
+.PortableText h4, 
+.PortableText h1, 
+.PortableText h3 {
+  font-size: 2rem;
+  padding-top: 8px;
+  font-family: 'MaziusDisplay', serif;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.PortableText h4, 
+.PortableText h5, 
+.PortableText h6 {
+  font-size: 1rem;
+  font-family: 'MaziusDisplay', serif;
+  padding-bottom: 5px;
+  padding-top: 8px;
+  color: #444;
+  font-weight: bold;
+}
+
+.PortableText p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.PortableText a {
+  color: #3B82F6;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* Table styling */
+.PortableText table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.PortableText th {
+  background-color: #d8e8f6;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  padding: 10px 8px;
+  text-align: left;
+}
+
+.PortableText td {
+  border: 1px solid #ddd;
+  padding: 10px 8px;
+}
+
+
+
+.PortableText tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

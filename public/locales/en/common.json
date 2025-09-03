@@ -1,0 +1,174 @@
+{
+  "header": {
+    "menu": "Menu",
+    "mute": "Mute",
+    "unmute": "Unmute"
+  },
+  "hero": {
+    "title": "Discover a New Altitude of Comfort and Class",
+    "subtitle": "At VivaJets, we go beyond luxury. From executives advancing Africa's industries to individuals seeking seamless travel, our private flight services are built around efficiency, safety, and comfort. Wherever work, opportunity, or leisure takes you, VivaJets keeps you moving forward.",
+    "cta": "Book Your Flight",
+    "learnMore": "Learn More"
+  },
+  "reach": {
+    "title": "Reach Anywhere, Whenever.",
+    "subtitle": "Wherever opportunity calls, VivaJets gets you there with ease, connecting leaders, businesses, and dreamers across Africa and beyond."
+  },
+  "dna": {
+    "title": "Our DNA",
+    "subtitle": "The core values that drive excellence in private aviation",
+    "dividends": {
+      "title": "DIVIDENDS",
+      "subtitle": "Return on Investment",
+      "description": "Investing in private aviation isn't just about travel — it's about unlocking value through time saved, efficiency gained, and opportunities seized."
+    },
+    "indulgence": {
+      "title": "INDULGENCE",
+      "subtitle": "Luxury and Convenience",
+      "description": "Enjoy the highest standards of comfort with effortless booking and personalized service. Every detail is designed around you."
+    },
+    "efficiency": {
+      "title": "EFFICIENCY",
+      "subtitle": "Time-Saving",
+      "description": "Avoid long lines, rigid schedules, and airport delays. Fly when you want, how you want – and make every minute count."
+    },
+    "sanctuary": {
+      "title": "SANCTUARY",
+      "subtitle": "Safety and Security",
+      "description": "Our top-tier aircraft, rigorous maintenance protocols, and discreet operations ensure your peace of mind from takeoff to landing."
+    },
+    "value": {
+      "title": "VALUE",
+      "subtitle": "Cost-Effective",
+      "description": "Whether through fractional ownership, smart charter services, or long-term leases, our solutions are built to align with your financial goals without compromise."
+    },
+    "artistry": {
+      "title": "ARTISTRY",
+      "subtitle": "Expertise and Experience",
+      "description": "With decades of aviation insight, our team brings unparalleled expertise to every flight, ensuring a seamless and exceptional journey."
+    }
+  },
+  "ready": {
+    "title": "Ready When You Are",
+    "subtitle": "Our world-class service begins the moment you reach out. Whether you're planning weeks ahead or within hours, we're here to deliver seamless, sky-bound perfection."
+  },
+  "blog": {
+    "title": "Blogs",
+    "subtitle": "From industry trends to travel stories, the VivaJets Blog keeps you informed and inspired about private aviation in Africa and beyond.",
+    "loading": "Loading blog posts...",
+    "empty": "No blog posts found for the selected filter.",
+    "sort": {
+      "newestToOldest": "Newest to Oldest",
+      "oldestToNewest": "Oldest to Newest"
+    }
+  },
+  "media": {
+    "title": "Immerse Yourself in Our Customers Experiences",
+    "subtitle": "You can get the best private flight services from VivaJets. If you need a unique solution for work, pleasure, or travel. Make VivaJets your first choice today for your luxurious private plane travel!",
+    "popular": "Popular Articles",
+    "latest": "Latest Articles",
+    "readMore": "Read More",
+    "loadMore": "Load More Articles"
+  },
+  "language": {
+    "english": "English",
+    "french": "French",
+    "selectLanguage": "Select Language"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "aircraftCharter": "Aircraft Charter",
+    "aircraftManagement": "Aircraft Management",
+    "fractionalOwnership": "Fractional Ownership",
+    "aircraftSales": "Aircraft Sales & Acquisition",
+    "fleet": "Fleet",
+    "blog": "Blog",
+    "media": "Media",
+    "contactUs": "Contact Us",
+    "requestQuote": "Request Quote",
+    "requestQuoteSubtitle": "Share a few details and we'll build a personalized offer for you."
+  },
+  "footer": {
+    "tagline": "Seamless private travel for those who demand the exceptional.",
+    "copyright": "© 2024 Vivajets. All rights reserved.",
+    "services": "Services",
+    "resources": "Resources",
+    "fleet": "Fleet",
+    "contactUs": "Contact Us",
+    "aircraftCharter": "Aircraft Charter",
+    "aircraftManagement": "Aircraft Management",
+    "fractionalOwnership": "Fractional Ownership",
+    "aircraftSales": "Aircraft Sales",
+    "blog": "Blog",
+    "media": "Media"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "call": {
+      "title": "Call Us",
+      "description": "Call our customer care representative via the contact number for bookings and enquiries.",
+      "phone": "+23413430614"
+    },
+    "email": {
+      "title": "Email Address",
+      "description": "For inquiries, reviews and comments send a mail to our official email address via",
+      "address": "sales@viva-jets.com"
+    },
+    "office": {
+      "title": "Office Address",
+      "description": "For a visit and physical booking, visit our office",
+      "address": "22 Herbert Macauly Cres, Ikeja GRA, Ikeja 100271, Lagos",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20Adrenalina%20hub%2C%20369%20Borno%20Way%20%E2%80%93%20By%20Spencer%2C%20Yaba%2C%20Lagos"
+    }
+  },
+  "flight": {
+    "oneWay": "One Way",
+    "roundTrip": "Round Trip",
+    "multiLeg": "Multi Leg",
+    "takeoffLocation": "Take off Location",
+    "destinationLocation": "Destination Location",
+    "takeoffDate": "Take off Date",
+    "takeoffTime": "Take off Time",
+    "returnDate": "Return Date",
+    "numberOfSeats": "Number of Pax",
+    "oneSeat": "1 Seat",
+    "twoSeats": "2 Seats",
+    "threeSeats": "3 Seats",
+    "fourSeats": "4 Seats",
+    "fiveSeats": "5 Seats",
+    "sixSeats": "6 Seats",
+    "sevenSeats": "7 Seats",
+    "eightSeats": "8 Seats",
+    "ninePlusSeats": "9+ Seats",
+    "action": "Action",
+    "submit": "Submit",
+    "multiLegTrips": "Multi-Leg Trips",
+    "removeLeg": "Remove Leg",
+    "addLeg": "Add Leg",
+    "leg": "Leg",
+    "routeNotSet": "Route not set",
+    "from": "From",
+    "to": "To",
+    "date": "Date",
+    "noResultsFound": "No results found. Please try a different search.",
+    "thankYouMessage": "Thank you! We'll get back to you with a personalized quote soon.",
+    "errorMessage": "There was a problem sending your request. Please try again later.",
+    "selectValidDeparture": "Please select a valid departure location for Leg {{leg}}.",
+    "selectValidArrival": "Please select a valid arrival location for Leg {{leg}}.",
+    "selectDate": "Please select a date for Leg {{leg}}."
+  },
+  "modal": {
+    "completeRequest": "Complete Your Request",
+    "closeModal": "Close modal",
+    "provideContactDetails": "Please provide your contact details so we can send you a personalized quote for your flight.",
+    "fullName": "Full Name",
+    "enterFullName": "Enter your full name",
+    "emailAddress": "Email Address",
+    "enterEmailAddress": "Enter your email address",
+    "phoneNumber": "Phone Number",
+    "enterPhoneNumber": "Enter your phone number",
+    "submitting": "Submitting...",
+    "submitFlightRequest": "Submit Flight Request"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "titleLine1": "Aircraft Fractional",
+    "titleLine2": "Ownership",
+    "body": "Private or Business aviation doesn't have to mean full ownership. With VivaJets’ fractional ownership program, you get the freedom, flexibility, and prestige of private jet access—without the full-time responsibility or cost. Whether you're a frequent business traveler or someone who values convenience and comfort, this is the smarter way to fly.",
+    "ctaMoreInfo": "Request More Info",
+    "ctaAdvisor": "Speak With an Advisor"
+  },
+  "whatIs": {
+    "title": "What Is Fractional Ownership?",
+    "body": "Fractional ownership allows you to purchase a share in a private jet that aligns with how often you fly—giving you access to the aircraft when you need it, and none of the stress when you don't. You get all the benefits of private aviation, while we handle the details: flight operations, maintenance, crew, scheduling, and compliance.",
+    "body2": "Whether you fly 50 hours or 200+ hours a year, it’s a perfect fit for travelers who want efficiency and value, without compromising on quality."
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1Title": "1. Tell Us About Your Travel Needs",
+    "step1Body": "We start with a detailed understanding of how often you fly, where you go, and what matters most during your journey.",
+    "step2Title": "2. Choose the Right Share",
+    "step2Body": "Based on your flying hours and preferred aircraft category, we guide you to the ideal ownership share—whether it's 1/16th, 1/8th, or more.",
+    "step3Title": "3. We Manage Everything",
+    "step3Body": "From flight scheduling and crew to maintenance and insurance, VivaJets handles every operational detail.",
+    "step4Title": "4. You Fly—Seamlessly",
+    "step4Body": "Enjoy guaranteed access, personalized service, and the freedom to fly when and how you want."
+  },
+  "whyChoose": {
+    "title": "Why Choose Fractional Ownership?"
+  },
+  "cta": {
+    "talkToUs": "Discuss fractional options"
+  }
+}
+

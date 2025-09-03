@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Aircraft Sales & Acquisition",
+    "body": "Buying or selling an aircraft is a high-stakes process and our role is to make it smooth, secure, and strategic. We specialize in presenting your aircraft to the right global audience. Through targeted outreach, high-quality photography, and immersive virtual tours, we ensure your asset is showcased at its absolute best—capturing attention and attracting serious, qualified buyers. From start to finish, we craft a seamless, sophisticated sales journey tailored to your goals.",
+    "ctaList": "List Your Aircraft",
+    "ctaBrowse": "Browse Aircraft",
+    "scroll": "Scroll"
+  },
+  "benefits": {
+    "title": "Benefits of Private Jet Sales",
+    "subtitle": "Expert Sales. Seamless Process."
+  },
+  "aquire": {
+    "title": "Aircraft Acquisition",
+    "p1": "Partner with VivaJets to find the ideal aircraft that fits your needs and exceeds expectations. Our dedicated acquisition team, supported by a global network of aviation experts, will guide you through every step of the process, from selection to delivery.",
+    "p2": "We carefully consider all key factors, including budget, range, capacity, performance, and comfort, while maintaining our unwavering commitment to quality and excellence. Backed by our world-class technical and engineering teams, we also provide full support for pre-purchase evaluations and inspections.",
+    "p3": "With VivaJets, you gain more than just an aircraft; you gain complete confidence and peace of mind.",
+    "benefitsTitle": "Benefits of Private Jet Acquisition",
+    "b1Title": "1. Ultimate Control",
+    "b1Body": "Owning a private jet lets you travel on your schedule to any suitable airport, free from commercial airline restrictions.",
+    "b2Title": "2. Privacy and Security",
+    "b2Body": "Enjoy complete discretion and enhanced security measures when traveling on your private jet.",
+    "b3Title": "3. Increased Productivity",
+    "b3Body": "Eliminate wasted time at airports and layovers. Utilize travel time for meetings or relaxation on your own terms.",
+    "b4Title": "4. Global Access",
+    "b4Body": "Reach remote destinations or those with limited commercial flights directly and efficiently.",
+    "chartTitle": "Your Acquisition, Handled with Precision"
+  },
+  "findRight": {
+    "title": "Find the Right Jet for Your Journey",
+    "desc": "Whether you're flying across the country or across the world, there's a private jet built for the trip. Each type has its own strengths—some are perfect for short hops, others for long, non-stop flights. We'll walk you through the options so you can choose the one that fits your travel plans, comfort needs, and lifestyle.",
+    "bottomTitle": "Choosing the Right Jet Made Easy",
+    "bottomDesc": "Picking the perfect private jet comes down to a few key things: how far you're flying, how many people are coming with you, your budget, and what you need from the experience. This guide breaks it all down in simple terms, helping you make a confident choice that fits your personal or business travel needs.",
+    "mission": {
+      "title": "Mission Profile",
+      "body": "Where are you flying, and how often? A short regional trip calls for a different jet than a transcontinental journey."
+    },
+    "capacity": {
+      "title": "Passenger Capacity",
+      "body": "How many people will be on board regularly? Make sure the aircraft comfortably fits your group, with room to spare if needed."
+    },
+    "budget": {
+      "title": "Budget",
+      "body": "It's not just about the purchase price—consider operating costs, maintenance, and fuel efficiency when comparing options."
+    },
+    "access": {
+      "title": "Airport Access",
+      "body": "Will you be flying in and out of major airports or smaller, remote runways? Some aircraft are better suited for limited-access locations."
+    },
+    "amenities": {
+      "title": "Amenities",
+      "body": "From in-flight Wi-Fi to lie-flat seats and full galleys, think about what comfort and features matter most for you or your team."
+    },
+    "cta": "Contact Us"
+  },
+  "cta": {
+    "talkToUs": "Speak to our acquisitions team"
+  }
+}
+

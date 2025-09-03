@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "titleLine1": "Propriété Fractionnée",
+    "titleLine2": "d'Avion",
+    "body": "L'aviation privée ou d'affaires ne signifie pas forcément une propriété totale. Avec le programme de propriété fractionnée de VivaJets, vous bénéficiez de la liberté, de la flexibilité et du prestige de l'accès aux jets privés — sans la responsabilité ni le coût à plein temps. Que vous voyagiez fréquemment pour les affaires ou que vous valorisiez la commodité et le confort, c'est la manière la plus intelligente de voler.",
+    "ctaMoreInfo": "Demander Plus d'Infos",
+    "ctaAdvisor": "Parler à un Conseiller"
+  },
+  "whatIs": {
+    "title": "Qu'est-ce que la Propriété Fractionnée ?",
+    "body": "La propriété fractionnée vous permet d'acheter une part d'un jet privé en fonction de votre fréquence de vol — vous donnant accès à l'avion quand vous en avez besoin, sans le stress quand vous n'en avez pas. Vous profitez de tous les avantages de l'aviation privée pendant que nous gérons les opérations : vols, maintenance, équipage, planification et conformité.",
+    "body2": "Que vous voliez 50 heures ou plus de 200 heures par an, c'est la solution idéale pour ceux qui recherchent l'efficacité et la valeur, sans compromettre la qualité."
+  },
+  "howItWorks": {
+    "title": "Comment Ça Marche",
+    "step1Title": "1. Parlez-nous de vos besoins de voyage",
+    "step1Body": "Nous commençons par comprendre en détail la fréquence de vos vols, vos destinations et ce qui compte le plus pour vous.",
+    "step2Title": "2. Choisissez la Bonne Part",
+    "step2Body": "En fonction de vos heures de vol et de la catégorie d'avion préférée, nous vous orientons vers la part idéale — 1/16e, 1/8e, ou plus.",
+    "step3Title": "3. Nous Gérons Tout",
+    "step3Body": "De la planification des vols et de l'équipage à la maintenance et à l'assurance, VivaJets gère chaque détail opérationnel.",
+    "step4Title": "4. Vous Volez — Sans Accroc",
+    "step4Body": "Profitez d'un accès garanti, d'un service personnalisé et de la liberté de voler quand et comme vous le souhaitez."
+  },
+  "whyChoose": {
+    "title": "Pourquoi Choisir la Propriété Fractionnée ?"
+  },
+  "cta": {
+    "talkToUs": "Discuter des options fractionnées"
+  }
+}
+

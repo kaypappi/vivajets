@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "titleMain": "Vous Possédez le Jet.",
+    "titleSecond": "Nous Gérons le Reste",
+    "body": "Vous prenez de grandes décisions chaque jour ; la gestion d'un avion ne devrait pas en faire partie. Notre service complet de gestion d'avions s'occupe de chaque détail, pour que vous n'ayez pas à le faire. Des opérations de vol et de la planification des équipages à la maintenance, la conformité et le suivi financier, nous veillons à ce que votre avion fonctionne de manière fluide, sûre et économique. Que vous voliez souvent ou seulement quelques fois par an, nous adaptons notre support à vos besoins — maximisant la valeur de votre actif tout en minimisant les contraintes."
+  },
+  "whatIs": {
+    "title": "Qu'est-ce que la Gestion d'Avion ?",
+    "body": "Notre programme de gestion d'avions est une solution solide pour les propriétaires souhaitant profiter des avantages de la propriété sans le fardeau de la gestion. Nous prenons le contrôle opérationnel complet de votre avion, gérant chaque aspect en coulisses, de la navigabilité et la maintenance au recrutement, à la formation des équipages et à la logistique des vols.",
+    "body2": "Vous conservez un accès complet à votre jet, tandis que nous nous assurons qu'il est toujours prêt à voler, entièrement conforme et exploité selon les normes les plus élevées."
+  },
+  "services": {
+    "title": "Nos Services de Gestion Incluent :",
+    "list": {
+      "ops": {
+        "title": "Opérations de Vol & Planification",
+        "description": "Nous planifions, programmons et dépêchons chaque vol pour répondre exactement à vos préférences et délais — en local comme à l'international."
+      },
+      "crew": {
+        "title": "Gestion des Équipages",
+        "description": "Nous recrutons, formons et gérons des équipages de vol hautement expérimentés, garantissant sécurité, professionnalisme et excellence du service à chaque vol."
+      },
+      "maintenance": {
+        "title": "Maintenance & Navigabilité",
+        "description": "Votre jet est entretenu selon les normes les plus élevées avec des inspections proactives, la conformité réglementaire et un suivi de maintenance en temps réel."
+      },
+      "finance": {
+        "title": "Budgétisation & Supervision Financière",
+        "description": "Nous fournissons des rapports mensuels transparents, une gestion des dépenses et des contrôles des coûts pour protéger votre investissement et éviter les surprises."
+      },
+      "compliance": {
+        "title": "Conformité Réglementaire & Assurances",
+        "description": "Notre équipe garantit que votre avion respecte toutes les exigences aéronautiques locales et internationales, avec les bonnes assurances et la documentation nécessaire."
+      },
+      "tripSupport": {
+        "title": "Support de Voyage & Services de Conciergerie",
+        "description": "De la planification des vols et des permis à la restauration à bord et au transport terrestre, nous coordonnons chaque détail de votre voyage."
+      }
+    }
+  },
+  "cta": {
+    "talkToUs": "Parler à un Conseiller"
+  }
+}
+

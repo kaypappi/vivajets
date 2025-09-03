@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Private Aircraft Charter",
+    "subtitle": "Flexible schedules, tailored service, and on‑demand access across Africa and beyond."
+  },
+  "whyCharter": {
+    "title": "Why Choose Private Charter?",
+    "intro": "Chartering a private jet isn’t just about luxury; it’s about freedom, time, and peace of mind. You deserve to fly on your own schedule, with people you trust, in an environment that feels safe and comfortable.",
+    "features": {
+      "f1": {
+        "title": "Skip the crowds, the lines, and the delays",
+        "desc": "Fly smarter with Viva Jet."
+      },
+      "f2": { "title": "Fly in and out of smaller, more convenient airports" },
+      "f3": { "title": "Customize the experience to fit exactly what you need" },
+      "f4": { "title": "Avoid layovers and fly direct in comfort, every time with Viva Jet." },
+      "f5": { "title": "Travel in total privacy, whether it's work or family time" }
+    }
+  },
+  "booking": {
+    "title": "Request a Charter",
+    "subtitle": "Tell us your route and preferences; we’ll send options fast."
+  },
+  "cta": {
+    "talkToUs": "Request a charter quote"
+  }
+}
+

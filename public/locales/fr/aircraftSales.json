@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Vente & Acquisition d'Avion",
+    "body": "Acheter ou vendre un avion est un processus à forts enjeux et notre rôle est de le rendre fluide, sécurisé et stratégique. Nous sommes spécialisés dans la présentation de votre avion au bon public mondial. Grâce à une communication ciblée, une photographie de haute qualité et des visites virtuelles immersives, nous mettons en valeur votre actif au meilleur de son potentiel — attirant l'attention et des acheteurs sérieux et qualifiés. Du début à la fin, nous créons un parcours de vente fluide et sophistiqué, adapté à vos objectifs.",
+    "ctaList": "Lister Votre Avion",
+    "ctaBrowse": "Parcourir les Avions",
+    "scroll": "Faire défiler"
+  },
+  "benefits": {
+    "title": "Avantages de la Vente de Jets Privés",
+    "subtitle": "Ventes d'Experts. Processus Sans Accroc."
+  },
+  "aquire": {
+    "title": "Acquisition d'Avion",
+    "p1": "Collaborez avec VivaJets pour trouver l'avion idéal qui répond à vos besoins et dépasse vos attentes. Notre équipe dédiée à l'acquisition, appuyée par un réseau mondial d'experts en aviation, vous guide à chaque étape du processus, de la sélection à la livraison.",
+    "p2": "Nous prenons en compte tous les facteurs clés, y compris le budget, l'autonomie, la capacité, la performance et le confort, tout en maintenant notre engagement inébranlable envers la qualité et l'excellence. Avec le soutien de nos équipes techniques et d'ingénierie de classe mondiale, nous offrons également une assistance complète pour les évaluations et inspections préalables à l'achat.",
+    "p3": "Avec VivaJets, vous obtenez plus qu'un avion ; vous gagnez une confiance et une tranquillité d'esprit totales.",
+    "benefitsTitle": "Avantages de l'Acquisition de Jet Privé",
+    "b1Title": "1. Contrôle Ultime",
+    "b1Body": "La propriété d'un jet privé vous permet de voyager selon votre emploi du temps vers n'importe quel aéroport adapté, sans les restrictions des compagnies aériennes commerciales.",
+    "b2Title": "2. Confidentialité et Sécurité",
+    "b2Body": "Profitez d'une discrétion totale et de mesures de sécurité renforcées lors de vos déplacements en jet privé.",
+    "b3Title": "3. Productivité Accrue",
+    "b3Body": "Éliminez le temps perdu dans les aéroports et les escales. Utilisez le temps de voyage pour des réunions ou la détente selon vos propres termes.",
+    "b4Title": "4. Accès Mondial",
+    "b4Body": "Atteignez directement et efficacement des destinations éloignées ou mal desservies par les vols commerciaux.",
+    "chartTitle": "Votre Acquisition, Gérée avec Précision"
+  },
+  "findRight": {
+    "title": "Trouver le Bon Jet pour Votre Voyage",
+    "desc": "Que vous voyagiez à travers le pays ou à travers le monde, il existe un jet privé adapté au trajet. Chaque type a ses propres points forts — certains sont parfaits pour les courts trajets, d'autres pour les vols longs et sans escale. Nous vous guidons parmi les options pour que vous puissiez choisir celle qui correspond à vos plans de voyage, à votre confort et à votre style de vie.",
+    "bottomTitle": "Choisir le Bon Jet, en Toute Simplicité",
+    "bottomDesc": "Choisir le jet privé idéal repose sur quelques critères clés : la distance du vol, le nombre de passagers, votre budget et ce que vous attendez de l'expérience. Ce guide simplifie tout pour vous aider à faire un choix sûr qui s'adapte à vos besoins personnels ou professionnels.",
+    "mission": {
+      "title": "Profil de Mission",
+      "body": "Où voyagez-vous, et à quelle fréquence ? Un court trajet régional nécessite un jet différent d'un voyage transcontinental."
+    },
+    "capacity": {
+      "title": "Capacité de Passagers",
+      "body": "Combien de personnes seront régulièrement à bord ? Assurez-vous que l'avion accueille confortablement votre groupe, avec une marge si nécessaire."
+    },
+    "budget": {
+      "title": "Budget",
+      "body": "Il ne s'agit pas seulement du prix d'achat — considérez les coûts d'exploitation, la maintenance et l'efficacité énergétique lors de la comparaison des options."
+    },
+    "access": {
+      "title": "Accès aux Aéroports",
+      "body": "Voyagerez-vous via des grands aéroports ou des pistes plus petites et isolées ? Certains avions sont mieux adaptés aux lieux à accès limité."
+    },
+    "amenities": {
+      "title": "Aménagements",
+      "body": "Du Wi-Fi à bord aux sièges allongés et aux cuisines complètes, pensez aux éléments de confort qui comptent le plus pour vous ou votre équipe."
+    },
+    "cta": "Contactez-nous"
+  },
+  "cta": {
+    "talkToUs": "Parlez à notre équipe d'acquisition"
+  }
+}
+

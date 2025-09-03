@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Location d'Avion Privé",
+    "subtitle": "Horaires flexibles, service sur mesure et accès à la demande en Afrique et au‑delà."
+  },
+  "whyCharter": {
+    "title": "Pourquoi Choisir la Location Privée ?",
+    "intro": "Louer un jet privé n'est pas seulement une question de luxe ; c'est une question de liberté, de temps et de tranquillité d'esprit. Vous méritez de voler selon votre propre emploi du temps, avec des personnes de confiance, dans un environnement sûr et confortable.",
+    "features": {
+      "f1": {
+        "title": "Évitez les foules, les files d'attente et les retards",
+        "desc": "Volez plus intelligemment avec Viva Jet."
+      },
+      "f2": { "title": "Accédez à des aéroports plus petits et plus pratiques" },
+      "f3": { "title": "Personnalisez l'expérience selon vos besoins exacts" },
+      "f4": { "title": "Évitez les correspondances et volez directement, confortablement, à chaque fois avec Viva Jet." },
+      "f5": { "title": "Voyagez en toute intimité, pour le travail ou la famille" }
+    }
+  },
+  "booking": {
+    "title": "Demander une Location",
+    "subtitle": "Indiquez-nous votre itinéraire et vos préférences; nous enverrons rapidement des options."
+  },
+  "cta": {
+    "talkToUs": "Demander un devis de location"
+  }
+}
+

@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "titleMain": "You Own the Jet.",
+    "titleSecond": "We Handle the Rest",
+    "body": "You handle big decisions every day; aircraft management shouldn't be one of them. Our comprehensive aircraft management service takes care of every detail so you don't have to. From flight operations and crew scheduling to maintenance, compliance, and financial oversight, we ensure your aircraft runs smoothly, safely, and cost‑efficiently. Whether you fly frequently or just a few times a year, we tailor our support to meet your needs—maximizing the value of your asset while minimizing the hassle."
+  },
+  "whatIs": {
+    "title": "What Is Aircraft Management?",
+    "body": "Our aircraft management program is a solid solution for jet owners who want to enjoy the benefits of ownership without the burden of management. We take full operational control of your aircraft, managing every aspect behind the scenes, from airworthiness and maintenance to crew hiring, training, and trip logistics.",
+    "body2": "You retain full access to your jet, while we make sure it is always flight‑ready, fully compliant, and operated to the highest standards."
+  },
+  "services": {
+    "title": "Our Management Services Include:",
+    "list": {
+      "ops": {
+        "title": "Flight Operations & Scheduling",
+        "description": "We plan, schedule, and dispatch every flight to meet your exact preferences and timelines—whether local or international."
+      },
+      "crew": {
+        "title": "Crew Management",
+        "description": "We recruit, train and manage highly experienced flight crew, ensuring safety, professionalism, and service excellence on every flight."
+      },
+      "maintenance": {
+        "title": "Maintenance & Airworthiness",
+        "description": "Your jet is maintained to the highest standards with proactive inspections, regulatory compliance, and real‑time maintenance tracking."
+      },
+      "finance": {
+        "title": "Budgeting & Financial Oversight",
+        "description": "We provide transparent monthly reporting, expense management, and cost controls to protect your investment and avoid surprises."
+      },
+      "compliance": {
+        "title": "Regulatory Compliance & Insurance",
+        "description": "Our team ensures your aircraft meets all international and local aviation requirements, with the right insurance and documentation in place."
+      },
+      "tripSupport": {
+        "title": "Trip Support & Concierge Services",
+        "description": "From flight planning and permits to in‑flight catering and ground transportation, we coordinate every detail of your journey."
+      }
+    }
+  },
+  "cta": {
+    "talkToUs": "Speak With Advisor"
+  }
+}
+

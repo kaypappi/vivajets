@@ -1,0 +1,174 @@
+{
+  "header": {
+    "menu": "Menu",
+    "mute": "Muet",
+    "unmute": "Activer le son"
+  },
+  "hero": {
+    "title": "Découvrez une Nouvelle Altitude de Confort et de Classe",
+    "subtitle": "Chez VivaJets, nous allons au-delà du luxe. Des dirigeants qui font progresser les industries africaines aux particuliers recherchant des voyages sans tracas, nos services de vols privés sont construits autour de l'efficacité, de la sécurité et du confort. Où que le travail, l'opportunité ou les loisirs vous mènent, VivaJets vous fait avancer.",
+    "cta": "Réserver Votre Vol",
+    "learnMore": "En Savoir Plus"
+  },
+  "reach": {
+    "title": "Atteindre Partout, Quand Vous Voulez.",
+    "subtitle": "Où que l'opportunité vous appelle, VivaJets vous y amène facilement, connectant dirigeants, entreprises et rêveurs à travers l'Afrique et au-delà."
+  },
+  "dna": {
+    "title": "Notre ADN",
+    "subtitle": "Les valeurs fondamentales qui stimulent l'excellence dans l'aviation privée",
+    "dividends": {
+      "title": "DIVIDENDES",
+      "subtitle": "Retour sur Investissement",
+      "description": "Investir dans l'aviation privée ne se résume pas au voyage — il s'agit de libérer de la valeur grâce au temps économisé, à l'efficacité gagnée et aux opportunités saisies."
+    },
+    "indulgence": {
+      "title": "INDULGENCE",
+      "subtitle": "Luxe et Commodité",
+      "description": "Profitez des plus hauts standards de confort avec une réservation sans effort et un service personnalisé. Chaque détail est conçu autour de vous."
+    },
+    "efficiency": {
+      "title": "EFFICACITÉ",
+      "subtitle": "Économie de Temps",
+      "description": "Évitez les longues files d'attente, les horaires rigides et les retards d'aéroport. Volez quand vous voulez, comme vous voulez – et faites compter chaque minute."
+    },
+    "sanctuary": {
+      "title": "SANCTUAIRE",
+      "subtitle": "Sécurité et Protection",
+      "description": "Nos avions de première classe, protocoles de maintenance rigoureux et opérations discrètes assurent votre tranquillité d'esprit du décollage à l'atterrissage."
+    },
+    "value": {
+      "title": "VALEUR",
+      "subtitle": "Rentable",
+      "description": "Que ce soit par la propriété fractionnée, les services de location intelligents ou les baux à long terme, nos solutions sont conçues pour s'aligner sur vos objectifs financiers sans compromis."
+    },
+    "artistry": {
+      "title": "ARTISTE",
+      "subtitle": "Expertise et Expérience",
+      "description": "Avec des décennies d'expérience dans l'aviation, notre équipe apporte une expertise inégalée à chaque vol, garantissant un voyage sans faille et exceptionnel."
+    }
+  },
+  "ready": {
+    "title": "Prêt Quand Vous Êtes",
+    "subtitle": "Notre service de classe mondiale commence dès que vous nous contactez. Que vous planifiez des semaines à l'avance ou en quelques heures, nous sommes là pour vous offrir une perfection sans faille dans les airs."
+  },
+  "blog": {
+    "title": "Blogs",
+    "subtitle": "Des tendances de l'industrie aux récits de voyage, le blog VivaJets vous informe et vous inspire sur l'aviation privée en Afrique et au-delà.",
+    "loading": "Chargement des articles de blog...",
+    "empty": "Aucun article de blog trouvé pour le filtre sélectionné.",
+    "sort": {
+      "newestToOldest": "Du plus récent au plus ancien",
+      "oldestToNewest": "Du plus ancien au plus récent"
+    }
+  },
+  "media": {
+    "title": "Plongez dans les Expériences de Nos Clients",
+    "subtitle": "Vous pouvez obtenir les meilleurs services de vols privés chez VivaJets. Si vous avez besoin d'une solution unique pour le travail, le plaisir ou les voyages. Faites de VivaJets votre premier choix aujourd'hui pour vos voyages luxueux en avion privé !",
+    "popular": "Articles Populaires",
+    "latest": "Derniers Articles",
+    "readMore": "Lire Plus",
+    "loadMore": "Charger Plus d'Articles"
+  },
+  "language": {
+    "english": "Anglais",
+    "french": "Français",
+    "selectLanguage": "Sélectionner la Langue"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "aircraftCharter": "Location d'Avion",
+    "aircraftManagement": "Gestion d'Avion",
+    "fractionalOwnership": "Propriété Fractionnée",
+    "aircraftSales": "Vente & Acquisition d'Avion",
+    "fleet": "Flotte",
+    "blog": "Blog",
+    "media": "Médias",
+    "contactUs": "Contactez-nous",
+    "requestQuote": "Demander un Devis",
+    "requestQuoteSubtitle": "Partagez quelques détails et nous construirons une offre personnalisée pour vous."
+  },
+  "footer": {
+    "tagline": "Voyage privé sans tracas pour ceux qui exigent l'exceptionnel.",
+    "copyright": "© 2024 Vivajets. Tous droits réservés.",
+    "services": "Services",
+    "resources": "Ressources",
+    "fleet": "Flotte",
+    "contactUs": "Contactez-nous",
+    "aircraftCharter": "Location d'Avion",
+    "aircraftManagement": "Gestion d'Avion",
+    "fractionalOwnership": "Propriété Fractionnée",
+    "aircraftSales": "Vente d'Avion",
+    "blog": "Blog",
+    "media": "Médias"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "call": {
+      "title": "Appelez-nous",
+      "description": "Appelez notre service client via le numéro de contact pour les réservations et les demandes de renseignements.",
+      "phone": "+23413430614"
+    },
+    "email": {
+      "title": "Adresse e-mail",
+      "description": "Pour les demandes, avis et commentaires, envoyez un e-mail à notre adresse officielle via",
+      "address": "sales@viva-jets.com"
+    },
+    "office": {
+      "title": "Adresse du bureau",
+      "description": "Pour une visite et une réservation sur place, rendez-vous à notre bureau",
+      "address": "22 Herbert Macauly Cres, Ikeja GRA, Ikeja 100271, Lagos",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20Adrenalina%20hub%2C%20369%20Borno%20Way%20%E2%80%93%20By%20Spencer%2C%20Yaba%2C%20Lagos"
+    }
+  },
+  "flight": {
+    "oneWay": "Aller Simple",
+    "roundTrip": "Aller-Retour",
+    "multiLeg": "Multi-Étapes",
+    "takeoffLocation": "Lieu de Départ",
+    "destinationLocation": "Lieu de Destination",
+    "takeoffDate": "Date de Départ",
+    "takeoffTime": "Heure de Départ",
+    "returnDate": "Date de Retour",
+    "numberOfSeats": "Nombre de Sièges",
+    "oneSeat": "1 Siège",
+    "twoSeats": "2 Sièges",
+    "threeSeats": "3 Sièges",
+    "fourSeats": "4 Sièges",
+    "fiveSeats": "5 Sièges",
+    "sixSeats": "6 Sièges",
+    "sevenSeats": "7 Sièges",
+    "eightSeats": "8 Sièges",
+    "ninePlusSeats": "9+ Sièges",
+    "action": "Action",
+    "submit": "Soumettre",
+    "multiLegTrips": "Vols Multi-Étapes",
+    "removeLeg": "Supprimer l'Étape",
+    "addLeg": "Ajouter l'Étape",
+    "leg": "Étape",
+    "routeNotSet": "Itinéraire non défini",
+    "from": "De",
+    "to": "À",
+    "date": "Date",
+    "noResultsFound": "Aucun résultat trouvé. Veuillez essayer une recherche différente.",
+    "thankYouMessage": "Merci ! Nous vous répondrons bientôt avec un devis personnalisé.",
+    "errorMessage": "Il y a eu un problème lors de l'envoi de votre demande. Veuillez réessayer plus tard.",
+    "selectValidDeparture": "Veuillez sélectionner un lieu de départ valide pour l'Étape {{leg}}.",
+    "selectValidArrival": "Veuillez sélectionner un lieu d'arrivée valide pour l'Étape {{leg}}.",
+    "selectDate": "Veuillez sélectionner une date pour l'Étape {{leg}}."
+  },
+  "modal": {
+    "completeRequest": "Complétez Votre Demande",
+    "closeModal": "Fermer la modal",
+    "provideContactDetails": "Veuillez fournir vos coordonnées afin que nous puissions vous envoyer un devis personnalisé pour votre vol.",
+    "fullName": "Nom Complet",
+    "enterFullName": "Entrez votre nom complet",
+    "emailAddress": "Adresse Email",
+    "enterEmailAddress": "Entrez votre adresse email",
+    "phoneNumber": "Numéro de Téléphone",
+    "enterPhoneNumber": "Entrez votre numéro de téléphone",
+    "submitting": "Envoi en cours...",
+    "submitFlightRequest": "Soumettre la Demande de Vol"
+  }
+}
