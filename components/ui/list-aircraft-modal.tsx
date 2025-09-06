@@ -70,7 +70,7 @@ const ListAircraftModal: React.FC<ListAircraftModalProps> = ({ isOpen, onClose }
         },
         body: JSON.stringify({
           ...formData,
-          recipients: ['joel@falconaero.org', 'boluaj16@gmail.com', 'sales@viva-jets.com', 'basil@falconaero.org'],
+          recipients: ['joel@falconaero.org', 'sales@viva-jets.com' ],
           subject: 'Aircraft Listing Request',
           request: `Aircraft Listing Request from ${formData.fullName}
 

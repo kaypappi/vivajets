@@ -37,6 +37,17 @@ const bombardierSections: SectionDef[] = [
       { title: "Dimensions", description: "Height 6 ft 2 in, width 8 ft, and cabin length 54 ft 5 in for multiple living spaces.", icon: <Ruler size={16} /> },
       { title: "Passenger Capacity", description: "Up to 19 passengers, typically 8–12 in luxurious configurations with flat beds and private suites.", icon: <Users size={16} /> },
       { title: "Baggage Capacity", description: "195 cubic feet—ample room for luggage, golf clubs, and bulky equipment.", icon: <Briefcase size={16} /> },
+      { title: "Manufacturer", description: "Bombardier Business Aircraft.", icon: <Plane size={16} /> },
+      { title: "Length", description: "Approximately 111 ft—accommodates four spacious living zones.", icon: <Ruler size={16} /> },
+      { title: "Wingspan", description: "Approximately 104 ft—optimized for efficiency and stability.", icon: <Ruler size={16} /> },
+      { title: "Height", description: "Approximately 27 ft—impressive presence and ground clearance.", icon: <Ruler size={16} /> },
+      { title: "Max Takeoff Weight (MTOW)", description: "High MTOW supports long‑range missions with full fuel and passengers.", icon: <ArrowUp size={16} /> },
+      { title: "Fuel Capacity", description: "Large capacity enabling ultra‑long‑range flights.", icon: <Zap size={16} /> },
+      { title: "Engines", description: "Twin turbofan engines designed for high efficiency and low noise.", icon: <Cpu size={16} /> },
+      { title: "Max Range", description: "Up to ~7,700 nm for non‑stop intercontinental flights.", icon: <Compass size={16} /> },
+      { title: "Max Cruise Speed", description: "Up to Mach 0.925 when time is critical.", icon: <Gauge size={16} /> },
+      { title: "Max Altitude", description: "Cruises up to 51,000 ft for smoother rides above weather.", icon: <ArrowUp size={16} /> },
+      { title: "Seating Capacity", description: "Configurable layouts typically seat 8–12 in great comfort.", icon: <Users size={16} /> },
     ],
   },
   {
@@ -89,6 +100,17 @@ const challengerSections: SectionDef[] = [
       { title: "Dimensions", description: "Height 6.1 ft, width 8.2 ft, length 28.4 ft for a spacious large‑cabin layout.", icon: <Ruler size={16} /> },
       { title: "Passenger Capacity", description: "Seats up to 12 passengers comfortably for business or leisure.", icon: <Users size={16} /> },
       { title: "Baggage Capacity", description: "115 cubic feet for multiple suitcases, equipment, and essentials.", icon: <Briefcase size={16} /> },
+      { title: "Manufacturer", description: "Bombardier Business Aircraft.", icon: <Plane size={16} /> },
+      { title: "Length", description: "Approximately 68 ft—balanced proportions for large‑cabin comfort.", icon: <Ruler size={16} /> },
+      { title: "Wingspan", description: "Approximately 64 ft—optimized for stability and efficiency.", icon: <Ruler size={16} /> },
+      { title: "Height", description: "Approximately 20 ft—ample ground clearance and presence.", icon: <Ruler size={16} /> },
+      { title: "Max Takeoff Weight (MTOW)", description: "Supports long‑range missions with full fuel and passengers.", icon: <ArrowUp size={16} /> },
+      { title: "Fuel Capacity", description: "Large fuel volume enabling ~4,000 nm range.", icon: <Zap size={16} /> },
+      { title: "Engines", description: "Twin turbofan engines delivering efficient, reliable thrust.", icon: <Cpu size={16} /> },
+      { title: "Max Range", description: "Around 4,000 nm—Africa to Europe and regional city pairs.", icon: <Compass size={16} /> },
+      { title: "Max Cruise Speed", description: "Up to ~Mach 0.82 for timely arrivals.", icon: <Gauge size={16} /> },
+      { title: "Max Altitude", description: "Cruises up to 41,000 ft above weather and traffic.", icon: <ArrowUp size={16} /> },
+      { title: "Seating Capacity", description: "Typical layouts seat 9–12 in comfort.", icon: <Users size={16} /> },
     ],
   },
   {
@@ -110,68 +132,170 @@ const challengerSections: SectionDef[] = [
       { title: "Galley and Amenities", description: "Fully equipped galley and private lavatory for long‑haul convenience.", icon: <Utensils size={16} /> },
     ],
   },
+  {
+    title: "Technology",
+    headerIcon: <Cpu size={18} />,
+    items: [
+      { title: "Avionics Suite", description: "Advanced glass cockpit with integrated flight management.", icon: <Cpu size={16} /> },
+      { title: "Navigation & Safety", description: "Modern RNAV/RNP, TCAS, TAWS, and weather radar.", icon: <Compass size={16} /> },
+      { title: "Vision Systems", description: "Enhanced vision and synthetic vision where equipped.", icon: <Eye size={16} /> },
+      { title: "Cabin Technology", description: "High‑speed internet and CMS control via personal devices.", icon: <Wifi size={16} /> },
+    ],
+  },
 ];
 
-const gulfstreamSections: SectionDef[] = [
+const hawker900xpSections: SectionDef[] = [
   {
     title: "Aircraft Specifications",
     headerIcon: <Plane size={18} />,
     items: [
-      { title: "Dimensions", description: "Cabin height 6.2 ft, width 7.3 ft, length 50.1 ft.", icon: <Ruler size={16} /> },
-      { title: "Passenger Capacity", description: "Seats up to 19; typically 8–12 in luxurious layouts.", icon: <Users size={16} /> },
-      { title: "Baggage Capacity", description: "226 cubic feet for extended global trips.", icon: <Briefcase size={16} /> },
+      { title: "Dimensions", description: "Cabin height ~5.7 ft, width ~6.0 ft, length ~21.3 ft.", icon: <Ruler size={16} /> },
+      { title: "Passenger Capacity", description: "Seats 8–9 passengers in club and divan layouts.", icon: <Users size={16} /> },
+      { title: "Baggage Capacity", description: "~50 cubic feet for business gear and luggage.", icon: <Briefcase size={16} /> },
+      { title: "Manufacturer", description: "Hawker Beechcraft.", icon: <Plane size={16} /> },
+      { title: "Length", description: "Approximately 51 ft—compact and efficient footprint.", icon: <Ruler size={16} /> },
+      { title: "Wingspan", description: "Approximately 54 ft—stable platform for regional flying.", icon: <Ruler size={16} /> },
+      { title: "Height", description: "Approximately 18 ft—balanced stance for varied airfields.", icon: <Ruler size={16} /> },
+      { title: "Max Takeoff Weight (MTOW)", description: "Supports full‑payload operations on typical regional legs.", icon: <ArrowUp size={16} /> },
+      { title: "Fuel Capacity", description: "Sized for ~2,800 nm missions with reserves.", icon: <Zap size={16} /> },
+      { title: "Engines", description: "Twin turbofans optimized for efficiency and reliability.", icon: <Cpu size={16} /> },
+      { title: "Max Range", description: "About 2,800 nm—regional and medium‑haul routes.", icon: <Compass size={16} /> },
+      { title: "Max Cruise Speed", description: "Around Mach 0.78 for timely regional hops.", icon: <Gauge size={16} /> },
+      { title: "Max Altitude", description: "Cruises up to 41,000 ft.", icon: <ArrowUp size={16} /> },
+      { title: "Seating Capacity", description: "Typical 8‑seat configuration.", icon: <Users size={16} /> },
     ],
   },
   {
     title: "Performance",
     headerIcon: <Gauge size={18} />,
     items: [
-      { title: "Range", description: "6,750 nm—connects nearly any two cities worldwide without refueling.", icon: <Compass size={16} /> },
-      { title: "Speed", description: "Cruises at Mach 0.85; max Mach 0.90.", icon: <Gauge size={16} /> },
-      { title: "Takeoff and Landing", description: "~5,910 ft takeoff; ~2,770 ft landing for broad airport access.", icon: <PlaneLanding size={16} /> },
-      { title: "Service Ceiling", description: "Operates efficiently at 51,000 ft.", icon: <ArrowUp size={16} /> },
+      { title: "Range", description: "~2,800 nm—efficient regional and medium‑haul missions.", icon: <Compass size={16} /> },
+      { title: "Speed", description: "Cruises near Mach 0.78 with strong climb performance.", icon: <Gauge size={16} /> },
+      { title: "Takeoff and Landing", description: "~5,000 ft takeoff; ~2,400–2,700 ft landing capability.", icon: <PlaneLanding size={16} /> },
+      { title: "Service Ceiling", description: "Up to 41,000 ft for smooth, efficient cruise.", icon: <ArrowUp size={16} /> },
     ],
   },
   {
     title: "Cabin Features",
     headerIcon: <Armchair size={18} />,
     items: [
-      { title: "Elegant Living Areas", description: "Multiple zones for work, dining, and rest.", icon: <Layout size={16} /> },
-      { title: "Advanced Technology", description: "EVS and Synthetic Vision for safer, efficient flights.", icon: <Cpu size={16} /> },
-      { title: "Comfort & Connectivity", description: "Quiet cabin with Ka‑band internet and ergonomic seating.", icon: <Wifi size={16} /> },
+      { title: "Comfortable Cabin", description: "Club seating with a side‑facing divan for flexible layouts.", icon: <Layout size={16} /> },
+      { title: "Connectivity", description: "High‑speed internet and modern cabin controls (where equipped).", icon: <Wifi size={16} /> },
+      { title: "Galley & Lavatory", description: "Forward galley and private lavatory for productivity on the move.", icon: <Utensils size={16} /> },
+    ],
+  },
+  {
+    title: "Technology",
+    headerIcon: <Cpu size={18} />,
+    items: [
+      { title: "Avionics Suite", description: "Integrated glass cockpit for situational awareness.", icon: <Cpu size={16} /> },
+      { title: "Navigation & Safety", description: "RNAV, RNP, TCAS, TAWS, and modern autopilot.", icon: <Compass size={16} /> },
+      { title: "Vision & Weather", description: "EVS/SVS where installed, plus advanced weather radar.", icon: <Eye size={16} /> },
+      { title: "Cabin Technology", description: "Wi‑Fi and CMS options for entertainment and control.", icon: <Wifi size={16} /> },
     ],
   },
 ];
 
-const dassaultSections: SectionDef[] = [
+const hawker850xpSections: SectionDef[] = [
   {
     title: "Aircraft Specifications",
     headerIcon: <Plane size={18} />,
     items: [
-      { title: "Dimensions", description: "Cabin height 6.2 ft, width 7.7 ft, length 39.1 ft.", icon: <Ruler size={16} /> },
-      { title: "Passenger Capacity", description: "Comfortably seats 12–16 with reclining options and divans.", icon: <Users size={16} /> },
-      { title: "Baggage Capacity", description: "Around 140 cubic feet of storage for luggage and equipment.", icon: <Briefcase size={16} /> },
+      { title: "Dimensions", description: "Cabin height ~5.7 ft, width ~6.0 ft, length ~21 ft.", icon: <Ruler size={16} /> },
+      { title: "Passenger Capacity", description: "Typically seats 8 passengers in club + divan layout.", icon: <Users size={16} /> },
+      { title: "Baggage Capacity", description: "~50 cubic feet for luggage and carry‑ons.", icon: <Briefcase size={16} /> },
+      { title: "Manufacturer", description: "Hawker Beechcraft.", icon: <Plane size={16} /> },
+      { title: "Length", description: "Approximately 51 ft—optimized midsize footprint.", icon: <Ruler size={16} /> },
+      { title: "Wingspan", description: "Approximately 54 ft with winglets for improved efficiency.", icon: <Ruler size={16} /> },
+      { title: "Height", description: "Approximately 18 ft—balanced for varied airfields.", icon: <Ruler size={16} /> },
+      { title: "Max Takeoff Weight (MTOW)", description: "Supports typical mid‑range missions with full passengers.", icon: <ArrowUp size={16} /> },
+      { title: "Fuel Capacity", description: "Sized for ~2,600 nm operations.", icon: <Zap size={16} /> },
+      { title: "Engines", description: "Twin turbofans engineered for reliability and economy.", icon: <Cpu size={16} /> },
+      { title: "Max Range", description: "About 2,600 nm—efficient regional and mid‑range travel.", icon: <Compass size={16} /> },
+      { title: "Max Cruise Speed", description: "Around Mach 0.78 for swift business trips.", icon: <Gauge size={16} /> },
+      { title: "Max Altitude", description: "Cruises up to 41,000 ft.", icon: <ArrowUp size={16} /> },
+      { title: "Seating Capacity", description: "Typical 8‑seat configuration.", icon: <Users size={16} /> },
     ],
   },
   {
     title: "Performance",
     headerIcon: <Gauge size={18} />,
     items: [
-      { title: "Range", description: "5,950 nm—nonstop Lagos–London or Accra–Washington D.C.", icon: <Compass size={16} /> },
-      { title: "Speed", description: "Cruises at Mach 0.80; top Mach 0.90.", icon: <Gauge size={16} /> },
-      { title: "Takeoff and Landing", description: "~5,710 ft takeoff; ~2,400 ft landing enables smaller airports.", icon: <PlaneLanding size={16} /> },
-      { title: "Service Ceiling", description: "Operates up to 51,000 ft.", icon: <ArrowUp size={16} /> },
+      { title: "Range", description: "~2,600 nm—ideal for regional and mid‑range routes.", icon: <Compass size={16} /> },
+      { title: "Speed", description: "Cruises around Mach 0.78 with efficient fuel burn.", icon: <Gauge size={16} /> },
+      { title: "Takeoff and Landing", description: "~5,000+ ft takeoff; ~2,400–2,700 ft landing.", icon: <PlaneLanding size={16} /> },
+      { title: "Service Ceiling", description: "Up to 41,000 ft for smoother rides above weather.", icon: <ArrowUp size={16} /> },
     ],
   },
   {
     title: "Cabin Features",
     headerIcon: <Armchair size={18} />,
     items: [
-      { title: "Three‑Engine Design", description: "Trijet configuration supports greater range and safety.", icon: <Plane size={16} /> },
-      { title: "Customizable Interior", description: "Adaptable zones for dining, work, and relaxation.", icon: <Layout size={16} /> },
-      { title: "Quiet Comfort", description: "Advanced insulation for one of the quietest cabins in class.", icon: <VolumeX size={16} /> },
-      { title: "Air Quality & Lighting", description: "Air filtration and LED lighting help reduce jet lag.", icon: <Sun size={16} /> },
-      { title: "Advanced Avionics", description: "Dassault Digital Flight Control System for smooth, efficient flights.", icon: <Cpu size={16} /> },
+      { title: "Comfortable Seating", description: "Club seats with fold‑out tables and a side divan.", icon: <Armchair size={16} /> },
+      { title: "Connectivity", description: "Wi‑Fi and cabin controls available depending on installation.", icon: <Wifi size={16} /> },
+      { title: "Galley & Amenities", description: "Equipped galley and private lavatory for comfortable trips.", icon: <Utensils size={16} /> },
+    ],
+  },
+  {
+    title: "Technology",
+    headerIcon: <Cpu size={18} />,
+    items: [
+      { title: "Avionics Suite", description: "Modern glass cockpit and integrated FMS.", icon: <Cpu size={16} /> },
+      { title: "Navigation & Safety", description: "RNAV, RNP, TCAS, TAWS, and weather radar.", icon: <Compass size={16} /> },
+      { title: "Vision Systems", description: "Enhanced/synthetic vision where installed.", icon: <Eye size={16} /> },
+      { title: "Cabin Technology", description: "Connectivity and CMS for entertainment and control.", icon: <Wifi size={16} /> },
+    ],
+  },
+];
+
+const legacy600Sections: SectionDef[] = [
+  {
+    title: "Aircraft Specifications",
+    headerIcon: <Plane size={18} />,
+    items: [
+      { title: "Dimensions", description: "Cabin height ~6.0 ft, width ~6.9 ft, length ~42 ft.", icon: <Ruler size={16} /> },
+      { title: "Passenger Capacity", description: "Typically seats 12–13 with generous aisle space.", icon: <Users size={16} /> },
+      { title: "Baggage Capacity", description: "Up to ~286 cubic feet—among the largest in class.", icon: <Briefcase size={16} /> },
+      { title: "Manufacturer", description: "Embraer Executive Jets.", icon: <Plane size={16} /> },
+      { title: "Length", description: "Approximately 86 ft—generous cabin volume for super‑midsize class.", icon: <Ruler size={16} /> },
+      { title: "Wingspan", description: "Approximately 69 ft—efficient cruise and stability.", icon: <Ruler size={16} /> },
+      { title: "Height", description: "Approximately 22 ft—ample ground clearance.", icon: <Ruler size={16} /> },
+      { title: "Max Takeoff Weight (MTOW)", description: "Designed for long‑leg missions with full cabin.", icon: <ArrowUp size={16} /> },
+      { title: "Fuel Capacity", description: "Sized for ~3,400 nm operations with reserves.", icon: <Zap size={16} /> },
+      { title: "Engines", description: "Twin turbofans engineered for long‑range efficiency.", icon: <Cpu size={16} /> },
+      { title: "Max Range", description: "About 3,400 nm—Africa‑Europe and many transcontinental routes.", icon: <Compass size={16} /> },
+      { title: "Max Cruise Speed", description: "Around Mach 0.78–0.80 for efficient long legs.", icon: <Gauge size={16} /> },
+      { title: "Max Altitude", description: "Cruises up to 41,000 ft.", icon: <ArrowUp size={16} /> },
+      { title: "Seating Capacity", description: "Typical 12–13 seat configuration.", icon: <Users size={16} /> },
+    ],
+  },
+  {
+    title: "Performance",
+    headerIcon: <Gauge size={18} />,
+    items: [
+      { title: "Range", description: "~3,400 nm—Africa‑Europe and many transcontinental routes.", icon: <Compass size={16} /> },
+      { title: "Speed", description: "Cruises around Mach 0.78–0.80 for efficient long legs.", icon: <Gauge size={16} /> },
+      { title: "Takeoff and Landing", description: "~5,700+ ft takeoff; ~2,700–3,000 ft landing.", icon: <PlaneLanding size={16} /> },
+      { title: "Service Ceiling", description: "Up to 41,000 ft for smooth cruise above weather.", icon: <ArrowUp size={16} /> },
+    ],
+  },
+  {
+    title: "Cabin Features",
+    headerIcon: <Armchair size={18} />,
+    items: [
+      { title: "Spacious Three‑Zone Cabin", description: "Zones for work, dining, and relaxation.", icon: <Layout size={16} /> },
+      { title: "Connectivity", description: "High‑speed internet and modern CMS options.", icon: <Wifi size={16} /> },
+      { title: "Quiet & Comfortable", description: "Low cabin altitude with ample headroom and lighting.", icon: <VolumeX size={16} /> },
+    ],
+  },
+  {
+    title: "Technology",
+    headerIcon: <Cpu size={18} />,
+    items: [
+      { title: "Avionics Suite", description: "Advanced glass cockpit with integrated FMS.", icon: <Cpu size={16} /> },
+      { title: "Navigation & Safety", description: "RNAV, RNP, TCAS, TAWS, and weather radar.", icon: <Compass size={16} /> },
+      { title: "Vision Systems", description: "Enhanced/synthetic vision where equipped.", icon: <Eye size={16} /> },
+      { title: "Cabin Technology", description: "Connectivity and CMS for control and entertainment.", icon: <Wifi size={16} /> },
     ],
   },
 ];
@@ -179,8 +303,9 @@ const dassaultSections: SectionDef[] = [
 const modelKeyToSections: Record<string, SectionDef[]> = {
   "global-7500": bombardierSections,
   "challenger-604": challengerSections,
-  g650: gulfstreamSections,
-  "falcon-7x": dassaultSections,
+  "hawker-900xp": hawker900xpSections,
+  "hawker-850xp": hawker850xpSections,
+  "legacy-600": legacy600Sections,
 };
 
 export default function BuyersGuideDetails({ model }: { model: string }) {

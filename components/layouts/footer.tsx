@@ -32,7 +32,7 @@ export default function Footer() {
             Facebook
           </a>
           <a
-            href="https://www.instagram.com/viva.jets/"
+            href="https://www.instagram.com/flyvivajets/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 rounded-full border border-white/20 bg-white/5 text-white text-base hover:bg-white/10 transition"
@@ -118,17 +118,22 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/buyers-guide/challenger-604" className="hover:text-white transition">
-                Challenger 605 
+                Challenger 604 
               </Link>
             </li>
             <li>
-              <Link href="/buyers-guide/g650" className="hover:text-white transition">
-                Gulfstream G550 
+              <Link href="/buyers-guide/hawker-900xp" className="hover:text-white transition">
+                Hawker 900XP 
               </Link>
             </li>
             <li>
-              <Link href="/buyers-guide/falcon-7x" className="hover:text-white transition">
-                Dassault Falcon 7X 
+              <Link href="/buyers-guide/hawker-850xp" className="hover:text-white transition">
+                Hawker 850XP 
+              </Link>
+            </li>
+            <li>
+              <Link href="/buyers-guide/legacy-600" className="hover:text-white transition">
+                Legacy 600
               </Link>
             </li>
           </ul>
@@ -169,7 +174,7 @@ export default function Footer() {
           Facebook
         </a>
         <a
-          href="https://www.instagram.com/viva.jets/"
+          href="https://www.instagram.com/flyvivajets/"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-full border border-white/20 bg-white/5 text-white text-sm hover:bg-white/10 transition"

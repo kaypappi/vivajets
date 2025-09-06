@@ -9,7 +9,7 @@ const content: Record<string, { title: string; paragraphs: string[]; images: { s
   "global-7500": {
     title: "Bombardier Global 7500",
     paragraphs: [
-      "The Bombardier Global 7500 stands in a league of its own as the flagship in the category of ultra‑long‑range business jets. Renowned for its ability to connect almost any two cities on the planet non‑stop, it's a true game‑changer in private aviation. Combining performance, luxury, and cutting‑edge technology, the Global 7500 redefines what a business jet can achieve.",
+      "The Bombardier Global 7500 stands in a league of its own as the flagship in the category of ultra‑long‑range business jets. Renowned for its ability to connect almost any two cities on the planet non‑stop, it's a true game‑changer in private aviation. Combining performance, luxury, and cutting‑edge technology, the Global 7500 redefines what a business jet can achieve",
       
     ],
     images: [
@@ -20,39 +20,51 @@ const content: Record<string, { title: string; paragraphs: string[]; images: { s
     ],
   },
   "challenger-604": {
-    title: "Challenger 605",
+    title: "Challenger 604",
     paragraphs: [
-      "The Bombardier Challenger 605 is a large-cabin business jet designed for long-range travel, reliability, and comfort. As an upgrade to the Challenger 604, it offers enhanced avionics, a spacious cabin, and efficient fuel consumption, making it a preferred choice for corporate travel, government operations, and private ownership. In the African market, the Challenger 605 stands out due to its versatility and durability. Africa's diverse geography—ranging from remote locations to bustling financial hubs—requires an aircraft that can handle long distances, variable airport infrastructure, and operational efficiency. With a range of around 4,000 nautical miles, it can easily connect major African cities like Johannesburg to Lagos or Nairobi to Accra, as well as reach international business destinations like Dubai or London without refueling.",
+      "The Bombardier Challenger 604 is a proven large‑cabin business jet known for reliability, range, and comfort. Favored by corporations and private owners alike, it delivers a spacious cabin with excellent operating economics. With a range of around 4,000 nautical miles, it connects key African cities—such as Johannesburg to Lagos or Nairobi to Accra—and reaches hubs like Dubai or London with ease.",
     ],
     images: [
-      { src: "https://imq-prod-public.s3.us-east-1.amazonaws.com/iStock-1695077051.png", alt: "Challenger 605 side view" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755104954/65e0cd882c351b6c63441ec8_65ca2b990dac03909b097bd0_Challenger-605_20INT_vg237e.webp", alt: "Challenger 605 interior" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105007/CL-605-Ext-JS_d3izlc.jpg", alt: "Challenger 605 engine" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105038/CH-605-Ext-402A7464__nv1rvn.webp", alt: "Challenger 605 cabin" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757116963/Challenger604-JS_gjsw2c.jpg", alt: "Challenger 604 side view" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757116963/Challenger604D-ANGB-3_ccqsg6.jpg", alt: "Challenger 604 interior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757116963/Challenger604_8_PR_d9v5ov.webp", alt: "Challenger 604 engine" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757116962/46_tmohiq.jpg", alt: "Challenger 604 cabin" },
     ],
   },
-  g650: {
-    title: "Gulfstream G650",
+  "hawker-900xp": {
+    title: "Hawker 900XP",
     paragraphs: [
-      "A pioneer in the ultra-long-range jet category, the Gulfstream G550 combines performance, reliability, and luxury. Known for its unparalleled range, the G550 is perfect for global travelers seeking efficiency and comfort. Whether it's connecting Lagos to Tokyo or Cape Town to New York, the G550 offers nonstop travel in style.",
+      "The Hawker 900XP is a versatile midsize jet that blends range, efficiency, and comfort. Well‑suited to Africa’s diverse operating conditions, it offers strong short‑field performance and reliable operations into secondary airports. With a range near 2,800 nautical miles, it efficiently connects regional and international business hubs.",
     ],
     images: [
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105189/Gulfstream_G650_For_Lease_1_eubigm.jpg", alt: "Gulfstream G550 exterior" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105093/Gulfstream-G650-e1632249432496_aueqwm.png", alt: "Gulfstream G550 interior" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105137/65e0cd8e38b7d4ae41f1f16f_65ca688607e365863f9a2574_g650_20INT_gt9rb4.webp", alt: "Gulfstream G550 seating" },
-      { src: "https://imq-prod-public.s3.us-east-1.amazonaws.com/iStock-1006204668.png ", alt: "Gulfstream G550 engine" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117367/900XP-Ext-1_kgfmel.jpg", alt: "Hawker 900XP exterior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117375/Hawker_900XP_Cabin_2_0_wfatec.jpg", alt: "Hawker 900XP interior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117367/hawker-beechcraft-900xp-exm_tcm42-3923._tcm36-3923_hutlsp.jpg", alt: "Hawker 900XP seating" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117367/65afca92948f1867c7d148fe_53416350560_890915179a_k_ixncgk.webp", alt: "Hawker 900XP engine" },
     ],
   },
-  "falcon-7x": {
-    title: "Dassault Falcon 7X",
+  "hawker-850xp": {
+    title: "Hawker 850XP",
     paragraphs: [
-      "The Dassault Falcon 7X is a revolutionary trijet that blends performance with unparalleled versatility. Known for its ability to access challenging airports, the Falcon 7X offers unmatched operational efficiency and luxurious comfort. Its unique design makes it a favorite for private owners and businesses requiring global reach with the ability to land in remote or compact locations.",
+      "The Hawker 850XP combines robust performance with outstanding value in the midsize category. Its winglets and optimized aerodynamics improve climb and cruise efficiency, while the comfortable cabin supports productive travel for business teams. With range around 2,600 nautical miles, it’s ideal for regional and medium‑haul missions.",
     ],
     images: [
-      { src: "https://imq-prod-public.s3.us-east-1.amazonaws.com/iStock-545456506.png", alt: "Dassault Falcon 7X exterior" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105277/sofas_owra4s.webp", alt: "Dassault Falcon 7X interior" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105277/sofas_owra4s.webp", alt: "Dassault Falcon 7X seating" },
-      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1755105369/Falcon-7X-88-left-side-JS_zwmqz7.jpg", alt: "Dassault Falcon 7X engine" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117661/hawker-800-800xp-1_fbhw2z.webp", alt: "Hawker 850XP exterior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117661/1682544926_gf29sj.jpg", alt: "Hawker 850XP interior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117662/PRIVAIRA-HAWKER-850-N858XP-interior-1024x767_k1g7ur.jpg", alt: "Hawker 850XP seating" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117662/hawker-beechcraft-850xp_mynmv5.jpg", alt: "Hawker 850XP engine" },
+    ],
+  },
+  "legacy-600": {
+    title: "Legacy 600",
+    paragraphs: [
+      "The Embraer Legacy 600 is a super‑midsize jet offering a large, comfortable cabin and exceptional baggage capacity. With robust systems derived from Embraer’s commercial lineage, it delivers dependable operations and competitive operating costs. Its ~3,400 nm range supports intercontinental travel and high‑utilization missions across Africa and beyond.",
+    ],
+    images: [
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117972/Embraer_ERJ-135BJ_Legacy_600__London_Executive_Aviation_JP6974088_ctd7ud.jpg", alt: "Legacy 600 exterior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117972/interior_07_kpkfmm.webp", alt: "Legacy 600 interior" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117973/Legacy_600_npvnu1.jpg", alt: "Legacy 600 seating" },
+      { src: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757117974/Legacy_650E_09_1600x1200_bouonv.jpg", alt: "Legacy 600 cabin" },
     ],
   },
 };

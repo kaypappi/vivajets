@@ -91,7 +91,7 @@
   },
   "footer": {
     "tagline": "Seamless private travel for those who demand the exceptional.",
-    "copyright": "© 2024 Vivajets. All rights reserved.",
+    "copyright": "© 2025 Vivajets. All rights reserved.",
     "services": "Services",
     "resources": "Resources",
     "fleet": "Fleet",
@@ -170,5 +170,39 @@
     "enterPhoneNumber": "Enter your phone number",
     "submitting": "Submitting...",
     "submitFlightRequest": "Submit Flight Request"
+  },
+  "whatYouGet": {
+    "title": "What You Get With Us",
+    "subtitle": "At VivaJets, every journey is designed around you. We go beyond transportation to deliver an experience defined by comfort, trust, and flexibility. Here's what sets us apart:",
+    "cards": {
+      "flightsThatFit": {
+        "title": "Flights That Fit Your Life",
+        "description": "We work around your schedule. Whether it's early morning or same-day departure, we get you in the air when you need to be."
+      },
+      "rightJet": {
+        "title": "The Right Jet for Every Trip",
+        "description": "Light jets for short flights. Larger cabins for long hauls. We'll help you choose what works best for your destination, group size, and preferences."
+      },
+      "realPeople": {
+        "title": "Real People, Real Service",
+        "description": "You're not booking through a faceless app. We're here to help you plan your trip, answer questions, and make sure you're comfortable every step of the way."
+      },
+      "rightJetDuplicate": {
+        "title": "The Right Jet for Every Trip",
+        "description": "Light jets for short flights. Larger cabins for long hauls. We'll help you choose what works best for your destination, group size, and preferences."
+      },
+      "realPeopleDuplicate": {
+        "title": "Real People, Real Service",
+        "description": "You're not booking through a faceless app. We're here to help you plan your trip, answer questions, and make sure you're comfortable every step of a lifetime"
+      }
+    }
+  },
+  "aboutHero": {
+    "title": {
+      "desktop": "You Call the Shots.\nWe Handle the\nFlight.",
+      "mobile": "You Call the Shots. We Handle the Flight."
+    },
+    "subtitle": "Say yes to efficiency, flexibility, and control. VivaJets is built for leaders, innovators, and enterprises driving Africa's growth, delivering private flights that keep you on schedule and ahead of the curve.",
+    "bookFlight": "Book A Flight"
   }
 }

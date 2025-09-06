@@ -35,12 +35,16 @@ export async function POST(request: Request) {
     // Determine if this is a flight booking request
     const isFlightBooking = !!flightData;
     
+    // Generate unique identifier to prevent email threading
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const uniqueId = Math.random().toString(36).substring(2, 8);
+    
     // Prepare email content based on request type
-    let emailSubject = subject || 'New Quote Request - VivaJets';
+    let emailSubject = subject || `New Quote Request - VivaJets [${uniqueId}]`;
     let emailContent = '';
 
     if (isFlightBooking) {
-      emailSubject = 'New Flight Booking Request - VivaJets';
+      emailSubject = `New Flight Booking Request - VivaJets [${uniqueId}]`;
       
       // Format flight data for email
       const formatFlightInfo = () => {
@@ -146,6 +150,7 @@ export async function POST(request: Request) {
       to: recipients.join(', '),
       subject: emailSubject,
       html: emailContent,
+      messageId: `${uniqueId}-${timestamp}@viva-jets.com`, // Unique Message-ID to prevent threading
     };
 
     // Send the email

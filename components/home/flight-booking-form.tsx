@@ -409,7 +409,7 @@ export default function FlightBookingForm({ className = "" }: FlightBookingFormP
         body: JSON.stringify({
           ...personalDetails,
           request: `Flight booking request for ${tripType} trip`,
-          recipients: ['joel@falconaero.org', 'boluaj16@gmail.com', 'sales@viva-jets.com', 'basil@falconaero.org'],
+          recipients: ['joel@falconaero.org', 'sales@viva-jets.com' ],
           flightData
         }),
       });

@@ -13,13 +13,13 @@ export default function Ready() {
   const [ref, inView] = useInView();
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden md:overflow-visible">
       <Image
         src='/assets/images/ready-bg.svg'
         alt="World map background"
         fill
         priority
-        className="object-cover object-center z-0"
+        className="object-contain md:object-cover object-center z-0"
       />
       <div className="absolute bottom-0 left-0 w-full z-20 pb-8 md:pb-20">
         <div
@@ -30,6 +30,7 @@ export default function Ready() {
             items-start md:items-end
             justify-start md:justify-between
             transition-all duration-1000
+            bg-black md:bg-transparent py-4 md:py-0
             ${inView ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}
           `}
         >

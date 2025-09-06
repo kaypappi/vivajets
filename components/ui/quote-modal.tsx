@@ -250,7 +250,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
         },
         body: JSON.stringify({
           ...formData,
-          recipients: ['joel@falconaero.org', 'boluaj16@gmail.com', 'sales@viva-jets.com', 'basil@falconaero.org'],
+          recipients: ['joel@falconaero.org', 'sales@viva-jets.com' ],
           flightData
         }),
       });

@@ -6,8 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import QuoteModal from "@/components/ui/quote-modal";
+import { useTranslations } from "@/lib/useTranslations";
 
 export default function AboutHero() {
+  const { t } = useTranslations();
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   return (
@@ -35,23 +37,23 @@ export default function AboutHero() {
           <div className="text-white mt-16 sm:mt-0">
             {/* Desktop Heading */}
             <h1 className="hidden md:block text-5xl md:text-6xl special-header font-bold leading-tight">
-              You Call the Shots.
-              <br />
-              We Handle the
-              <br />
-              Flight.
+              {t("aboutHero.title.desktop").split('\n').map((line, index) => (
+                <span key={index}>
+                  {line}
+                  {index < t("aboutHero.title.desktop").split('\n').length - 1 && <br />}
+                </span>
+              ))}
             </h1>
             {/* Mobile Heading */}
             <h1 className="block md:hidden text-4xl special-header font-bold leading-tight mb-[-400px]">
-              You Call the Shots. We Handle the Flight.
+              {t("aboutHero.title.mobile")}
             </h1>
           </div>
 
           {/* Right side content */}
           <div className="text-white max-w-4xl mt-10 sm:mt-0">
             <p className="mb-8 text-base md:text-lg ">
-            Say yes to efficiency, flexibility, and control. VivaJets is built for leaders, innovators, and enterprises driving Africa’s growth, delivering private flights that keep you on schedule and ahead of the curve.
-
+              {t("aboutHero.subtitle")}
             </p>
             <div className="flex items-center gap-4">
               {/* <Link href="/book">
@@ -65,7 +67,7 @@ export default function AboutHero() {
                 className="rounded-full cursor-pointer"
                 onClick={() => setIsQuoteModalOpen(true)}
               >
-                Book A Flight
+                {t("aboutHero.bookFlight")}
               </Button>
             </div>
           </div>

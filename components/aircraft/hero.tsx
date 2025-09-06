@@ -66,14 +66,20 @@ export default function AircraftHero() {
               >
                 {t('hero.ctaList')}
               </Button>
-              <Button
-                variant="default"
-                size="sm"
-                className="rounded-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3"
-                onClick={handleBrowseAircraft}
+              <a
+                href="https://buyersguide.viva-jets.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                {t('hero.ctaBrowse')}
-              </Button>
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="rounded-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3"
+                >
+                  {t('hero.ctaBrowse')}
+                </Button>
+              </a>
             </div>
           </div>
         </div>

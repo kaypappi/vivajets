@@ -42,13 +42,13 @@ export default function Hero() {
               {t('hero.body')}
             </p>
             <div className="flex flex-row items-center gap-3 sm:gap-4">
-              <Button
+              {/* <Button
                 variant="secondary"
                 size="sm"
                 className="rounded-full text-xs sm:text-sm px-4 py-2 sm:px-6 sm:py-3"
               >
                 {t('hero.ctaMoreInfo')}
-              </Button>
+              </Button> */}
               <a
                 href="https://calendly.com/viva-jets-sales/30min"
                 target="_blank"

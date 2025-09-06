@@ -24,9 +24,9 @@ const AboutPage = () => {
       <AboutHero />
       <WhyChoose />
       <WhatYouGet />
-      <WhoWeFly />
+      {/* <WhoWeFly /> */}
 
-      <WhyVivaJets />
+      {/* <WhyVivaJets /> */}
       <ReadyWhenYouAre />
     </main>
   );

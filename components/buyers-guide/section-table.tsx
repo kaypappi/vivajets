@@ -21,7 +21,7 @@ export default function SectionTable({ title, intro, headerIcon, items }: Sectio
       <div className="rounded-lg bg-white ">
       {/* Mobile stacked layout */}
       <div className="md:hidden">
-        <div className="rounded-md border border-neutral-200 p-5">
+        <div className="rounded-md  border-neutral-200 p-5">
           <div className="flex items-start gap-3">
             {headerIcon && <span className="text-amber-600 mt-1">{headerIcon}</span>}
             <div>
@@ -30,7 +30,7 @@ export default function SectionTable({ title, intro, headerIcon, items }: Sectio
             </div>
           </div>
         </div>
-        <div className="mt-4 overflow-hidden rounded-md border border-neutral-200 divide-y divide-neutral-200">
+        <div className="mt-4 overflow-hidden rounded-md border-neutral-200 divide-y divide-neutral-200">
           {items.map((item, idx) => (
             <div key={idx} className="p-5">
               <ItemRow {...item} />
@@ -56,7 +56,7 @@ export default function SectionTable({ title, intro, headerIcon, items }: Sectio
                   </div>
                 </div>
               </td>
-              <td className="p-6 border border-neutral-200 md:border-l rounded-tr-md">
+              <td className="p-6 border-neutral-200 md:border-l rounded-tr-md">
                 <ItemRow {...items[0]} />
               </td>
             </tr>

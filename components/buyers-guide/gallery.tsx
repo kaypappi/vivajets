@@ -26,23 +26,44 @@ export default function Gallery({ images }: GalleryProps) {
 
   return (
     <div className="grid grid-cols-12 gap-6">
-      <div className="col-span-12 md:col-span-3 flex md:flex-col gap-3 order-2 md:order-1">
-        {images.map((img, idx) => (
-          <button
-            key={img.src + idx}
-            onClick={() => select(idx)}
-            className={`relative w-full overflow-hidden rounded-md border transition ${
-              idx === currentIndex ? "ring-2 ring-blue-500 border-blue-500" : "border-neutral-200 hover:border-neutral-300"
-            }`}
-            style={{ aspectRatio: "4/1.7" }} // Slightly increased height
-            aria-label={`View image ${idx + 1}`}
-          >
-            <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 25vw, 15vw" />
-          </button>
-        ))}
+      {/* Thumbnails as 2x2 grid */}
+      <div className="col-span-12 md:col-span-3 order-2 md:order-1">
+        <div className="grid grid-cols-2 grid-rows-2 gap-3">
+          {images.slice(0, 4).map((img, idx) => (
+            <button
+              key={img.src + idx}
+              onClick={() => select(idx)}
+              className={`relative w-full overflow-hidden transition ${
+                idx === currentIndex ? " ring-[] -[]" : "-neutral-200 hover:-neutral-300"
+              }`}
+              style={{ aspectRatio: "4/3" }}
+              aria-label={`View image ${idx + 1}`}
+            >
+              <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 40vw, 20vw" />
+            </button>
+          ))}
+        </div>
+        {/* If more than 4 images, show additional thumbnails below */}
+        {images.length > 4 && (
+          <div className="grid grid-cols-2 grid-rows-2 gap-3 mt-3">
+            {images.slice(4, 8).map((img, idx) => (
+              <button
+                key={img.src + (idx + 4)}
+                onClick={() => select(idx + 4)}
+                className={`relative w-full overflow-hidden transition ${
+                  idx + 4 === currentIndex ? "ring-2 ring-[] -[]" : "-neutral-200 hover:-neutral-300"
+                }`}
+                style={{ aspectRatio: "4/3" }}
+                aria-label={`View image ${idx + 5}`}
+              >
+                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 40vw, 20vw" />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
       <div className="col-span-12 md:col-span-9 relative order-1 md:order-2">
-        <div className="relative w-full overflow-hidden rounded-md border border-neutral-200">
+        <div className="relative w-full overflow-hidden -md  -neutral-200">
           <div className="relative aspect-[16/9] w-full">
             <AnimatePresence mode="wait">
               <motion.div
@@ -68,14 +89,14 @@ export default function Gallery({ images }: GalleryProps) {
             <button
               aria-label="Previous image"
               onClick={prev}
-              className="rounded-full bg-black/50 hover:bg-black/60 p-2 text-white transition"
+              className="-full bg-black/50 hover:bg-black/60 p-2 text-white transition"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               aria-label="Next image"
               onClick={next}
-              className="rounded-full bg-black/50 hover:bg-black/60 p-2 text-white transition"
+              className="-full bg-black/50 hover:bg-black/60 p-2 text-white transition"
             >
               <ChevronRight size={20} />
             </button>
