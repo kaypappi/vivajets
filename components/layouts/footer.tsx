@@ -111,11 +111,11 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-2">{t('footer.fleet')}</h4>
           <ul className="space-y-7 mt-5 text-white/70">
-            <li>
+            {/* <li>
               <Link href="/buyers-guide/global-7500" className="hover:text-white transition">
                 Bombardier Global 7500
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/buyers-guide/challenger-604" className="hover:text-white transition">
                 Challenger 604 
@@ -126,7 +126,7 @@ export default function Footer() {
                 Hawker 900XP 
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/buyers-guide/hawker-850xp" className="hover:text-white transition">
                 Hawker 850XP 
               </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
               <Link href="/buyers-guide/legacy-600" className="hover:text-white transition">
                 Legacy 600
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         {/* Contact Us */}
@@ -143,7 +143,13 @@ export default function Footer() {
           <h4 className="font-semibold mb-2">{t('footer.contactUs')}</h4>
           <ul className="space-y-7 mt-5 text-white/70">
             <li>
-              <a href="tel:+23413430614" className="hover:text-white transition">+23413430614</a>
+              <a href="https://wa.me/2348111113660" className="hover:text-white transition">WhatsApp: +234 811 111 3660</a>
+            </li>
+            <li>
+              <a href="tel:02018883685" className="hover:text-white transition">Telephone: 02018883685</a>
+            </li>
+            <li>
+              <a href="tel:+23413430614" className="hover:text-white transition">Mobile: +23413430614</a>
             </li>
             <li>
               <a href="mailto:sales@viva-jets.com" className="hover:text-white transition">sales@viva-jets.com</a>

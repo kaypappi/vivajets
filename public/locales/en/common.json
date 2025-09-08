@@ -105,9 +105,19 @@
   },
   "contact": {
     "title": "Contact Us",
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "Chat with us on WhatsApp for quick bookings and enquiries.",
+      "phone": "+234 811 111 3660"
+    },
     "call": {
       "title": "Call Us",
       "description": "Call our customer care representative via the contact number for bookings and enquiries.",
+      "phone": "02018883685"
+    },
+    "mobile": {
+      "title": "Mobile",
+      "description": "Call our mobile number for urgent bookings and enquiries.",
       "phone": "+23413430614"
     },
     "email": {

@@ -21,13 +21,29 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 pt-80 pb-20">
         <h1 className="special-header text-5xl md:text-7xl text-black mb-16">{t('contact.title')}</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ContactCard
+            icon={<Phone className="text-green-600" size={22} />}
+            title={t('contact.whatsapp.title')}
+            description={t('contact.whatsapp.description')}
+          >
+            <a href={`https://wa.me/2348111113660`} className="text-sm text-black font-medium hover:underline">{t('contact.whatsapp.phone')}</a>
+          </ContactCard>
+
           <ContactCard
             icon={<Phone className="text-blue-600" size={22} />}
             title={t('contact.call.title')}
             description={t('contact.call.description')}
           >
             <a href={`tel:${t('contact.call.phone')}`} className="text-sm text-black font-medium hover:underline">{t('contact.call.phone')}</a>
+          </ContactCard>
+
+          <ContactCard
+            icon={<Phone className="text-blue-600" size={22} />}
+            title={t('contact.mobile.title')}
+            description={t('contact.mobile.description')}
+          >
+            <a href={`tel:${t('contact.mobile.phone')}`} className="text-sm text-black font-medium hover:underline">{t('contact.mobile.phone')}</a>
           </ContactCard>
 
           <ContactCard

@@ -105,9 +105,19 @@
   },
   "contact": {
     "title": "Contactez-nous",
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "Chattez avec nous sur WhatsApp pour des réservations rapides et des demandes de renseignements.",
+      "phone": "+234 811 111 3660"
+    },
     "call": {
       "title": "Appelez-nous",
       "description": "Appelez notre service client via le numéro de contact pour les réservations et les demandes de renseignements.",
+      "phone": "02018883685"
+    },
+    "mobile": {
+      "title": "Mobile",
+      "description": "Appelez notre numéro mobile pour des réservations urgentes et des demandes de renseignements.",
       "phone": "+23413430614"
     },
     "email": {

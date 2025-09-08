@@ -9,11 +9,11 @@ interface TabItem {
 }
 
 const tabs: TabItem[] = [
-  { slug: "global-7500", label: "Bombardier Global 7500" },
+  // { slug: "global-7500", label: "Bombardier Global 7500" },
   { slug: "challenger-604", label: "Challenger 604" },
   { slug: "hawker-900xp", label: "Hawker 900XP" },
-  { slug: "hawker-850xp", label: "Hawker 850XP" },
-  { slug: "legacy-600", label: "Legacy 600" },
+  // { slug: "hawker-850xp", label: "Hawker 850XP" },
+  // { slug: "legacy-600", label: "Legacy 600" },
 ];
 
 export default function TabsNav() {
