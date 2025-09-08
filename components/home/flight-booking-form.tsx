@@ -7,6 +7,7 @@ import { debounce } from 'lodash';
 import { format } from "date-fns";
 import FlightQuoteModal from "../ui/flight-quote-modal";
 import { useTranslations } from "@/lib/useTranslations";
+import { trackLinkedInConversion } from "@/lib/analytics";
 
 interface Location {
   id: number;
@@ -415,6 +416,7 @@ export default function FlightBookingForm({ className = "" }: FlightBookingFormP
       });
 
       if (response.ok) {
+        trackLinkedInConversion(23415961);
         showNotification('success', t('flight.thankYouMessage'));
         setIsModalOpen(false);
         

@@ -6,6 +6,7 @@ import { format } from 'date-fns';
 import { createPortal } from 'react-dom';
 import { useTranslations } from "@/lib/useTranslations";
 import axios from 'axios';
+import { trackLinkedInConversion } from '@/lib/analytics';
 
 interface Location {
   id: number;
@@ -256,6 +257,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
       });
 
       if (response.ok) {
+        trackLinkedInConversion(23415961);
         showNotification('success', "Thank you! We'll get back to you with a personalized quote soon.");
         setFormData({ fullName: '', email: '', phone: '' });
         setTimeout(() => {

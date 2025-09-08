@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { createPortal } from 'react-dom';
+import { trackLinkedInConversion } from '@/lib/analytics';
 
 interface ListAircraftModalProps {
   isOpen: boolean;
@@ -84,6 +85,7 @@ ${formData.aircraftDetails}`
       });
 
       if (response.ok) {
+        trackLinkedInConversion(23415961);
         showNotification('success', "Thank you! We'll contact you soon to discuss listing your aircraft.");
         setFormData({ fullName: '', email: '', phone: '', aircraftDetails: '' });
         setTimeout(() => {
