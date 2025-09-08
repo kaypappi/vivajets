@@ -143,7 +143,7 @@ export default function Footer() {
           <h4 className="font-semibold mb-2">{t('footer.contactUs')}</h4>
           <ul className="space-y-7 mt-5 text-white/70">
             <li>
-              <a href="tel:08104446209" className="hover:text-white transition">0810 444 6209</a>
+              <a href="tel:+23413430614" className="hover:text-white transition">+23413430614</a>
             </li>
             <li>
               <a href="mailto:sales@viva-jets.com" className="hover:text-white transition">sales@viva-jets.com</a>
