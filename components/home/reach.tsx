@@ -12,25 +12,32 @@ export default function Reach() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/assets/images/reach-bg.png"
+        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757405178/Group_1000002981_1_ci8vmc.png"
         alt="World map background"
         fill
         priority
         className="object-cover object-center z-0"
       />
-      {/* Overlay GIF, fade in when loaded, hidden on mobile */}
-      <Image
-        src="/assets/images/reach-bg.gif"
-        alt="World map background animated"
-        fill
-        priority={false}
-        onLoadingComplete={() => setGifLoaded(true)}
-        className={`object-cover object-center z-0 transition-opacity duration-700 ${gifLoaded ? 'opacity-100' : 'opacity-0'} block`}
-        unoptimized
-      />
+      {/* Overlay GIF, slide in from left when in view */}
+      <div className="absolute inset-0 flex items-center justify-end z-0">
+        <Image
+          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757404190/Hawker-900XP_copy_1_1_qvk0ic.png"
+          alt="World map background animated"
+          width={800}
+          height={600}
+          priority={false}
+          onLoadingComplete={() => setGifLoaded(true)}
+          className={`
+            object-cover object-center max-w-4xl w-full h-auto
+            transition-all duration-1000 ease-out
+            ${inView && gifLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+          `}
+          unoptimized
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70 z-10" />
-      {/* Content container: on mobile, content at bottom; on desktop, right side */}
-      <div className="absolute inset-0 flex flex-col justify-end sm:justify-center sm:items-end z-20">
+      {/* Content container: on mobile, content at bottom; on desktop, left side */}
+      <div className="absolute inset-0 flex flex-col justify-end sm:justify-center sm:items-start z-20">
         <div
           ref={ref}
           className={`
@@ -42,7 +49,7 @@ export default function Reach() {
             duration-1000
             mb-10
             sm:mb-0
-            sm:mr-16
+            sm:ml-16
             ${inView ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}
           `}
         >

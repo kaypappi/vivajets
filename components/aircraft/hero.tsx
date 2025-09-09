@@ -26,7 +26,7 @@ export default function AircraftHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/images/craft-bg.png"
+          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757403831/_O3G9857_1_1_si6bqq.png"
           alt="Private jet on tarmac at sunset"
           fill
           priority

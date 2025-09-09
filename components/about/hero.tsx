@@ -75,11 +75,11 @@ export default function AboutHero() {
       </div>
        <div className="absolute hidden sm:block bottom-0 left-1/2 -translate-x-1/2 translate-y-[30%] w-full z-[5]">
         <Image
-          src="/assets/images/plane.svg"
+          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757403664/CDY_7_copy_3_1_z4hboc.png"
           alt="VivaJets Plane"
           width={1920}
           height={400}
-          className="w-full h-auto"
+          className="w-full h-auto mt-52"
         />
       </div>
       

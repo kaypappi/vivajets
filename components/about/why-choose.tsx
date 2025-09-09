@@ -33,7 +33,7 @@ const WhyChoose = () => {
       className="py-10 sm:py-20 bg-cover bg-center sm:pt-64"
       style={{ backgroundImage: "url('/assets/images/why-choose-section.png')" }}
     >
-      <div className="container mx-auto px-4 pt-20 text-white">
+      <div className="container mx-auto px-4 pt-24 text-white">
         <div className="mb-20 text-left sm:text-center">
           <h2 className="text-4xl md:text-5xl font-bold special-header">{t('whyCharter.title')}</h2>
           <p className="max-w-5xl mt-4 text-lg mx-0 sm:mx-auto">

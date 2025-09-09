@@ -7,32 +7,32 @@ const services = (t: (key: string) => string) => [
   {
     title: t("services.list.ops.title"),
     description: t("services.list.ops.description"),
-    image: "/assets/images/get_image_1.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405467/PXL_20240422_134856216_1_tuni4p.png",
   },
   {
     title: t("services.list.crew.title"),
     description: t("services.list.crew.description"),
-    image: "/assets/images/get_image_2.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405469/PXL_20240422_134856216_1_1_mbxnif.png",
   },
   {
     title: t("services.list.maintenance.title"),
     description: t("services.list.maintenance.description"),
-    image: "/assets/images/get_image_3.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405473/PXL_20240422_134856216_1_2_abvyd0.png",
   },
   {
     title: t("services.list.finance.title"),
     description: t("services.list.finance.description"),
-    image: "/assets/images/get_image_4.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405478/PXL_20240422_134856216_1_3_jx79iy.png",
   },
   {
     title: t("services.list.compliance.title"),
     description: t("services.list.compliance.description"),
-    image: "/assets/images/get_image_5.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405480/PXL_20240422_134856216_1_4_qhlepa.png",
   },
   {
     title: t("services.list.tripSupport.title"),
     description: t("services.list.tripSupport.description"),
-    image: "/assets/images/woman.png",
+    image: "https://res.cloudinary.com/dljgzevaj/image/upload/v1757405483/PXL_20240422_134856216_1_5_x9g7vw.png",
   },
 ];
 
