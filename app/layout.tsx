@@ -29,6 +29,20 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-WPSRG4J5');
           `}
         </Script>
+        
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J2DB4TP04K"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J2DB4TP04K');
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}
