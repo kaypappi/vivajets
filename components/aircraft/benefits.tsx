@@ -5,13 +5,13 @@ import { useTranslations } from '@/lib/useTranslations'
 function Benefits() {
   const { t } = useTranslations('aircraftSales')
   return (
-    <div className='relative bg-white'>
+    <div className='relative bg-[#F3F5F9]'>
       <div className='container mx-auto px-4 py-20'>
         <h2 className='text-3xl sm:text-5xl font-bold special-header'>{t('benefits.title')}</h2>
         {/* Desktop image */}
         <div className="w-full h-auto mt-20 hidden sm:block">
           <Image
-            src="/assets/images/benfit-img.svg"
+            src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757499112/Group_1000002889_qy1rjn.svg"
             alt="benefit-bg"
             width={1200}
             height={400}
@@ -22,7 +22,7 @@ function Benefits() {
         {/* Mobile image */}
         <div className="w-full h-auto mt-20 block sm:hidden">
           <Image
-            src="/assets/images/benefit_mobile.svg"
+            src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757499112/Group_1000002889_qy1rjn.svg"
             alt="benefit-bg-mobile"
             width={600}
             height={300}

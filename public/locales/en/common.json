@@ -183,10 +183,10 @@
   },
   "whatYouGet": {
     "title": "What You Get With Us",
-    "subtitle": "At VivaJets, every journey is designed around you. We go beyond transportation to deliver an experience defined by comfort, trust, and flexibility. Here's what sets us apart:",
+    "subtitle": "At VivaJets, every journey is designed around you. We go beyond transportation to deliver an experience defined by comfort, trust, and flexibility. Here’s what sets us apart:",
     "cards": {
       "flightsThatFit": {
-        "title": "Flights That Fit Your Life",
+        "title": "Travel on Your Terms",
         "description": "We work around your schedule. Whether it's early morning or same-day departure, we get you in the air when you need to be."
       },
       "rightJet": {
@@ -195,15 +195,15 @@
       },
       "realPeople": {
         "title": "Real People, Real Service",
-        "description": "You're not booking through a faceless app. We're here to help you plan your trip, answer questions, and make sure you're comfortable every step of the way."
+        "description": "It’s not just about booking a flight. We’re here to design your journey, answer your questions, and make sure you travel with ease."
       },
-      "rightJetDuplicate": {
-        "title": "The Right Jet for Every Trip",
-        "description": "Light jets for short flights. Larger cabins for long hauls. We'll help you choose what works best for your destination, group size, and preferences."
+      "safety": {
+        "title": "Safety Without Compromise",
+        "description": "Every flight upholds the highest international standards, giving you total peace of mind."
       },
-      "realPeopleDuplicate": {
-        "title": "Real People, Real Service",
-        "description": "You're not booking through a faceless app. We're here to help you plan your trip, answer questions, and make sure you're comfortable every step of a lifetime"
+      "globalReach": {
+        "title": "Seamless Global Reach",
+        "description": "We are committed to connecting you effortlessly to anywhere in the world."
       }
     }
   },

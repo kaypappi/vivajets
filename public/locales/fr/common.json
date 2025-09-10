@@ -186,8 +186,8 @@
     "subtitle": "Chez VivaJets, chaque voyage est conçu autour de vous. Nous allons au-delà du transport pour offrir une expérience définie par le confort, la confiance et la flexibilité. Voici ce qui nous distingue :",
     "cards": {
       "flightsThatFit": {
-        "title": "Des Vols Qui S'Adaptent À Votre Vie",
-        "description": "Nous nous adaptons à votre emploi du temps. Que ce soit tôt le matin ou un départ le jour même, nous vous mettons en l'air quand vous en avez besoin."
+        "title": "Voyagez à Votre Rythme",
+        "description": "Nous nous adaptons à votre emploi du temps. Qu’il s’agisse d’un départ tôt le matin ou le jour même, nous vous faisons décoller quand vous en avez besoin."
       },
       "rightJet": {
         "title": "Le Bon Jet Pour Chaque Voyage",
@@ -195,15 +195,15 @@
       },
       "realPeople": {
         "title": "De Vraies Personnes, Un Vrai Service",
-        "description": "Vous ne réservez pas via une application sans visage. Nous sommes là pour vous aider à planifier votre voyage, répondre à vos questions et nous assurer que vous êtes à l'aise à chaque étape."
+        "description": "Il ne s’agit pas seulement de réserver un vol. Nous concevons votre voyage, répondons à vos questions et veillons à ce que vous voyagiez en toute sérénité."
       },
-      "rightJetDuplicate": {
-        "title": "Le Bon Jet Pour Chaque Voyage",
-        "description": "Jets légers pour les vols courts. Cabines plus grandes pour les longs trajets. Nous vous aiderons à choisir ce qui convient le mieux à votre destination, à la taille de votre groupe et à vos préférences."
+      "safety": {
+        "title": "Une Sécurité Sans Compromis",
+        "description": "Chaque vol respecte les normes internationales les plus strictes pour une tranquillité d’esprit totale."
       },
-      "realPeopleDuplicate": {
-        "title": "De Vraies Personnes, Un Vrai Service",
-        "description": "Vous ne réservez pas via une application sans visage. Nous sommes là pour vous aider à planifier votre voyage, répondre à vos questions et nous assurer que vous êtes à l'aise à chaque étape de votre vie"
+      "globalReach": {
+        "title": "Une Portée Mondiale Sans Accroc",
+        "description": "Nous vous connectons, sans effort, vers n’importe quelle destination dans le monde."
       }
     }
   },

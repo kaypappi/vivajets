@@ -13,9 +13,9 @@ export default function Ready() {
   const [ref, inView] = useInView();
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   return (
-    <section className="relative w-full overflow-hidden md:overflow-visible">
+    <section className="relative min-h-screen pt-10 w-full mt-10 overflow-hidden md:overflow-visible">
       <Image
-        src='https://res.cloudinary.com/dljgzevaj/image/upload/v1757461720/Group_1000002835_1_zwcckd.svg'
+        src='/assets/images/ready-bg-2.png'
         alt="World map background"
         fill
         priority

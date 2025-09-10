@@ -4,7 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  useCarousel,
   Autoplay,
 } from "@/components/ui/carousel";
 import React from "react";
@@ -12,6 +11,7 @@ import { useTranslations } from "@/lib/useTranslations";
 
 const WhatYouGet = () => {
   const { t } = useTranslations();
+  const [carouselApi, setCarouselApi] = React.useState<any>(null);
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
@@ -34,13 +34,13 @@ const WhatYouGet = () => {
     },
     {
       image: "/assets/images/get_image_4.png",
-      title: t("whatYouGet.cards.rightJetDuplicate.title"),
-      description: t("whatYouGet.cards.rightJetDuplicate.description"),
+      title: t("whatYouGet.cards.safety.title"),
+      description: t("whatYouGet.cards.safety.description"),
     },
     {
       image: "/assets/images/get_image_5.png",
-      title: t("whatYouGet.cards.realPeopleDuplicate.title"),
-      description: t("whatYouGet.cards.realPeopleDuplicate.description"),
+      title: t("whatYouGet.cards.globalReach.title"),
+      description: t("whatYouGet.cards.globalReach.description"),
     },
   ];
 
@@ -56,11 +56,35 @@ const WhatYouGet = () => {
               {t("whatYouGet.subtitle")}
             </p>
           </div>
-          {/* Add carousel controls here if needed */}
+          <div className="hidden md:flex items-center gap-3">
+            <button
+              type="button"
+              onClick={() => carouselApi?.scrollPrev()}
+              aria-label="Previous"
+              className="h-10 w-10 rounded-full bg-white/80 hover:bg-white shadow border border-black/10 flex items-center justify-center transition"
+              disabled={carouselApi ? !carouselApi.canScrollPrev() : false}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 6L9 12L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={() => carouselApi?.scrollNext()}
+              aria-label="Next"
+              className="h-10 w-10 rounded-full bg-white/80 hover:bg-white shadow border border-black/10 flex items-center justify-center transition"
+              disabled={carouselApi ? !carouselApi.canScrollNext() : false}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
       <Carousel
+        setApi={setCarouselApi}
         plugins={[plugin.current]}
         opts={{
           align: "start",
