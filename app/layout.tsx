@@ -43,6 +43,27 @@ export default function RootLayout({
             gtag('config', 'G-J2DB4TP04K');
           `}
         </Script>
+        {/* Event snippet for Purchase conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. */}
+        <Script id="gtag-conversion-snippet" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-16927607169/8Y3CI7Mxa0aEIGT24c',
+                  'value': 1.0,
+                  'currency': 'USD',
+                  'transaction_id': '',
+                  'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}
