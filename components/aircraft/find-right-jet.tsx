@@ -21,10 +21,22 @@ function FindRightJet() {
         </div>
 
         {/* Large Image */}
-        <div className="relative w-full h-[700px] mb-8">
+        {/* Desktop Image */}
+        <div className="relative w-full h-[700px] mb-8 hidden md:block">
           <Image
             src="/assets/images/light.png"
             alt="Private jet at night"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        </div>
+        {/* Mobile Image */}
+        <div className="relative w-full h-[400px] mb-8 block md:hidden">
+          <Image
+            src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757762213/_O4G4437_1_qyivn8.png"
+            alt="Private jet at night (mobile)"
             fill
             className="object-cover"
             priority

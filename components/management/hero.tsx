@@ -13,20 +13,20 @@ export default function ManagementHero() {
   return (
     <section className="relative min-h-screen w-full bg-[#F5F5F5] flex items-center">
       {/* Plane Image */}
-      <div className="absolute mt-24 -top-12 sm:-top-24 left-1/2 -translate-x-1/2 w-full pointer-events-none select-none">
+      <div className="absolute mt-44 sm:mt-24 -top-12 sm:-top-24 left-1/2 -translate-x-1/2 w-full pointer-events-none select-none">
         <Image
           src="/assets/images/plane2.svg"
           alt="VivaJets Plane"
           width={1920}
           height={400}
           priority
-          className="w-full hidden sm:block h-auto"
+          className="w-full h-auto"
         />
       </div>
 
       <div className="container mx-auto z-10 sm:pt-[600px] px-4 grid md:grid-cols-2 gap-16 items-center  md:pb-32 relative">
         {/* Headline */}
-        <div className="sm:mt-0 mt-24">
+        <div className="sm:mt-0 mt-60">
           <h1 className="text-4xl md:text-6xl special-header font-bold leading-tight text-black">
             {t('hero.titleMain')} <br/>
             {t('hero.titleSecond')}

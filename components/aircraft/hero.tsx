@@ -24,10 +24,23 @@ export default function AircraftHero() {
   return (
     <section className="relative min-h-screen w-full bg-black">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      {/* Mobile Image */}
+      <div className="absolute inset-0 z-0 block md:hidden">
+        <Image
+          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757762090/_O3G9857_1_pbdydv.png"
+          alt="Private jet on tarmac at sunset (mobile)"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+          quality={85}
+        />
+      </div>
+      {/* Desktop Image */}
+      <div className="absolute inset-0 z-0 hidden md:block">
         <Image
           src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757403831/_O3G9857_1_1_si6bqq.png"
-          alt="Private jet on tarmac at sunset"
+          alt="Private jet on tarmac at sunset (desktop)"
           fill
           priority
           className="object-cover object-center"
@@ -37,7 +50,7 @@ export default function AircraftHero() {
       </div>
 
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/30 z-1" />
+      <div className="absolute inset-0 bg-black/50 z-1" />
 
       {/* Header */}
       <Header isMuted={false} toggleMute={() => {}} showMuteButton={false} />
