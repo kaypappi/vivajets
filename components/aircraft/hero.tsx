@@ -67,9 +67,11 @@ export default function AircraftHero() {
 
           {/* Right side - Content and Buttons */}
           <div className="text-white max-w-full md:max-w-3xl">
-            <p className="mb-5 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed">
-              {t('hero.body')}
-            </p>
+            <div className="mb-5 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed space-y-4">
+              {t('hero.body', { returnObjects: true }).map((paragraph: string, index: number) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
             <div className="flex items-center gap-2 sm:gap-4">
               <Button
                 variant="secondary"

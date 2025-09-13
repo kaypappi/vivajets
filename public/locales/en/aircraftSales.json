@@ -1,7 +1,11 @@
 {
   "hero": {
     "title": "Aircraft Sales & Acquisition",
-    "body": "Buying or selling an aircraft is a high-stakes process and our role is to make it smooth, secure, and strategic. We specialize in presenting your aircraft to the right global audience. Through targeted outreach, high-quality photography, and immersive virtual tours, we ensure your asset is showcased at its absolute best—capturing attention and attracting serious, qualified buyers. From start to finish, we craft a seamless, sophisticated sales journey tailored to your goals.",
+    "body": [
+      "Buying or selling an aircraft is a high-stakes process and our role is to make it smooth, secure, and strategic.",
+      "We specialize in presenting your aircraft to the right global audience. Through targeted outreach, high-quality photography, and immersive virtual tours, we ensure your asset is showcased at its absolute best—capturing attention and attracting serious, qualified buyers.",
+      "From start to finish, we craft a seamless, sophisticated sales journey tailored to your goals."
+    ],
     "ctaList": "List Your Aircraft",
     "ctaBrowse": "Browse Aircraft",
     "scroll": "Scroll"

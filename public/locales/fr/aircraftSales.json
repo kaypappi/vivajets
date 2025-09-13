@@ -1,7 +1,11 @@
 {
   "hero": {
     "title": "Vente & Acquisition d'Avion",
-    "body": "Acheter ou vendre un avion est un processus à forts enjeux et notre rôle est de le rendre fluide, sécurisé et stratégique. Nous sommes spécialisés dans la présentation de votre avion au bon public mondial. Grâce à une communication ciblée, une photographie de haute qualité et des visites virtuelles immersives, nous mettons en valeur votre actif au meilleur de son potentiel — attirant l'attention et des acheteurs sérieux et qualifiés. Du début à la fin, nous créons un parcours de vente fluide et sophistiqué, adapté à vos objectifs.",
+    "body": [
+      "Acheter ou vendre un avion est un processus à forts enjeux et notre rôle est de le rendre fluide, sécurisé et stratégique.",
+      "Nous sommes spécialisés dans la présentation de votre avion au bon public mondial. Grâce à une communication ciblée, une photographie de haute qualité et des visites virtuelles immersives, nous mettons en valeur votre actif au meilleur de son potentiel — attirant l'attention et des acheteurs sérieux et qualifiés.",
+      "Du début à la fin, nous créons un parcours de vente fluide et sophistiqué, adapté à vos objectifs."
+    ],
     "ctaList": "Lister Votre Avion",
     "ctaBrowse": "Parcourir les Avions",
     "scroll": "Faire défiler"
