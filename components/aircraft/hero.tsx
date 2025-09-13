@@ -68,7 +68,7 @@ export default function AircraftHero() {
           {/* Right side - Content and Buttons */}
           <div className="text-white max-w-full md:max-w-3xl">
             <div className="mb-5 sm:mb-8 text-sm sm:text-base md:text-lg leading-relaxed space-y-4">
-              {t('hero.body', { returnObjects: true }).map((paragraph: string, index: number) => (
+              {(t('hero.body', { returnObjects: true }) as string[]).map((paragraph: string, index: number) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
