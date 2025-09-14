@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
 import { useTranslations } from "@/lib/useTranslations";
 
@@ -176,6 +176,13 @@ export default function Dna() {
   const [isMobile, setIsMobile] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isInView, setIsInView] = useState(false);
+  const autoSpeedPx = 600;
+  const sectionRangeRef = useRef<{ start: number; end: number }>({ start: 0, end: 0 });
+  const rafRef = useRef<number | null>(null);
+  const lastTimeRef = useRef<number>(0);
+  const prefersReducedMotion = useRef(false);
   
   const dnaPoints = getDnaPoints(t);
 
@@ -189,6 +196,55 @@ export default function Dna() {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  // Respect reduced motion preference (do not disable autoplay per request)
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'matchMedia' in window) {
+      prefersReducedMotion.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+  }, []);
+
+  // Compute section scroll range (absolute positions)
+  useEffect(() => {
+    const computeRange = () => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const start = window.scrollY + rect.top;
+      const end = start + rect.height - window.innerHeight;
+      sectionRangeRef.current = { start, end };
+    };
+    computeRange();
+    window.addEventListener('resize', computeRange);
+    window.addEventListener('orientationchange', computeRange as any);
+    return () => {
+      window.removeEventListener('resize', computeRange);
+      window.removeEventListener('orientationchange', computeRange as any);
+    };
+  }, []);
+
+  // Observe whether section is in view to control autoplay
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      setIsInView(entry.isIntersecting);
+    }, { threshold: 0.2 });
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  // Keep the scroll range updated while the section is in view (handles late layout shifts)
+  useEffect(() => {
+    if (!isInView) return;
+    const id = window.setInterval(() => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const start = window.scrollY + rect.top;
+      const end = start + rect.height - window.innerHeight;
+      sectionRangeRef.current = { start, end };
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [isInView]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -215,6 +271,84 @@ export default function Dna() {
     });
     return () => unsubscribe();
   }, [springScrollProgress, activeIndex]);
+
+  // Autoplay: smoothly scrolls the window within the section range when in view
+  useEffect(() => {
+    if (!isAutoPlay || !isInView) return;
+    lastTimeRef.current = 0;
+    const loop = (time: number) => {
+      if (!lastTimeRef.current) lastTimeRef.current = time;
+      const dt = (time - lastTimeRef.current) / 1000;
+      lastTimeRef.current = time;
+      const { start, end } = sectionRangeRef.current;
+      const currentY = window.scrollY;
+
+      // If outside the section, snap to the nearest boundary before continuing
+      if (currentY < start - 1) {
+        window.scrollTo({ top: start });
+      } else if (currentY > end + 1) {
+        window.scrollTo({ top: end });
+      } else {
+        let nextY = currentY + autoSpeedPx * dt;
+        if (nextY >= end) {
+          // Loop back to start when reaching the end
+          nextY = start;
+        }
+        window.scrollTo({ top: nextY });
+      }
+      rafRef.current = requestAnimationFrame(loop);
+    };
+    // Ensure starting within the section bounds
+    const { start, end } = sectionRangeRef.current;
+    if (window.scrollY < start || window.scrollY > end) {
+      window.scrollTo({ top: start });
+    }
+    rafRef.current = requestAnimationFrame(loop);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    };
+  }, [isAutoPlay, isInView, autoSpeedPx]);
+
+  // Helper: scroll to a specific logical step or progress
+  const scrollToProgress = useCallback((progress: number, smooth: boolean = true) => {
+    const { start, end } = sectionRangeRef.current;
+    const clamped = Math.max(0, Math.min(0.999, progress));
+    const y = start + clamped * (end - start);
+    window.scrollTo({ top: y, behavior: smooth ? 'smooth' : 'auto' });
+  }, []);
+
+  const goToIndex = useCallback((index: number) => {
+    const n = dnaPoints.length;
+    const target = Math.min(0.999, (index + 0.5) / n);
+    scrollToProgress(target, true);
+  }, [dnaPoints.length, scrollToProgress]);
+
+  const handleNext = useCallback(() => {
+    goToIndex(Math.min(dnaPoints.length - 1, activeIndex + 1));
+  }, [goToIndex, activeIndex, dnaPoints.length]);
+
+  const handlePrev = useCallback(() => {
+    goToIndex(Math.max(0, activeIndex - 1));
+  }, [goToIndex, activeIndex]);
+
+  // Keyboard controls within the section (no autoplay pause)
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (!isInView) return;
+      if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        handleNext();
+      } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        handlePrev();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [isInView, handleNext, handlePrev]);
 
   // Enhanced background transitions
   const backgroundColor = useTransform(
@@ -420,30 +554,7 @@ export default function Dna() {
                   </motion.div>
                 </div>
 
-                {/* Progress indicator */}
-                <motion.div
-                  variants={childVariants}
-                  className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                >
-                  <div className="flex space-x-3">
-                    {dnaPoints.map((_, index) => (
-                      <motion.div
-                        key={index}
-                        className="w-2 h-2 rounded-full"
-                        style={{
-                          backgroundColor: index === activeIndex ? activePoint.accentColor : activePoint.textColor,
-                          opacity: index === activeIndex ? 1 : 0.3
-                        }}
-                        initial={{ scale: 0.8 }}
-                        animate={{ 
-                          scale: index === activeIndex ? 1.2 : 0.8,
-                          opacity: index === activeIndex ? 1 : 0.3
-                        }}
-                        transition={{ duration: 0.3 }}
-                      />
-                    ))}
-                  </div>
-                </motion.div>
+                {/* Controls and dots intentionally hidden per request */}
               </motion.div>
             </AnimatePresence>
           </div>
