@@ -124,9 +124,12 @@ function FindRightJet() {
               
               {/* Contact Us Button as 6th item */}
               <div className="flex items-center justify-center">
-                <button className="bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+                <a
+                  href="/contact"
+                  className="bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors text-center"
+                >
                   {t('findRight.cta')}
-                </button>
+                </a>
               </div>
             </div>
           </div>
