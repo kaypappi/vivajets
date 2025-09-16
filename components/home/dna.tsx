@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
+import { motion, useScroll, useTransform, AnimatePresence, useSpring } from 'framer-motion';
 import { useTranslations } from "@/lib/useTranslations";
 
 const getDnaPoints = (t: any) => [
@@ -176,6 +176,7 @@ export default function Dna() {
   const [isMobile, setIsMobile] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  // Set autoplay default to true, but will be disabled on mobile
   const [isAutoPlay, setIsAutoPlay] = useState(true);
   const [isInView, setIsInView] = useState(false);
   const autoSpeedPx = 600;
@@ -189,7 +190,10 @@ export default function Dna() {
   // Mobile detection
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      // Disable autoplay on mobile
+      setIsAutoPlay(!mobile);
     };
     
     checkMobile();
@@ -274,6 +278,7 @@ export default function Dna() {
 
   // Autoplay: smoothly scrolls the window within the section range when in view
   useEffect(() => {
+    // Do not run autoplay on mobile
     if (!isAutoPlay || !isInView) return;
     lastTimeRef.current = 0;
     const loop = (time: number) => {
@@ -375,7 +380,7 @@ export default function Dna() {
 
   const activePoint = dnaPoints[activeIndex];
 
-  // Mobile fallback without complex animations
+  // Mobile fallback without complex animations and without autoplay/scrolling
   if (isMobile) {
     return (
       <div className="py-16 bg-gradient-to-b from-gray-50 to-white">

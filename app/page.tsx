@@ -8,7 +8,7 @@ import Header from "../components/layouts/header";
 import { useState } from "react";
 import HeroOptimized from "../components/home/hero-optimized";
 import { useTranslations } from "@/lib/useTranslations";
-
+import ParalaxBg from "../components/about/paralaxbg";
 
 
 
@@ -27,7 +27,8 @@ export default function Home() {
       <HeroOptimized isMuted={isMuted} />
       <Reach />
       <Dna />
-      <Ready />
+      {/* <Ready /> */}
+      <ParalaxBg />
       <Media />
 
     </>
