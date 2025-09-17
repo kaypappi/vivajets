@@ -12,7 +12,7 @@ export default function Reach() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757405178/Group_1000002981_1_ci8vmc.png"
+        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1758136339/Gemini_Generated_Image_y8nbq8y8nbq8y8nb_dkd75k.png"
         alt="World map background"
         fill
         priority
@@ -53,7 +53,7 @@ export default function Reach() {
             ${inView ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}
           `}
         >
-          <h2 className="text-4xl md:text-5xl special-header font-bold text-white mb-4 leading-tight">
+          <h2 className="text-4xl md:text-6xl special-header font-bold text-white mb-4 leading-tight">
             {t('reach.title')}
           </h2>
           <p className="text-white/80 text-base md:text-lg">
