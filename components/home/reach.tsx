@@ -12,25 +12,46 @@ export default function Reach() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* 
-        Background image: 
-        - Uses next/image for optimized loading.
-        - Responsive scaling for all screen sizes, including mobile.
-        - Uses object-cover to ensure the image covers the section.
-        - Uses object-center for centering on desktop, but on mobile, object-[center_top] to keep the map visible and not overly cropped.
-        - min-h-screen ensures the section is always at least the height of the viewport.
-        - Responsive className for mobile and desktop.
+        Mobile Background Image:
+        - Hidden on desktop (sm:hidden)
+        - Optimized for mobile viewport
+        - Uses object-cover to ensure proper scaling
+        - Object position set to center top for better mobile layout
       */}
       <Image
-        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1758466525/Group_1000002985_1_paetth.png"
-        alt="World map background"
+        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1758480885/Screenshot_2025-09-19_at_5.38.37_PM_2_jnsmch.png"
+        alt="World map background - mobile"
         fill
         priority
-        // Responsive object position: center top on mobile, center on larger screens
         className="
           object-cover
           z-0
           object-[center_top]
-          sm:object-center
+          sm:hidden
+          transition-all
+          duration-300
+        "
+        sizes="100vw"
+      />
+      
+      {/* 
+        Desktop Background Image:
+        - Hidden on mobile (hidden sm:block)
+        - Optimized for desktop viewport
+        - Uses object-center for proper desktop centering
+        - Better resolution and aspect ratio for larger screens
+      */}
+      <Image
+        src="https://res.cloudinary.com/dljgzevaj/image/upload/v1758480881/Group_1000002985_2_dej3rp.png"
+        alt="World map background - desktop"
+        fill
+        priority
+        className="
+          object-cover
+          z-0
+          object-center
+          hidden
+          sm:block
           transition-all
           duration-300
         "
@@ -39,8 +60,8 @@ export default function Reach() {
       {/* Overlay GIF, slide in from left when in view */}
     
     
-      {/* Content container: on mobile, content at bottom; on desktop, left side */}
-      <div className="absolute inset-0 text-black  flex flex-col justify-end sm:justify-center sm:items-start z-20">
+      {/* Content container: on mobile, content positioned higher; on desktop, left side */}
+      <div className="absolute inset-0 text-black  flex flex-col justify-start pt-20 sm:justify-center sm:items-start z-20">
         <div
           ref={ref}
           className={`
@@ -55,7 +76,7 @@ export default function Reach() {
             p-6
             mx-4
             sm:mx-0
-            mb-10
+            mb-20
             sm:mb-0
             sm:ml-16
             ${inView ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}
