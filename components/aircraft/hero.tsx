@@ -27,7 +27,7 @@ export default function AircraftHero() {
       {/* Mobile Image */}
       <div className="absolute inset-0 z-0 block md:hidden">
         <Image
-          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1757762090/_O3G9857_1_pbdydv.png"
+          src="https://res.cloudinary.com/dljgzevaj/image/upload/v1758538515/_O3G9857_2_1_af3tps.png"
           alt="Private jet on tarmac at sunset (mobile)"
           fill
           priority
