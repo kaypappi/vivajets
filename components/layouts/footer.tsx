@@ -97,8 +97,12 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-2">{t('footer.resources')}</h4>
           <ul className="space-y-7 mt-5 text-white/70">
-            {/* <li>Terms and Conditions</li>
-            <li>Privacy Policy</li> */}
+            <li>
+              <Link href="/terms" className="hover:text-white transition">Terms and Conditions</Link>
+            </li>
+            <li>
+              <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
+            </li>
             <li>
               <Link href="/blog" className="hover:text-white transition">{t('footer.blog')}</Link>
             </li>
